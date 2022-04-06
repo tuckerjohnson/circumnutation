@@ -1,0 +1,3 @@
+\version "2.20.0"
+
+xpnote = \markup { \override #'(line-width . 90) \justify { \bold \italic "Settle the Score"  is a piece for five instruments: cor anglais, trumpet, electric guitar, violin, and computer. It can either be performed as a chamber work with all five parts, or any one part alone. The piece is designed such that each part has unique content and contour; each solo has different alternations of smooth and jagged music. When played as a chamber work, \bold \italic "Settle the Score" reveals a sequence of forty-seven 12-tone aggregates, partitioned into all the five part aggregates with part sizes from one to twelve. All six versions are different, but they share a light spirit, and are comfortable whether alone or together.}} 
