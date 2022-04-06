@@ -48,7 +48,36 @@
                 }
         }
   }
+        \score {
+                \header {
+                        piece = \markup { \large { \bold "panicle" } }
+                }
+                \new PianoStaff \with { \consists "Merge_rests_engraver" } <<
+                        \set PianoStaff.connectArpeggios = ##t
+                        \override PianoStaff.Arpeggio.arpeggio-direction = #UP
+                                \new Staff = "ui2" {
+                                        \accidentalStyle modern
+                                        <<
+                                        \relative \voiceAitwo
+                                        >>
+                                }
+                                \new Staff = "di4" { \clef bass
+                                        \accidentalStyle modern
+                                        <<
+                                        \relative \voiceBitwo
+                                        >>
+                                }
+                >>      
+                \layout {
+                        \context { 
+                                \Score 
+                                        \override BarNumber.font-size = #1
+                                        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+                        }
+                }
+        }
 
+    
 
   \score {
       \header {

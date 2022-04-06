@@ -10,6 +10,7 @@
 \include "front-matter/pp-inside-cover.ly"
 \include "front-matter/pp-front-matter.ly"
 \include "manuscripts/pp-i1.ly"
+\include "manuscripts/pp-i2.ly"
 \include "manuscripts/pp-i19.ly"
 \include "manuscripts/pp-i20.ly"
 \include "manuscripts/pp-i21.ly"
