@@ -21,14 +21,39 @@ front-matter = \markuplist {
       \line { \hbracket \bold "inventions" }
         \vspace #0.5
       \line { \left-column { \line { \italic "sequence 1" }
-                             \line { \bold "       prelude" }
-                             \line { \bold "       panicle" }
-                             \line { \bold "       circumnutation" }
+                             \line { \bold "1       prelude" }
+                             \line { \bold "2       panicle" }
+                             \line { \bold "3       circumnutation" }
                              \vspace #0.2
-                             \line { \italic "sequnce 2" }
-                             \line { \bold "       polar" }
-                             \line { \bold "       panicle" }
-                             \line { \bold "       circumnutation" } 
+                             \line { \italic "sequence 2" }
+                             \line { \bold "4       polar" }
+                             \line { \bold "5       panicle" }
+                             \line { \bold "6       circumnutation" }
+                             \vspace #0.2
+                             \line { \italic "sequence 3" }
+                             \line { \bold "7       cyme" }
+                             \line { \bold "8       polar" }
+                             \line { \bold "9       circumnutation" } 
+                             \vspace #0.2
+                             \line { \italic "sequence 4" }
+                             \line { \bold "10      panicle" }
+                             \line { \bold "11      composite" }
+                             \line { \bold "12      circumnutation" } 
+                             \vspace #0.2
+                             \line { \italic "sequence 5" }
+                             \line { \bold "13      composite" }
+                             \line { \bold "14      polar" }
+                             \line { \bold "15      circumnutation" } 
+                             \vspace #0.2
+                             \line { \italic "sequence 6" }
+                             \line { \bold "16      cyme" }
+                             \line { \bold "17      pappus" }
+                             \line { \bold "18      circumnutation" }  
+                             \vspace #0.2
+                             \line { \italic "sequence 7" }
+                             \line { \bold "19      panicle" }
+                             \line { \bold "20      cyme" }
+                             \line { \bold "21      circumnutation" } 
                 }
         }
       \vspace #1.5

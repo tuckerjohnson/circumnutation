@@ -22,26 +22,27 @@
                 \new PianoStaff \with { \consists "Merge_rests_engraver" } <<
                         \set PianoStaff.connectArpeggios = ##t
                         \override PianoStaff.Arpeggio.arpeggio-direction = #UP
-                        \new Staff = "ut4" {
-                                \accidentalStyle modern
+                        \new Staff = "ui1" {
+                                \accidentalStyle forget
                                 <<
                                         \relative \voiceApre
                                 >>
                                 } 
-                        \new Staff = "dt4" { \clef bass
-                                \accidentalStyle modern
+                        \new Staff = "di1" { \clef bass
+                                \accidentalStyle forget
                                 <<
                                         \relative \voiceBpre
                                 >>
                         }
                 >>      
-  \layout {
-      \context { 
-          \Score 
-          \override BarNumber.font-size = #1
-          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
-     }
-  }
+        \layout {
+                \context { 
+                        \Score 
+                                \override BarNumber.font-size = #1
+                                \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/25)
+                                \override TimeSignature.stencil = ##f
+                }
+        }
   }
 
 
@@ -137,11 +138,12 @@
               >>
           }
       >>      
-  \layout {
-      \context { 
-          \Score 
-          \override BarNumber.font-size = #1
-          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+        \layout {
+                \context { 
+                        \Score 
+                                \override BarNumber.font-size = #1
+                                \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+                                \override TimeSignature.stencil = ##f
      }
   }
   }
