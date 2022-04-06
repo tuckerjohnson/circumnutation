@@ -2,6 +2,10 @@
 
 %------document structure------
 \book {
+        \outcover
+        \pageBreak
+        \markup { \vspace #5 }
+        \pageBreak
         \cover
         \pageBreak
         \front-matter
@@ -39,7 +43,7 @@
                 \context { 
                         \Score 
                                 \override BarNumber.font-size = #1
-                                \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/25)
+                                \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
                                 \override TimeSignature.stencil = ##f
                 }
         }

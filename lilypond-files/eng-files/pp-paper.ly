@@ -2,7 +2,7 @@
 
 %------paper-block------
 \paper {
-  first-page-number = 1
+  first-page-number = -1
   print-page-number = ##f
 	oddHeaderMarkup = \markup { \tiny { "  " } }
 	evenHeaderMarkup = \markup { \tiny { "  " } }
@@ -55,9 +55,9 @@
         system-system-spacing =
                 #'((basic-distance . 5)
                 (minimum-distance . 5)
-                (padding . 6))
+                (padding . 8))
         score-system-spacing =
-                #'((basic-distance . 5)
-                (minimum-distance . 5)
-                (padding . 1))
+                #'((basic-distance . 10)
+                (minimum-distance . 10)
+                (padding . 10))
 }

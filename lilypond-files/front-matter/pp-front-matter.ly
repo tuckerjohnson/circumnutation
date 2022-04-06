@@ -15,11 +15,9 @@ front-matter = \markuplist {
      \line { \hbracket \bold "program notes" }
       \vspace #0.2
       \xpnote
-      \vspace #1.5
+      \vspace #0.5
       \line { ================================= }
-      \vspace #1.5
-      \line { \hbracket \bold "inventions" }
-        \vspace #0.5
+      \vspace #0.5
       \line { \left-column { \line { \italic "sequence 1" }
                              \line { \bold "1       prelude" }
                              \line { \bold "2       panicle" }
@@ -56,7 +54,7 @@ front-matter = \markuplist {
                              \line { \bold "21      circumnutation" } 
                 }
         }
-      \vspace #1.5
+      \vspace #0.5
       \line { ================================= }
       \vspace #1.5
    }
