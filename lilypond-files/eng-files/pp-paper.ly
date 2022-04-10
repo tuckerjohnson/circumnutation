@@ -49,7 +49,7 @@
 	        (set-global-fonts
 		        #:music "haydn"
 		        #:brace "haydn"
-		        #:roman "Times"
+		        #:roman "Didot"
 		))
         max-systems-per-page = #7
         system-system-spacing =
