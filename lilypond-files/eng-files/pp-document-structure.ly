@@ -61,7 +61,7 @@
                                         \relative \voiceAitwo
                                         >>
                                 }
-                                \new Staff = "di4" { \clef bass
+                                \new Staff = "di2" { \clef bass
                                         \accidentalStyle modern
                                         <<
                                         \relative \voiceBitwo
@@ -72,7 +72,8 @@
                         \context { 
                                 \Score 
                                         \override BarNumber.font-size = #1
-                                        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+                                        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+                                        \override TimeSignature.stencil = ##f
                         }
                 }
         }

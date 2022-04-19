@@ -3,7 +3,7 @@
 %------variables------
 
 %texts
-xtitle = \markup { twenty-one inventions }
+xtitle = \markup { Twenty-One Inventions }
 xsub = \markup { in seven sequences }
 xcomp = \markup { Tucker Johnson }
 xinst = \markup  { piano }

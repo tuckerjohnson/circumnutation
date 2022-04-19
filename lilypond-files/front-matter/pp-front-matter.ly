@@ -18,7 +18,8 @@ front-matter = \markuplist {
       \vspace #0.5
       \line { ================================= }
       \vspace #0.5
-      \line { \left-column { \line { \italic "sequence 1" }
+      \fill-line { \column { \null }
+                \left-column { \line { \italic "sequence 1" }
                              \line { \bold "1       prelude" }
                              \line { \bold "2       panicle" }
                              \line { \bold "3       circumnutation" }
@@ -38,6 +39,8 @@ front-matter = \markuplist {
                              \line { \bold "11      composite" }
                              \line { \bold "12      circumnutation" } 
                              \vspace #0.2
+                        }
+                        \left-column {
                              \line { \italic "sequence 5" }
                              \line { \bold "13      composite" }
                              \line { \bold "14      polar" }
@@ -53,11 +56,13 @@ front-matter = \markuplist {
                              \line { \bold "20      cyme" }
                              \line { \bold "21      circumnutation" } 
                 }
+                \column { \null }
         }
       \vspace #0.5
       \line { ================================= }
       \vspace #1.5
-   }
+       } 
+  }
    \column { \null }
   }
-}
+
