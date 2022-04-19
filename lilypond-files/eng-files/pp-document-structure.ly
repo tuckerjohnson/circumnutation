@@ -71,8 +71,8 @@
                 \layout {
                         \context { 
                                 \Score 
-                                        \override BarNumber.font-size = #1
-                                        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+                                        \override BarNumber.break-visibility = ##(#f #f #f)
+                                        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
                                         \override TimeSignature.stencil = ##f
                         }
                 }
