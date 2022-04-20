@@ -17,10 +17,10 @@
         \score {
                 \header {
                 title = \markup { \fontsize #1 \xtitle }
-                subtitle = \markup { \italic \xsub }
+                subtitle = \markup { \medium \italic \xsub }
                 composer = \xcomp
                 poet = \markup { "piano" }
-                instrument = \markup { \bold \italic "sequence " \number 1 }
+                instrument = \markup { \italic "sequence" \number 1 \smaller \medium \italic " (sunwise)" }
                 piece = \markup { \large { \bold "prelude" } }
                 }
                 \new PianoStaff \with { \consists "Merge_rests_engraver" } <<
@@ -77,38 +77,46 @@
                         }
                 }
         }
+        \score {
+                \header {
+                        piece = \markup { \large { \bold "circumnutation" } }
+                }
+                \new PianoStaff <<
+                        \set PianoStaff.connectArpeggios = ##t
+                        \override PianoStaff.Arpeggio.arpeggio-direction = #UP
+                        \new Staff = "ui3" {
+                                \accidentalStyle modern
+                                <<
+                                        \relative \voiceAithree
+                                        \\
+                                        \relative \voiceDithree
+                                        \\
+                                        \relative \voiceBithree
+                                        \\
+                                        \relative \voiceCithree
+                                >>
+                        }
+                        \new Staff = "di3" { \clef bass
+                                \accidentalStyle modern
+                                <<
+                                        \relative \voiceEithree
+                                        \\
+                                        \relative \voiceGithree
+                                        \\
+                                        \relative \voiceFithree
+                                >>
+                        }
+                >>      
+                \layout {
+                        \context { 
+                                \Score 
+                                        \override BarNumber.font-size = #1
+                                        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+                                        \override TimeSignature.stencil = ##f
+                        }
+                }
+        }
 
-    
-
-  \score {
-      \header {
-          instrument = \markup { \bold \italic { "sequence " \number 7 } }
-          piece = \markup { \large { \bold "panicle" } }
-      }
-      \new PianoStaff \with { \consists "Merge_rests_engraver" } <<
-          \set PianoStaff.connectArpeggios = ##t
-          \override PianoStaff.Arpeggio.arpeggio-direction = #UP
-          \new Staff = "ut4" {
-              \accidentalStyle modern
-              <<
-                  \relative \voiceApthree
-              >>
-          }
-          \new Staff = "dt4" { \clef bass
-              \accidentalStyle modern
-              <<
-                  \relative \voiceBpthree
-              >>
-          }
-      >>      
-  \layout {
-      \context { 
-          \Score 
-          \override BarNumber.font-size = #1
-          \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
-     }
-  }
-  }
 
 \score {
       \header {
