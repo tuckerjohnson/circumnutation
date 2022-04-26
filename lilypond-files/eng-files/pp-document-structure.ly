@@ -120,6 +120,7 @@
 
 \score {
       \header {
+          instrument = \markup { \italic "sequence" \number 7 \smaller \medium \italic " (sunwise)" }
           piece = \markup { \large { \bold "cyme" } }
       }
       \new PianoStaff \with { \consists "Merge_rests_engraver" } <<
@@ -152,7 +153,7 @@
   }
   \score {
       \header {
-          piece = \markup { \large { \bold "circumnutation" \italic "(sunwise)" } }
+          piece = \markup { \large { \bold "circumnutation" } }
       }
       \new PianoStaff <<
           \set PianoStaff.connectArpeggios = ##t

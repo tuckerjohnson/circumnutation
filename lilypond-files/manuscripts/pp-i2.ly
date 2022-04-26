@@ -14,9 +14,9 @@ e[-.-> f-.\mp g a \change Staff = "di2" bes,, \change Staff = "ui2" c''-. \chang
 \stemUp \dtwo e,,-.[ \utwo f''-. g,-.-> \dtwo a,-. \utwo bes''-. \dtwo c,, \utwo d''-.] |
 \dtwo  b,,[ cis d \utwo e-.\> fis-. g-.-> a-.]   |
 \stemNeutral a-.[ b-. c-.-> d-. e-. f-. g-.]\p |
-\dtwo g,,,[ \utwo aes'''-. bes,-.-> \dtwo c,, des-. \utwo ees'''\ff f] |
-\dtwo bes,,,,-.[ \utwo c'''-. des-. \dtwo ees,,,-. f-. \utwo ges''-.-> aes-.] |
-fis-.[ \dtwo gis,,-. \utwo ais''-. \dtwo b,,,, cis' \utwo dis''-.-> \dtwo e,,] |
+\dtwo g,,,[ \utwo aes'''-. bes,-.-> \dtwo c,, des-. \utwo ees''' f] |
+\dtwo bes,,,,-.[\> \utwo c'''-. des-. \dtwo ees,,,-. f-. \utwo ges''-.-> aes-.] |
+fis-.[ \dtwo gis,,-.\mp \utwo ais''-. \dtwo b,,,, cis' \utwo dis''-.-> \dtwo e,,] |
 cis,-.[ \utwo dis'''-.-> \dtwo e,,-. fis,-. gis'-. a,-. b'-.] |
 a,-.[ b'-. \utwo cis' d, \dtwo e,,-. \utwo fis''-. \dtwo g,,-.] |
 g-.[ \utwo a''-. b-.-> \dtwo c,, d, \utwo e''' \dtwo f,,-.] |
@@ -25,8 +25,8 @@ aes-.[ bes-. \utwo c''-. d-. ees,-.-> \dtwo f,,, \utwo \ottava 1 g''''-.] \ottav
 \dtwo fis,,,,[ gis-. ais-. \utwo \ottava 1 b''''-. \ottava 0 \dtwo cis,,,, \utwo dis''-.-> \dtwo e,,] |
 \utwo e''-.->[ \dtwo fis,,-. gis-. ais,-. b'-. cis,-. dis-.] |
 c-.[ \utwo d'-. e'-.-> \dtwo fis,,,, g a'' b] |
-\utwo c-.[ d-. e-. fis'-.-> \dtwo g,,,,-. a-. b-.] |
-\utwo f'''-.[ g-. a^\markup { \italic "molto rit." } b \dtwo c,,,-. d-. e-.] \utwo \bar "|." \undo \omit Staff.BarLine \once \override Staff.BarLine.allow-span-bar = ##t }
+\utwo c-.[ d-. e-. fis'-.-> \dtwo g,,,,-. a-.\offset Y-offset #-1.7 \> b-.] |
+\utwo f'''-.[ g-. a^\markup { \italic "molto rit." } b \dtwo c,,,-. d-. e-.]\offset Y-offset #-1.7 \pp \utwo \bar "|." \undo \omit Staff.BarLine \once \override Staff.BarLine.allow-span-bar = ##t }
 
 voiceBitwo = { \tmarktthree \set tieWaitForNote = ##t \override TimeSignature.stencil = ##f \override Staff.BarLine.stencil = ##f
 \time 7/8 \utwo \stemDown c'4_( e8_._) \dtwo s8 s8 s8 s8 |
@@ -37,15 +37,15 @@ s4. s4  c'4_( |
 b8_._) cis8_([ d8_.]_) s8 s4. |
 s1*7/8 |
 g,,4._(\ff c8_._) s8 \utwo \stemUp ees'''8^([ f8^.]^) |
-s1*7/8 |
-\dtwo \stemDown s8 s8 s8 b,,,,,8_( cis'4 e8_._)|
-s1*7/8 |
-s8 s8 \utwo cis''8_>_([ d,8_._)] s4. |
-s4. \dtwo c,8_([ d,_._)] \utwo \stemUp e'''4^( |
-f8^.^) s8 s4 s4. |
-\dtwo s4. s4 \stemDown f,,,4_( |
+\dtwo s1*7/8 |
+\stemDown s8 s8 s8 b,,,,,8_(\f cis'4 e8_._)|
+s8 s8 s8\> s8 s8 s8 s8 |
+s8 s8\p \utwo cis''8_>_([ d,8_._)] s4. |
+s4. \dtwo c,8_([\ff d,_._)] \utwo \stemUp e'''4^( |
+f8^.^) \dtwo s8 s4 s8\> s8 s8 |
+s4 s8\p s4 \stemDown f,,,4_(\f |
 fis8_._) s8 s8 s8 cis'4_( e8_._)  |
-s1*7/8 |
-s4. fis,,8_([ g_._)] a''_([ b_._)] |
+s8 s8\> s8 s8 s8 s8 s8 |
+s8\pp s4 fis,,8_([\ff g_._)] a''_([ b_._)] |
 s1*7/8 |
 \utwo s4 \stemUp a'8~[ b~^>] <a b>4.\offset X-offset #3.5 ^\markup "attacca" \dtwo | \revert Staff.BarLine.stencil }
