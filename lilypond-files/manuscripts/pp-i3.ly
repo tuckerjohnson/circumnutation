@@ -33,7 +33,7 @@ s1 |
 \time 5/4 s1*5/4 |
 \time 3/4 s4 b2 |
 \time 2/4 \stemDown a2 |
-\time 4/4 g1\arpeggio \bar "|." }
+\time 4/4 s1 \bar "|." }
 
 
 
@@ -52,7 +52,7 @@ s1 |
 \time 5/4 s1*5/4 |
 \time 3/4 bes4_( aes ges_) |
 \time 2/4 s1*1/2 |
-\time 4/4 f1\arpeggio \bar "|." }
+\time 4/4 <f g>1\arpeggio \bar "|." }
 
 
 voiceDithree = { \tmarksev \dtim 

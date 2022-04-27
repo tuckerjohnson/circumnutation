@@ -67,7 +67,8 @@
                                         \relative \voiceBitwo
                                         >>
                                 }
-                >>      
+                >>
+                \midi { }      
                 \layout {
                         \context { 
                                 \Score 
