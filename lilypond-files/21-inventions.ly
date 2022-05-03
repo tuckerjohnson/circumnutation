@@ -12,6 +12,7 @@
 \include "manuscripts/pp-i1.ly"
 \include "manuscripts/pp-i2.ly"
 \include "manuscripts/pp-i3.ly"
+\include "manuscripts/pp-i4.ly"
 \include "manuscripts/pp-i19.ly"
 \include "manuscripts/pp-i20.ly"
 \include "manuscripts/pp-i21.ly"

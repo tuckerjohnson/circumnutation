@@ -1,6 +1,9 @@
-\version "2.20.0" %Cor Anglais Settle the Score manuscript:
+\version "2.22.2"
+
+unt = \change Staff = "ui19"
+dnt = \change Staff = "di19"
   
-voiceApthree = { \tmarktthree
+voiceAnineteen = { \tmarktthree
 \time 7/8 s1*7/8 |
 s1*7/8 |
 s1*7/8 |
@@ -23,7 +26,7 @@ s1*7/8 |
 s1*7/8 |
 s1*7/8 \bar "|." }
 
-voiceBpthree = { \tmarktthree
+voiceBnineteen = { \tmarktthree
 \time 7/8 s1*7/8 |
 s1*7/8 |
 s1*7/8 |

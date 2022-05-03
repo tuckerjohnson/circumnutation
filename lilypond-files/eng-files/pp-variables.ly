@@ -1,6 +1,4 @@
-\version "2.20.0" %commonplace Common Tones variables
-
-%------variables------
+\version "2.22.2" 
 
 %texts
 xtitle = \markup { Twenty-One Inventions }
@@ -18,6 +16,7 @@ tmarkione = \tempo "Molto rubato"
 tmarksev = \tempo "Poco rubato" 4 = 46-52
 tmarktfour = \tempo "Tempo giusto" 4 = 60
 tmarktthree = \tempo "Vivace" 4 = 165
+tmarktwo = \tempo "Moderato" 4 = 90
 bh = \break
 ds = #2.5
 sods = #3.4

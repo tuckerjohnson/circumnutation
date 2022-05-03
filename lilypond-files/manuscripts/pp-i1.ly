@@ -10,7 +10,7 @@ voiceApre = { \tmarkione \override Beam.auto-knee-gap = #6 \override Flag.stroke
 \time 7/8 \stemUp \change Staff = "di1" c,8[\laissezVibrer\sustainOff\sustainOn d\laissezVibrer e\laissezVibrer f\laissezVibrer g\laissezVibrer a\laissezVibrer b\laissezVibrer] \bar "|." }
 
 voiceBpre = { \tmarkione \override NoteHead #'no-ledgers = ##t \override Score.SustainPedalLineSpanner #'padding = #'3  
-\time 15/8 \set Staff.pedalSustainStyle = #'bracket \override NoteHead.transparent = ##t \change Staff = "ui1" s4. \offset Y-offset #1  \change Staff = "di1" s4 s4 d'1*1/2_~ 1*1/2 |
+\time 15/8 \set Staff.pedalSustainStyle = #'bracket \override NoteHead.transparent = ##t s4.\sustainOn s4 s4 d'1*1/2_~ 1*1/2 |
 s4.\sustainOff\sustainOn s4 s4 d1*1/2_~ 1*1/2 |
 s4.\sustainOff\sustainOn s4 s4 d1*1/2_~ 1*1/2 |
 s4.\sustainOff\sustainOn s4 s4 d1*1/2_~ 1*1/2 |
