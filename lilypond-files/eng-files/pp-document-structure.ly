@@ -30,7 +30,7 @@
                                 <<
                                         \relative \voiceApre
                                 >>
-                        } 
+                        }
                         \new Staff = "di1" { \clef bass
                                 \accidentalStyle forget
                                 <<
@@ -38,10 +38,10 @@
                                 >>
                         }
                 >>
-                \midi { }      
+                \midi { }
                 \layout {
-                        \context { 
-                                \Score 
+                        \context {
+                                \Score
                                         \override BarNumber.font-size = #1
                                         \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
                                         \override TimeSignature.stencil = ##f
@@ -68,10 +68,10 @@
                                         >>
                                 }
                 >>
-                \midi { }      
+                \midi { }
                 \layout {
-                        \context { 
-                                \Score 
+                        \context {
+                                \Score
                                         \override BarNumber.break-visibility = ##(#f #f #f)
                                         \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
                                         \override TimeSignature.stencil = ##f
@@ -108,10 +108,10 @@
                                 >>
                         }
                 >>
-                \midi { }      
+                \midi { }
                 \layout {
-                        \context { 
-                                \Score 
+                        \context {
+                                \Score
                                         \override BarNumber.font-size = #1
                                         \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
                                         \override TimeSignature.stencil = ##f
@@ -142,8 +142,8 @@
                 >>
                 \midi { }
                 \layout {
-                        \context { 
-                                \Score 
+                        \context {
+                                \Score
                                         \override BarNumber.font-size = #1
                                         \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
                         }
@@ -171,16 +171,16 @@
                                         >>
                                 }
                 >>
-                %\midi { }      
+                %\midi { }
                 \layout {
-                        \context { 
-                                \Score 
+                        \context {
+                                \Score
                                         \override BarNumber.break-visibility = ##(#f #f #f)
                                         \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
                                         \override TimeSignature.stencil = ##f
                         }
                 }
-        } 
+        }
 
         \score {
                 \header {
@@ -206,10 +206,10 @@
                                 >>
                         }
                 >>
-                \midi { }      
+                \midi { }
                 \layout {
-                        \context { 
-                                \Score 
+                        \context {
+                                \Score
                                         \override BarNumber.font-size = #1
                                         \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
                         }
@@ -246,10 +246,10 @@
                                 >>
                         }
                 >>
-                \midi { }      
+                \midi { }
                 \layout {
-                        \context { 
-                                \Score 
+                        \context {
+                                \Score
                                         \override BarNumber.font-size = #1
                                         \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
                                         \override TimeSignature.stencil = ##f
