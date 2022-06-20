@@ -1,6 +1,6 @@
 \version "2.20.0" %commonplace Common Tones engraver file
 
-%------called files------ 
+%------called files------
 \include "eng-files/pp-variables.ly"
 \include "eng-files/pp-paper.ly"
 \include "front-matter/pp-p-notes.ly"
