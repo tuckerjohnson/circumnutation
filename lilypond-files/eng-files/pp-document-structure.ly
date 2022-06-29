@@ -119,6 +119,7 @@
                 }
         }
 
+	\pageBreak
         \score {
                 \header {
                         instrument = \markup { \italic "sequence" \number 2 \smaller \medium \italic " (counterclockwise)" }
@@ -150,6 +151,7 @@
                 }
         }
 
+	\pageBreak
         \score {
                 \header {
                         instrument = \markup { \italic "sequence" \number 7 \smaller \medium \italic " (sunwise)" }
