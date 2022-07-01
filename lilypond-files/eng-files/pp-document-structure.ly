@@ -68,7 +68,7 @@
                                         >>
                                 }
                 >>
-                \midi { }
+                %\midi { }
                 \layout {
                         \context {
                                 \Score
@@ -108,7 +108,7 @@
                                 >>
                         }
                 >>
-                \midi { }
+                %\midi { }
                 \layout {
                         \context {
                                 \Score
