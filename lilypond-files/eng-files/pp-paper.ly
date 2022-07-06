@@ -1,4 +1,4 @@
-\version "2.20.0" %sts paper file
+\version "2.22.2" %sts paper file
 
 %------paper-block------
 \paper {
@@ -6,7 +6,7 @@
   print-page-number = ##f
 	oddHeaderMarkup = \markup { \tiny { "  " } }
 	evenHeaderMarkup = \markup { \tiny { "  " } }
-	oddFooterMarkup = \markup { 
+	oddFooterMarkup = \markup {
       \concat { \on-the-fly #(on-page 3) \fill-line { \null \xcr \null } }
       \concat { \on-the-fly #(on-page 5) \oddfoot }
       \concat { \on-the-fly #(on-page 7) \oddfoot }
@@ -20,7 +20,7 @@
       \concat { \on-the-fly #(on-page 23) \oddfoot }
       \concat { \on-the-fly #(on-page 25) \oddfoot }
       \concat { \on-the-fly #(on-page 27) \oddfoot }
-    }  
+    }
   evenFooterMarkup = \markup {
       \concat { \on-the-fly #(on-page 2) \evfoot }
       \concat { \on-the-fly #(on-page 4) \evfoot }
