@@ -38,7 +38,7 @@ piece = \markup { \large { \bold "prelude" } }
 >>
 }
 >>
-%\midi { }
+\midi { }
 \layout {
 \context {
 \Score
@@ -180,7 +180,7 @@ piece = \markup { \large { \bold "composite" } }
 >>
 }
 >>
-\midi { }
+%\midi { }
 \layout {
 \context {
 \Score
