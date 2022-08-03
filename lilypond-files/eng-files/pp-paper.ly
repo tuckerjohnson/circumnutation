@@ -57,7 +57,7 @@
                 (minimum-distance . 5)
                 (padding . 8))
         score-system-spacing =
-                #'((basic-distance . 10)
-                (minimum-distance . 10)
-                (padding . 10))
+                #'((basic-distance . 4)
+                (minimum-distance . 4)
+                (padding . 5))
 }

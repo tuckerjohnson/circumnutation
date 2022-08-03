@@ -142,7 +142,7 @@ piece = \markup { \large { \bold "polar" } }
 >>
 }
 >>
-\midi { }
+%\midi { }
 \layout {
 \context {
 \Score

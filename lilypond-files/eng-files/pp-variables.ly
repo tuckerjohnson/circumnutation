@@ -1,11 +1,11 @@
 \version "2.22.2"
 
 %texts
-xtitle = \markup { Twenty-One Inventions }
-xsub = \markup { in seven sequences }
+xtitle = \markup { Fifteen Inventions }
+xsub = \markup { \null }
 xcomp = \markup { Tucker Johnson }
 xinst = \markup  { piano }
-xdur = \markup { 25 minutes }
+xdur = \markup { 20 minutes }
 xcr = \markup \tiny { Copyright Tucker Johnson MMXXII. All Rights Reserved }
 oddfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromproperty #'page:page-number-string " - " } \small { \xcomp } } \null } }
 evfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromproperty #'page:page-number-string " - " } \small { \xtitle } } \null } }
