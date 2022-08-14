@@ -1,11 +1,11 @@
 \version "2.20.0" %Invention 2 manuscript:
-  
+
 utwo = \change Staff = "ui2"
 dtwo = \change Staff = "di2"
 
-voiceAitwo = { \tmarktthree 
-\omit Staff.BarLine 
-\override Staff.BarLine.allow-span-bar = ##f 
+voiceAitwo = { \tmarktthree
+\omit Staff.BarLine
+\override Staff.BarLine.allow-span-bar = ##f
 \override DynamicLineSpanner.staff-padding = \phds
 \time 7/8 c'8[\offset X-offset #-2.5 \f d-- e f->-. \change Staff = "di2" g,-. a-. b-.] |
 b8[-. \change Staff = "ui2" c-.\> d-. e-. f-. g-. a->-.] |
