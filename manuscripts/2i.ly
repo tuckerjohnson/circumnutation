@@ -1,9 +1,11 @@
-\version "2.20.0" %Invention 2 manuscript:
-
-utwo = \change Staff = "ui2"
-dtwo = \change Staff = "di2"
-
-voiceAitwo = { \tmarktthree
+%fifteen inventions project
+\new PianoStaff \with { \consists "Merge_rests_engraver" } <<
+\set PianoStaff.connectArpeggios = ##t
+\override PianoStaff.Arpeggio.arpeggio-direction = #UP
+\new Staff = "ui2" {
+\accidentalStyle modern
+<<
+\relative { \tmarktthree
 \omit Staff.BarLine
 \override Staff.BarLine.allow-span-bar = ##f
 \override DynamicLineSpanner.staff-padding = \phds
@@ -27,8 +29,12 @@ aes-.[ bes-. \utwo c''-. d-. ees,-.-> \dtwo f,,, \utwo \ottava 1 g''''-.] \ottav
 c-.[ \utwo d'-. e'-.-> \dtwo fis,,,, g a'' b] |
 \utwo c-.[ d-. e-. fis'-.-> \dtwo g,,,,-. a-.\offset Y-offset #-1.7 \> b-.] |
 \utwo f'''-.[ g-. a^\markup { \italic "molto rit." } b \dtwo c,,,-. d-. e-.]\offset Y-offset #-1.7 \pp \utwo \bar "|." \undo \omit Staff.BarLine \once \override Staff.BarLine.allow-span-bar = ##t }
-
-voiceBitwo = { \tmarktthree \set tieWaitForNote = ##t \override TimeSignature.stencil = ##f \override Staff.BarLine.stencil = ##f
+>>
+}
+\new Staff = "di2" { \clef bass
+\accidentalStyle modern
+<<
+\relative { \tmarktthree \set tieWaitForNote = ##t \override TimeSignature.stencil = ##f \override Staff.BarLine.stencil = ##f
 \time 7/8 \utwo \stemDown c'4_( e8_._) \dtwo s8 s8 s8 s8 |
 s1*7/8 |
 s4 \utwo \stemUp g8^([^\f a8^.]^) \dtwo \stemDown bes,,4_(\f d8_._) |
@@ -49,3 +55,15 @@ s8 s8\> s8 s8 s8 s8 s8 |
 s8\pp s4 fis,,8_([\ff g_._)] a''_([ b_._)] |
 s1*7/8 |
 \utwo s4 \stemUp a'8~[ b~^>] <a b>4.\offset X-offset #3.5 ^\markup "attacca" \dtwo | \revert Staff.BarLine.stencil }
+>>
+}
+>>
+%\midi { }
+\layout {
+\context {
+\Score
+\override BarNumber.break-visibility = ##(#f #f #f)
+\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+\override TimeSignature.stencil = ##f
+}
+}

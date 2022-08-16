@@ -1,4 +1,4 @@
-\version "2.20.0" %inside cover
+%fifteen inventions project
 
 cover =  \markuplist {
     \fill-line {

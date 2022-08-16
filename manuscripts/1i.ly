@@ -1,4 +1,4 @@
-\version "2.22.2" %invention 1 manuscript:
+%fifteen inventions project
 
 \new PianoStaff \with { \consists "Merge_rests_engraver" } <<
 \set PianoStaff.connectArpeggios = ##t
@@ -42,7 +42,7 @@
 >>
 }
 >>
-\midi { }
+%\midi { }
 \layout {
 \context {
 \Score

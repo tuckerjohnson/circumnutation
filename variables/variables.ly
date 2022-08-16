@@ -1,5 +1,4 @@
-\version "2.22.2"
-
+%fifteen inventions project
 %texts
 xtitle = \markup { Fifteen Inventions }
 xsub = \markup { \null }
@@ -32,3 +31,7 @@ lst = \once \override TextSpanner.bound-details.left.text = "st"
 rst = \once \override TextSpanner.bound-details.right.text = " st"
 lord = \once \override TextSpanner.bound-details.left.text = "ord"
 rord = \once \override TextSpanner.bound-details.right.text = " ord"
+
+
+utwo = \change Staff = "ui2"
+dtwo = \change Staff = "di2"
