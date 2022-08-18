@@ -7,70 +7,70 @@
 <<
 \relative { \tmarksev \dtim \override TextSpanner.bound-details.left.text = "poco rit."
 \time 7/4 s1*7/4 |
-\time 3/4 \stemUp e''''4(^\markup { \tiny \bold E } d c) |
-\time 5/4 s2. c2^\markup { \tiny \bold C } |
-\time 4/4 s2 bes2(^\markup { \tiny \bold Bb } |
-\time 2/4 a2) |
-\time 5/4 s1*5/4 |
-\time 6/4 s1 g2(^\markup { \tiny \bold G } |
-\time 3/4 f4) dis2 |
-s1*3/4 |
-s4 <cis gis>2 |
 \time 4/4 s1 |
-cis4( b a gis |
-\time 2/4 fis2)\startTextSpan |
-\time 3/4 s2 s8 s8\stopTextSpan |
+\time 5/4 s1*5/4 |
+\time 3/4 \stemDown s2 \ottava 1 d''''4 |
+\time 5/4 d( c bes a g) \ottava 0 |
+\time 4/4 f1 |
+\time 6/4 s1*6/4 |
+\time 3/4 \stemUp e4 d( cis) |
+\time 2/4 cis2 |
+\time 4/4 s1 |
+\time 3/4 b4( a gis) |
+\time 2/4 s1*2/4 |
+\time 4/4 s1 |
+\time 2/4 s4 fis4 |
 \time 4/4 e1 \offset Y-offset 2 \fermata \arpeggio \bar "|." }
 \\
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |
-\time 3/4 s1*3/4 |
+\time 4/4 \stemUp fis''4^( e d cis) |
+\time 5/4 b1^( a4) |
+\time 3/4 s4 f'2 |
 \time 5/4 s1*5/4 |
-\time 4/4 s1*4/4 |
-\time 2/4 s1*2/4 |
-\time 5/4 g''4^( f ees des c) |
-\time 6/4 s1*6/4 |
-\time 3/4 s2 bes4( |
-aes2) fis4 |
-s1*3/4 |
-\time 4/4 \stemUp e4( d2 c4) |
-s1 |
-\time 2/4 s4 \stemDown b4 |
-\time 3/4 \stemUp \change Staff = "di7" s2 a4 |
-\time 4/4 g1 \arpeggio \bar "|."  }
+\time 4/4 \stemDown g1 |
+\time 6/4 \stemNeutral bes,1. |
+\time 3/4 \stemDown s4 a2 |
+\time 2/4 <bes f>4^( <aes ees>) |
+\time 4/4 \stemUp g'2^( f) |
+\time 3/4 \stemDown ees4( des) e |
+\time 2/4 \stemUp d4^( c) |
+\time 4/4 c4( bes aes g) |
+\time 2/4 s4 bes4 |
+\time 4/4 a1 \arpeggio \bar "|."  }
 \\
 \relative { \tmarksev \dtim
-\time 7/4 \stemDown cis'''4^(\mp b a g fis e d) |
-\time 3/4 s2 <b' fis>4_( |
-\time 5/4 a g f e d) |
-\time 4/4 <c d>1 |
-\time 2/4 \stemUp s4 gis'4 |
+\time 7/4 \stemDown ais''4^(\mp gis fis e dis cis b) |
+\time 4/4 \stemUp b2. \stemDown a4 |
 \time 5/4 s1*5/4 |
+\time 3/4 s4 ees'2 |
+\time 5/4 s1*5/4 |
+\time 4/4 s1 |
 \time 6/4 s1*6/4 |
 \time 3/4 s1*3/4 |
-s1*3/4 |
-s1*3/4 |
-\time 4/4 s1 |
-\stemDown s2 fis4_( e) |
 \time 2/4 s1*2/4 |
-\time 3/4 \stemUp d4( cis b) |
-\time 4/4 a1 \arpeggio \bar "|." }
+\time 4/4 s1 |
+\time 3/4 s1*3/4 |
+\time 2/4 f,4_( ees) |
+\time 4/4 s1 |
+\time 2/4 s1*2/4 |
+\time 4/4 c1 \arpeggio \bar "|." }
 \\
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |
-\time 3/4 s1*3/4 |
+\time 4/4 g'1 |
+\time 5/4 \stemDown g4( f e d c) |
+\time 3/4 g'2. |
 \time 5/4 s1*5/4 |
 \time 4/4 s1 |
-\time 2/4 s4 <d'' e>4 |
-\time 5/4 s1*5/4 |
 \time 6/4 s1*6/4 |
 \time 3/4 s1*3/4 |
-\stemUp e2^( d4) |
-\stemDown c2_( bes4) |
-\time 4/4 s1 |
-s1 |
-\time 2/4 a4( \stemUp g) |
+\time 2/4 s1*2/4 |
+\time 4/4 ees4( d c2) |
 \time 3/4 s1*3/4 |
+\time 2/4 s1*2/4 |
+\time 4/4 s1 |
+\time 2/4 s1*2/4 |
 \time 4/4 f1 \arpeggio \bar "|." }
 >>
 }
@@ -79,54 +79,54 @@ s1 |
 <<
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |
-\time 3/4 s1*3/4 |
-\time 5/4 s4 b1 |
-\time 4/4 s1*4/4 |
-\time 2/4 b2 |
+\time 4/4 s1 |
 \time 5/4 s1*5/4 |
+\time 3/4 s1*3/4 |
+\time 5/4 \stemDown ees'4~ ees1 |
+\time 4/4 \stemUp ees'4( d c bes) |
 \time 6/4 s1*6/4 |
 \time 3/4 s1*3/4 |
-s1*3/4 |
-s1*3/4 |
-\time 4/4 \stemDown b4( a g f) |
-s1 |
-\time 2/4 \stemUp e4( d) |
-\time 3/4 s1*3/4 |
-\time 4/4 c1 \arpeggio \bar "|." }
+\time 2/4 s1*2/4 |
+\time 4/4 s1 |
+\time 3/4 \clef treble ges2. |
+\time 2/4 \clef bass s1*2/4 |
+\time 4/4 s1 |
+\time 2/4 s1*2/4 |
+\time 4/4 g,1 \arpeggio \bar "|." }
 \\
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |
-\time 3/4 s4 g,,2_\markup { \tiny \bold G } |
-\time 5/4 s1*5/4 |
-\time 4/4 \stemUp ees4(_\markup { \tiny \bold Eb } f g aes) |
-\time 2/4 s1*2/4 |
-\time 5/4 \stemDown aes2( bes2.) |
-\time 6/4 s1*6/4 |
-\time 3/4 s4 c4( d) |
-cis( b a) |
-s1*3/4 |
 \time 4/4 s1 |
-s1 |
-\time 2/4 s1*2/4 |
-\time 3/4 g4(_\markup { \tiny \bold G } fis e) |
-\time 4/4 d1 \arpeggio \bar "|." }
+\time 5/4 s1*5/4 |
+\time 3/4 s1*3/4 |
+\time 5/4 \clef treble s1 \stemUp f'4 |
+\time 4/4 a1 |
+\time 6/4 a4( g f e d c) |
+\time 3/4 \stemDown \clef bass b4 aes4^( ges4 )|
+\time 2/4 ges2 |
+\time 4/4 s1 |
+\time 3/4 s1*3/4 |
+\time 2/4 \stemUp bes2 |
+\time 4/4 f2( ees4 des4) |
+\time 2/4 aes'2 |
+\time 4/4 bes,1 \arpeggio \bar "|." }
 \\
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |
-\time 3/4 a2. |
+\time 4/4 g1 |
+\time 5/4 g4( f e d c) |
+\time 3/4 c4_( bes a) |
 \time 5/4 s1*5/4 |
-\time 4/4 s1*4/4 |
-\time 2/4 \stemDown cis,4 fis4 |
-\time 5/4 s1*5/4 |
-\time 6/4 \stemUp fis4^( e d c b a |
-\time 3/4 g) a2 |
-s1*3/4 |
-g4_( f ees) |
 \time 4/4 s1 |
-s4 d2. |
+\time 6/4 s1*6/4 |
+\time 3/4 s1*3/4 |
 \time 2/4 \stemDown s4 c4 |
+\time 4/4 s4 bes2( a4) |
 \time 3/4 s1*3/4 |
-\time 4/4 bes1 \arpeggio \bar "|." }
+\time 2/4 a4( g) |
+\time 4/4 s1 |
+\time 2/4 f4( ees) |
+\time 4/4 d1 \arpeggio \bar "|." }
 >>
 }
 >>

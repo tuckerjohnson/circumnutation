@@ -18,21 +18,21 @@ front-matter = \markuplist {
       \line { ================================= }
       \fill-line { \column { \null }
                 \left-column {
-                             \line { \bold "1       pappus" }
-                             \line { \bold "2       polar" }
-                             \line { \bold "3       cyme" }
-                             \line { \bold "4       panicle" }
-                             \line { \bold "5       panicle" }
-                             \line { \bold "6       polar" }
-                             \line { \bold "7       cyme" }
-                             \line { \bold "8       composite" }
-                             \line { \bold "9       panicle" }
-                             \line { \bold "10      cyme" }
-                             \line { \bold "11      panicle" }
-                             \line { \bold "12      composite" }
-                             \line { \bold "13      polar" }
-                             \line { \bold "14      umbel" }
-                             \line { \bold "15      circumnutation" }
+                             \line { \bold "pappus" }
+                             \line { \bold "panicle 1" }
+                             \line { \bold "polar 1" }
+                             \line { \bold "composite 1" }
+                             \line { \bold "panicle 2" }
+                             \line { \bold "cyme 1" }
+                             \line { \bold "polar 2" }
+                             \line { \bold "panicle 3" }
+                             \line { \bold "composite 2" }
+                             \line { \bold "panicle 4" }
+                             \line { \bold "cyme 2" }
+                             \line { \bold "cyme 3" }
+                             \line { \bold "polar 4" }
+                             \line { \bold "umbel" }
+                             \line { \bold "circumnutation" }
                 }
                 \column { \null }
         }
