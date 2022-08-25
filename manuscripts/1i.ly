@@ -42,7 +42,7 @@
 >>
 }
 >>
-%\midi { }
+\midi { }
 \layout {
 \context {
 \Score
