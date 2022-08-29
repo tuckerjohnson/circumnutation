@@ -9,13 +9,19 @@
 \omit Staff.BarLine
 \override Staff.BarLine.allow-span-bar = ##f
 \override DynamicLineSpanner.staff-padding = \phds
-\time 7/8 d'8[ \change Staff = "di2" e,8 fis,8 g'8 \change Staff = "ui2" a'8( b8 cis8] |
-ees8[ f aes) \change Staff = "di2" bes,,, c' \change Staff = "ui2" ges'' des,] |
-\change Staff = "di2" a8[ \change Staff = "ui2" bes''( g) \change Staff = "di2" f,, \change Staff = "ui2" e'' \change Staff = "di2" d,,, \change Staff = "ui2" c'''] |
-\stemUp \change Staff = "di2" ais,,[ \change Staff = "ui2" dis'( \change Staff = "di2" gis,) cis, \change Staff = "ui2" b''( e) \change Staff = "di2" fis,,] |
-\change Staff = "ui2" \stemNeutral g''[ \change Staff = "di2" a,,, \change Staff = "ui2" bes'''( c) d,,( ees) f''] |
-gis,,[ fis' \change Staff = "di2" e,,, \change Staff = "ui2" d'''( cis) \change Staff = "di2" b, \change Staff = "ui2" a'] |
-s1*7/8 \override Staff.BarLine.allow-span-bar = ##t | \revert Staff.BarLine.stencil }
+\time 7/8 d'8[ e \change Staff = "di2" fis,-.-> \change Staff = "ui2" g'( a) \change Staff = "di2" b, \change Staff = "ui2" cis']( |
+ees[ f) \change Staff = "di2" aes,, \change Staff = "ui2" bes''( c) \change Staff = "di2" g,, d-.->] |
+cis'[ \change Staff = "ui2" b'' \change Staff = "di2" a,,,-.-> \change Staff = "ui2" gis'''( fis e) dis,] |
+c'[ \change Staff = "di2" bes, \change Staff = "ui2" f'' \change Staff = "di2" g,,,-.-> \change Staff = "ui2" a''' d,, e'] |
+f,[( ges) aes'( bes) \change Staff = "di2" ces,,,-.-> \change Staff = "ui2" des'''( ees)] |
+\change Staff = "di2" c,,[ \change Staff = "ui2" b'' \change Staff = "di2" a,, \change Staff = "ui2" g''( fis) \change Staff = "di2" e,,,-.-> \change Staff = "ui2" d'''] |
+des[( c) \change Staff = "di2" bes,,,-.-> \change Staff = "ui2" aes'''( f) \change Staff = "di2" ees,( ges)] \change Staff = "ui2" |
+g'[( a) \change Staff = "di2" b,( c) \change Staff = "ui2" d'( e) \change Staff = "di2" f,,,-.->] |
+gis'[ \change Staff = "ui2" ais' \change Staff = "di2" cis,,,-.-> \change Staff = "ui2" dis'''( b fis) \change Staff = "di2" e,] |
+\change Staff = "ui2" d'[( c  \change Staff = "di2" bes) a( g) f ees,-.->] |
+cis'[ gis-.-> fis'( a b) d, \change Staff = "ui2" e'] |
+\change Staff = "di2" f,[ \change Staff = "ui2" g'( aes) \change Staff = "di2" bes, c,,-.-> \change Staff = "ui2" des'''( ees)]
+\override Staff.BarLine.allow-span-bar = ##t \bar "|." \revert Staff.BarLine.stencil }
 >>
 }
 \new Staff = "di2" { \clef bass
@@ -23,6 +29,11 @@ s1*7/8 \override Staff.BarLine.allow-span-bar = ##t | \revert Staff.BarLine.sten
 <<
 \relative { \tmarktthree \set tieWaitForNote = ##t \override TimeSignature.stencil = ##f \override Staff.BarLine.stencil = ##f
 \time 7/8 s1*7/8 |
+s1*7/8 |
+s1*7/8 |
+s1*7/8 |
+s1*7/8 |
+s1*7/8 |
 s1*7/8 |
 s1*7/8 |
 s1*7/8 |

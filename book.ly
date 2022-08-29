@@ -25,30 +25,9 @@ piece = \markup { \large { \bold "pappus" } }
 
 \score {
 \header {
-piece = \markup { \large { \bold "panicle" } }
+piece = \markup { \large { \bold "panicle 1" } }
 }
 \include "manuscripts/2i.ly"
-}
-
-\score {
-\header {
-piece = \markup { \large { \bold "polar" } }
-}
-\include "manuscripts/3i.ly"
-}
-
-\score {
-\header {
-piece = \markup { \large { \bold "composite" } }
-}
-\include "manuscripts/4i.ly"
-}
-
-\score {
-\header {
-piece = \markup { \large { \bold "cyme" } }
-}
-\include "manuscripts/13i.ly"
 }
 
 \score {

@@ -9,8 +9,8 @@
 \time 7/4 s1*7/4 |
 \time 4/4 s1 |
 \time 5/4 s1*5/4 |
-\time 3/4 \stemDown s2 \ottava 1 d''''4 |
-\time 5/4 d( c bes a g) \ottava 0 |
+\time 3/4 s2 \ottava 1 d''''4 |
+\time 5/4 \stemDown d( c bes a g) \ottava 0 |
 \time 4/4 f1 |
 \time 6/4 s1*6/4 |
 \time 3/4 \stemUp e4 d( cis) |
@@ -25,8 +25,8 @@
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |
 \time 4/4 \stemUp fis''4^( e d cis) |
-\time 5/4 b1^( a4) |
-\time 3/4 s4 f'2 |
+\time 5/4 \stemDown b1^( a4) |
+\time 3/4 s4 <f' ees>2 |
 \time 5/4 s1*5/4 |
 \time 4/4 \stemDown g1 |
 \time 6/4 \stemNeutral bes,1. |
@@ -41,9 +41,9 @@
 \\
 \relative { \tmarksev \dtim
 \time 7/4 \stemDown ais''4^(\mp gis fis e dis cis b) |
-\time 4/4 \stemUp b2. \stemDown a4 |
+\time 4/4 b2. a4 |
 \time 5/4 s1*5/4 |
-\time 3/4 s4 ees'2 |
+\time 3/4 s1*3/4 |
 \time 5/4 s1*5/4 |
 \time 4/4 s1 |
 \time 6/4 s1*6/4 |
@@ -51,22 +51,22 @@
 \time 2/4 s1*2/4 |
 \time 4/4 s1 |
 \time 3/4 s1*3/4 |
-\time 2/4 f,4_( ees) |
+\time 2/4 f4_( ees) |
 \time 4/4 s1 |
 \time 2/4 s1*2/4 |
 \time 4/4 c1 \arpeggio \bar "|." }
 \\
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |
-\time 4/4 g'1 |
-\time 5/4 \stemDown g4( f e d c) |
-\time 3/4 g'2. |
+\time 4/4 s1 |
+\time 5/4 s1*5/4 |
+\time 3/4 s1*3/4 |
 \time 5/4 s1*5/4 |
 \time 4/4 s1 |
 \time 6/4 s1*6/4 |
 \time 3/4 s1*3/4 |
 \time 2/4 s1*2/4 |
-\time 4/4 ees4( d c2) |
+\time 4/4 \stemDown ees'4( d c2) |
 \time 3/4 s1*3/4 |
 \time 2/4 s1*2/4 |
 \time 4/4 s1 |
@@ -114,7 +114,7 @@
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |
 \time 4/4 g1 |
-\time 5/4 g4( f e d c) |
+\time 5/4 \stemNeutral g4( f e d c) |
 \time 3/4 c4_( bes a) |
 \time 5/4 s1*5/4 |
 \time 4/4 s1 |

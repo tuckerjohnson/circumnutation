@@ -6,7 +6,7 @@
 \new Staff = "ui1" {
   \accidentalStyle modern-cautionary
   <<
-    \relative { \tempo "Presto"
+    \relative { \tempo "Prestissimo"
     \time 7/16 s16 s16 s16 s16 s16 s16 s16 |
     s16 s16 s16 s16 s16 s16 s16 |
     s16 s16 s16 s16 s16 s16 s16 |
@@ -25,7 +25,7 @@
 \new Staff = "di1" { \clef bass
   \accidentalStyle modern-cautionary
   <<
-  \relative { \tempo "Presto"
+  \relative { \tempo "Prestissimo"
   \time 7/16 e,16[\p fis g a b c d] |
   ees16[ f aes bes \change Staff = "ui1" des ces \change Staff = "di1" ges] |
   f16[ ees d c bes aes g] |
