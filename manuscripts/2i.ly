@@ -28,7 +28,7 @@ cis'[ gis-.-> fis'( a b) d, \change Staff = "ui2" e'] |
 \accidentalStyle modern
 <<
 \relative { \tmarktthree \set tieWaitForNote = ##t \override TimeSignature.stencil = ##f \override Staff.BarLine.stencil = ##f
-\time 7/8 s1*7/8 |
+\time 7/8 s8 \change Staff = "ui2" \stemDown e'2 \change Staff = "di2" b4 |
 s1*7/8 |
 s1*7/8 |
 s1*7/8 |
