@@ -26,9 +26,9 @@
   \accidentalStyle modern-cautionary
   <<
   \relative { \tempo "Prestissimo"
-  \time 7/16 e,16[\p fis g a b c d] |
-  ees16[ f aes bes \change Staff = "ui1" des ces \change Staff = "di1" ges] |
-  f16[ ees d c bes aes g] |
+  \time 7/16 gis,16[\p ais b cis dis e fis] |
+  fis16[ gis b cis \change Staff = "ui1" e d \change Staff = "di1" a] |
+  gis16[ fis e dis cis b ais] |
   e16[ cis a b dis fis gis] |
   a16[ bes c d e f g] |
   \change Staff = "ui1" des'[ ees c \change Staff = "di1" bes aes g f] |
