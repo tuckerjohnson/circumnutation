@@ -32,6 +32,13 @@ piece = \markup { \large { \bold "panicle 1" } }
 
 \score {
 \header {
+piece = \markup { \large { \bold "polar 1" } }
+}
+\include "manuscripts/3i.ly"
+}
+
+\score {
+\header {
 piece = \markup { \large { \bold "circumnutation" } }
 }
 \include "manuscripts/15i.ly"

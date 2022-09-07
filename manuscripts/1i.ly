@@ -6,7 +6,7 @@
 \new Staff = "ui1" {
   \accidentalStyle modern-cautionary
   <<
-    \relative { \tempo "Prestissimo"
+    \relative { \tmarkione
     \time 7/16 s16 s16 s16 s16 s16 s16 s16 |
     s16 s16 s16 s16 s16 s16 s16 |
     s16 s16 s16 s16 s16 s16 s16 |
@@ -25,19 +25,19 @@
 \new Staff = "di1" { \clef bass
   \accidentalStyle modern-cautionary
   <<
-  \relative { \tempo "Prestissimo"
+  \relative { \tmarkione
   \time 7/16 gis,16[\p ais b cis dis e fis] |
   g16[ a c \change Staff = "ui1" d f ees \change Staff = "di1" bes] |
   a16[ g fis e d c b] |
   aes16[ f des ees g bes c] |
-  a16[ bes c d e f g] |
-  \change Staff = "ui1" des'[ ees c \change Staff = "di1" bes aes g f] |
-  fis[ e d cis b a g] |
-  gis[ a b cis d e fis] |
-  bes[ c \change Staff = "ui1" ees f ges des \change Staff = "di1" aes] |
-  g[ f ees d c bes a] |
-  b[ e, dis fis gis ais cis] |
-  d[ e f g a b c] \bar "|."
+  cis16[ d e fis gis a b] |
+  \change Staff = "ui1" f'[ g e d c \change Staff = "di1" b a] |
+  bes[ aes ges f ees des ces] |
+  c[ des ees f ges aes bes] |
+  \change Staff = "ui1" d[ e g a bes f c] |
+  \change Staff = "di1" b[ a g fis e d cis] |
+  ees[ aes, g bes c d f] |
+  fis[ gis a b cis \change Staff = "ui1" dis e] \change Staff = "di1" \bar "|."
   }
 >>
 }
