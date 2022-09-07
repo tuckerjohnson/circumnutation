@@ -27,9 +27,9 @@
   <<
   \relative { \tempo "Prestissimo"
   \time 7/16 gis,16[\p ais b cis dis e fis] |
-  fis16[ gis b cis \change Staff = "ui1" e d \change Staff = "di1" a] |
-  gis16[ fis e dis cis b ais] |
-  e16[ cis a b dis fis gis] |
+  g16[ a c \change Staff = "ui1" d f ees \change Staff = "di1" bes] |
+  a16[ g fis e d c b] |
+  aes16[ f des ees g bes c] |
   a16[ bes c d e f g] |
   \change Staff = "ui1" des'[ ees c \change Staff = "di1" bes aes g f] |
   fis[ e d cis b a g] |
