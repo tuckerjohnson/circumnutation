@@ -30,7 +30,7 @@ front-matter = \markuplist {
                              \line { \bold "panicle 4" }
                              \line { \bold "cyme 2" }
                              \line { \bold "cyme 3" }
-                             \line { \bold "polar 4" }
+                             \line { \bold "polar 3" }
                              \line { \bold "umbel" }
                              \line { \bold "circumnutation" }
                 }
