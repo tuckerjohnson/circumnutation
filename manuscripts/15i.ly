@@ -43,7 +43,7 @@
 \time 7/4 \stemDown ais''4^(\mp gis fis e dis cis b) |
 \time 4/4 b2. a4 |
 \time 5/4 s1*5/4 |
-\time 3/4 s1*3/4 |
+\time 3/4 g2. |
 \time 5/4 s1*5/4 |
 \time 4/4 s1 |
 \time 6/4 s1*6/4 |
@@ -53,7 +53,7 @@
 \time 3/4 s1*3/4 |
 \time 2/4 f4_( ees) |
 \time 4/4 s1 |
-\time 2/4 s1*2/4 |
+\time 2/4 \stemUp des2 |
 \time 4/4 c1 \arpeggio \bar "|." }
 \\
 \relative { \tmarksev \dtim
@@ -91,8 +91,8 @@
 \time 3/4 \clef treble ges2. |
 \time 2/4 \clef bass s1*2/4 |
 \time 4/4 s1 |
-\time 2/4 s1*2/4 |
-\time 4/4 g,1 \arpeggio \bar "|." }
+\time 2/4 aes,2 |
+\time 4/4 g1 \arpeggio \bar "|." }
 \\
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |
@@ -108,8 +108,8 @@
 \time 3/4 s1*3/4 |
 \time 2/4 \stemUp bes2 |
 \time 4/4 f2( ees4 des4) |
-\time 2/4 aes'2 |
-\time 4/4 bes,1 \arpeggio \bar "|." }
+\time 2/4 s4 c4 |
+\time 4/4 bes1 \arpeggio \bar "|." }
 \\
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |
@@ -125,7 +125,7 @@
 \time 3/4 s1*3/4 |
 \time 2/4 a4( g) |
 \time 4/4 s1 |
-\time 2/4 f4( ees) |
+\time 2/4 f4_( ees) |
 \time 4/4 d1 \arpeggio \bar "|." }
 >>
 }

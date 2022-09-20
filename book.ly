@@ -25,24 +25,24 @@ piece = \markup { \large { \bold "pappus" } }
 
 \score {
 \header {
-piece = \markup { \large { \bold "panicle 1" } }
+piece = \markup { \large { \bold "panicle" \number 1 } }
 }
 \include "manuscripts/2i.ly"
 }
 
 \score {
 \header {
-piece = \markup { \large { \bold "polar 1" } }
+piece = \markup { \large { \bold "pinnate" \number 1 } }
 }
 \include "manuscripts/3i.ly"
 }
 
-\score {
-\header {
-piece = \markup { \large { \bold "circumnutation" } }
-}
-\include "manuscripts/15i.ly"
-}
+%\score {
+%\header {
+%piece = \markup { \large { \bold "circumnutation" } }
+%}
+%\include "manuscripts/15i.ly"
+%}
 \pageBreak
   \markup { \null }
   \pageBreak

@@ -20,17 +20,17 @@ front-matter = \markuplist {
                 \left-column {
                              \line { \bold "pappus" }
                              \line { \bold "panicle 1" }
-                             \line { \bold "polar 1" }
+                             \line { \bold "pinnate 1" }
                              \line { \bold "composite 1" }
                              \line { \bold "panicle 2" }
                              \line { \bold "cyme 1" }
-                             \line { \bold "polar 2" }
+                             \line { \bold "pinnate 2" }
                              \line { \bold "panicle 3" }
                              \line { \bold "composite 2" }
                              \line { \bold "panicle 4" }
                              \line { \bold "cyme 2" }
                              \line { \bold "cyme 3" }
-                             \line { \bold "polar 3" }
+                             \line { \bold "pinnate 3" }
                              \line { \bold "umbel" }
                              \line { \bold "circumnutation" }
                 }
