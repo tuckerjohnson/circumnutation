@@ -2,46 +2,39 @@
 \new PianoStaff <<
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
-\new Staff = "u4" {
+\new Staff = "ui4" {
 \accidentalStyle modern
 <<
-\relative { \tmarkfive
-\time 2/4 c'''2 |
-c2 |
-\time 7/16 g4. g16 |
-\time 7/8 gis4. dis2 |
-}
-\\
-\relative { \tmarkfive
-\time 2/4 e''2 |
-d2 |
-\time 7/16 b4. c16 |
-\time 7/8 a4. fis2 |
+\relative { \tmarkfi
+\time 5/4 r2. <ees' d'>2 |
+\time 3/4 <cis gis' e'>2. |
+\time 2/4 r4 <b' a'>4 |
+\time 7/8 c4.~ <c ees, bes''>2 |
+\time 4/4 <g'c>1 |
+<f ees'>2. r4 |
 }
 >>
 }
-\new Staff = "d4" { \clef bass
+\new Staff = "di4" { \clef bass
 \accidentalStyle modern
 <<
-\relative { \tmarkfive
-\time 2/4 <g f>2 |
-<a f>2 |
-\time 7/16 <f e>4. <e d>16 |
-\time 7/8 b'4. b2 |
+\relative { \tmarkfi
+\time 5/4 bes2~( bes8 c8 g2) |
+\time 3/4 b,4.( ais8 dis4) |
+\time 2/4 \change Staff = "ui4" \stemDown \tuplet 3/2 { fis'4( e d) } |
+\time 7/8 \change Staff = "di4" \stemUp f,4( aes8 ges2) |
+\time 4/4 \change Staff = "ui4" \stemDown a'4._( b8 f2)|
+\change Staff = "di4" \stemUp r8 <aes, d,>8~ 2 c,8( g'8) |
+
 }
 \\
-\relative { \tmarkfive
-\time 2/4 s2 |
-s2 |
-\time 7/16 s4. s16 |
-\time 7/8 s4. s2
-}
-\\
-\relative { \tmarkfive
-\time 2/4 \stemDown b,2 |
-b2 |
-\time 7/16 a4. a16 |
-\time 7/8 <cis e>4. <cis e>2 |
+\relative { \tmarkfi
+\time 5/4 r2. <f, a>2 |
+\time 3/4 fis2. |
+\time 2/4 r4 <cis' g>4 |
+\time 7/8 r4. r8 r16 cis,16~-> cis4 |
+\time 4/4 <d e'>1 |
+bes2. r4 |
 }
 >>
 }
@@ -52,6 +45,5 @@ b2 |
 \Score
 \override BarNumber.font-size = #1
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
-\override TimeSignature.stencil = ##f
 }
 }

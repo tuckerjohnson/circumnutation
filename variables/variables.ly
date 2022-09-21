@@ -16,7 +16,7 @@ tmarksev = \tempo "Poco rubato" 4 = 46-52
 tmarktfour = \tempo "Tempo giusto" 4 = 60
 tmarktthree = \tempo "Presto" 4 = 165
 tmarktwo = \tempo "Allegro moderato" 4 = 103
-tmarkfive = \tempo "largo" 8 = 40
+tmarkfi = \tempo "Moderato" 4 = 80
 bh = \break
 ds = #2.5
 sods = #3.4
