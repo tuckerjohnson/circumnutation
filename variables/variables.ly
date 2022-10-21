@@ -11,10 +11,10 @@ evfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromprop
 finfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromproperty #'page:page-number-string " - " } \small \typewriter { "February 1st, 2022 - Rochester, New York" } } \null } }
 
 %music
-tmarkione = \tempo "Prestissimo" 4 = 136
+tmarkione = \tempo "Vivace" 4 = 136
 tmarksev = \tempo "Poco rubato" 4 = 46-52
-tmarktfour = \tempo "Tempo giusto" 4 = 60
-tmarktthree = \tempo "Presto" 4 = 165
+tmarktfour = \tempo "Tempo giusto" 4 = 152
+tmarktthree = \tempo "Presto" 4 = 168
 tmarktwo = \tempo "Allegro moderato" 4 = 103
 tmarkfi = \tempo "Moderato" 4 = 80
 bh = \break
