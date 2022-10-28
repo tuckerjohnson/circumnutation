@@ -53,6 +53,13 @@ piece = \markup { \large { \bold "cyme" \number 1 } }
 
 \score {
 \header {
+piece = \markup { \large { \bold "cyme" \number 2 } }
+}
+\include "manuscripts/11i.ly"
+}
+
+\score {
+\header {
 piece = \markup { \large { \bold "circumnutation" } }
 }
 \include "manuscripts/15i.ly"
