@@ -1,6 +1,6 @@
 %fifteen inventions project
 %texts
-xtitle = \markup { Fifteen Inventions }
+xtitle = \markup { Fifteen Keyboard Inventions }
 xsub = \markup { \null }
 xcomp = \markup { Tucker Johnson }
 xinst = \markup  { piano }
