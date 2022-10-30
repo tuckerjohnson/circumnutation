@@ -17,7 +17,7 @@
 \time 5/4 bes2~ bes2.~ |
 \time 3/4 bes8-- s8 s2 |
 \time 2/4 d2 |
-\time 2/4 f,2( |
+f,2( |
 \time 4/4 e2 a2 |
 \time 5/4 d2~ d2.) |
 \time 2/4 f,2~ |
@@ -32,7 +32,7 @@
 \time 2/4 a2~^\p |
 \time 4/4 a1 |
 \time 2/4 f2(^\mf |
-\time 2/4 \stemDown  \override TupletBracket.direction = #-1 \tuplet 3/2 { e4 a4 c4~ } |
+\stemDown  \override TupletBracket.direction = #-1 \tuplet 3/2 { e4 a4 c4~ } |
 \time 4/4 c1) \bar "|."
 }
 \\
@@ -49,7 +49,7 @@
 \time 5/4 des2~ des2. |
 \time 3/4 c8--) s8 s2 |
 \time 2/4 s2 |
-\time 2/4 aes8-- s8 s4 |
+aes8-- s8 s4 |
 \time 4/4 c1~ |
 \time 5/4 c2~ c2. |
 \time 2/4 des4(\mp aes |
@@ -64,7 +64,7 @@
 \time 2/4 c8-- s8 s4 |
 \time 4/4 s1 |
 \time 2/4 aes8-- s8 s4 |
-\time 2/4 s2 |
+s2 |
 \time 4/4 g1\p \bar "|."
 }
 >>
@@ -85,7 +85,7 @@
 \time 5/4 ees,2~ ees2. |
 \time 3/4 e2.(\p |
 \time 2/4 fis4 b |
-\time 2/4 cis8--) s8 s4 |
+cis8--) s8 s4 |
 \time 4/4 s1 |
 \time 5/4 b2~ b2. |
 \time 2/4 s2 |
@@ -100,7 +100,7 @@
 \time 2/4 aes8) s8 s4 |
 \time 4/4 ees1~ |
 \time 2/4 ees8 s8 s4 |
-\time 2/4 s2 |
+s2 |
 \time 4/4 bes'1 \bar "|."
 }
 \\
@@ -116,7 +116,7 @@
 \time 5/4 g2~ g2. |
 \time 3/4 a2.~ |
 \time 2/4 a2~ |
-\time 2/4 a8 s8 s4 |
+a8 s8 s4 |
 \time 4/4 s1 |
 \time 5/4 g2~ g2. |
 \time 2/4 s2 |
@@ -131,7 +131,7 @@
 \time 2/4 e,2(\p |
 \time 4/4 b'2 fis2 |
 \time 2/4 cis8--) s8 s4 |
-\time 2/4 s2 |
+s2 |
 \time 4/4 d1 \bar "|."
 }
 >>
