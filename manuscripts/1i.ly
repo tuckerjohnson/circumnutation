@@ -7,17 +7,17 @@
   \accidentalStyle modern-cautionary
   <<
     \relative { \tmarkione
-    \time 7/16 s16 s16 s16 s16 s16 s16 s16 |
+    \time 28/16 s16^\markup { \smaller \italic "volante; non legato" } s16 s16 s16 s16 s16 s16
+    s16 s16 s16 s16 s16 s16 s16
+    s16 s16 s16 s16 s16 s16 s16
     s16 s16 s16 s16 s16 s16 s16 |
+    s16 s16 s16 s16 s16 s16 s16
+    s16 s16 s16 s16 s16 s16 s16
+    s16 s16 s16 s16 s16 s16 s16
     s16 s16 s16 s16 s16 s16 s16 |
-    s16 s16 s16 s16 s16 s16 s16 |
-    s16 s16 s16 s16 s16 s16 s16 |
-    s16 s16 s16 s16 s16 s16 s16 |
-    s16 s16 s16 s16 s16 s16 s16 |
-    s16 s16 s16 s16 s16 s16 s16 |
-    s16 s16 s16 s16 s16 s16 s16 |
-    s16 s16 s16 s16 s16 s16 s16 |
-    s16 s16 s16 s16 s16 s16 s16 |
+    s16 s16 s16 s16 s16 s16 s16
+    s16 s16 s16 s16 s16 s16 s16
+    s16 s16 s16 s16 s16 s16 s16
     s16 s16 s16 s16 s16 s16 s16 \bar "|."
     }
   >>
@@ -26,17 +26,17 @@
   \accidentalStyle modern-cautionary
   <<
   \relative { \tmarkione
-  \time 7/16 gis,16[\p ais b cis dis e fis] |
-  g16[ a c \change Staff = "ui1" d f ees \change Staff = "di1" bes] |
-  a16[ g fis e d c b] |
+  \time 28/16 gis,16[\p ais b cis dis e fis]
+  g16[ a c \change Staff = "ui1" d f ees \change Staff = "di1" bes]
+  a16[ g fis e d c b]
   aes16[ f des ees g bes c] |
-  cis16[ d e fis gis a b] |
-  \change Staff = "ui1" f'[ g e d c \change Staff = "di1" b a] |
-  bes[ aes ges f ees des ces] |
+  cis16[ d e fis gis a b]
+  \change Staff = "ui1" f'[ g e d c \change Staff = "di1" b a]
+  bes[ aes ges f ees des ces]
   c[ des ees f ges aes bes] |
-  \change Staff = "ui1" d[ e g a bes f c] |
-  \change Staff = "di1" b[ a g fis e d cis] |
-  ees[ aes, g bes c d f] |
+  \change Staff = "ui1" d[ e g a bes f c]
+  \change Staff = "di1" b[ a g fis e d cis]
+  ees[ aes, g bes c d f]
   fis[ gis a b cis \change Staff = "ui1" dis e] \change Staff = "di1" \bar "|."
   }
 >>

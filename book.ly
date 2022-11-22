@@ -17,11 +17,12 @@
 title = \markup { \fontsize #1 \xtitle }
 subtitle = \markup { \medium \italic \xsub }
 composer = \xcomp
-poet = \markup { "piano" }
+poet = \markup { \xinst }
 piece = \markup { \large { \bold "pappus" } }
 }
 \include "manuscripts/1i.ly"
 }
+
 
 \score {
 \header {
@@ -39,7 +40,7 @@ piece = \markup { \large { \bold "pinnate" \number 1 } }
 
 \score {
 \header {
-piece = \markup { \large { \bold "composite" \number 1 } }
+piece = \markup { \large { \bold "anisomery" \number 1 } }
 }
 \include "manuscripts/4i.ly"
 }

@@ -5,78 +5,78 @@
 \new Staff = "ui6" {
 \accidentalStyle modern
 <<
-\relative { \tmarktfour \numericTimeSignature
-\time 3/4 a''2.~ |
+\relative { \tmarktfour \numericTimeSignature \override Hairpin.to-barline = ##f
+\time 3/4 a''2.~^\markup { \smaller \italic "fuggevole; spianato" } |
 \time 2/4 a2 |
 \time 3/4 cis2.(^\p |
 \time 4/4 e2 fis,2~ |
-\time 3/4 fis4~ fis8) e'8~(^\mf e4 |
+\time 3/4 fis4~ fis8) e'8~(->^\mf e4 |
 fis,2.~ |
 \time 2/4 fis2~ |
 \time 4/4 fis8) s8 s2. |
 \time 3/4 a,2.( |
-d8) s8 s2 |
+d8)^\markup { \tiny \parenthesize \dynamic p } s8 s2 |
 \time 4/4 s1 |
-\time 2/4 cis8-- s8 s4 |
+\time 2/4 cis8--^\markup { \tiny \parenthesize \dynamic mf } s8 s4 |
 \time 3/4 s2. |
 \time 4/4 gis'1 |
 \time 1/4 d8( a8 |
 \time 4/4 e'1~ |
 \time 6/4 e4) s4 s2 s2 |
 \time 1/4 a,8( b8 |
-\time 4/4 fis'2) gis2~^\f |
+\time 4/4 fis'2) gis2~^\pp |
 \time 1/4 gis4 |
 \time 3/4 cis,2. |
 e2.~ |
 \time 4/4 e1 |
 \time 2/4 gis2~ |
 \time 4/4 gis1 |
-\time 3/4 a2.(^\mp |
+\time 3/4 a2.(^\mf |
 \time 2/4 fis2 |
-\time 3/4 cis2.) |
+\time 3/4 cis2.)\fermata |
 }
 \\
-\relative { \tmarktfour \numericTimeSignature
+\relative { \tmarktfour \numericTimeSignature \override Hairpin.to-barline = ##f
 \override DynamicLineSpanner.staff-padding = \phds
 \time 3/4 g'2.(\mp |
 \time 2/4 c4 f,4~ |
-\time 3/4 f8) s8 s2 |
+\time 3/4 f8)_\markup { \tiny \parenthesize \dynamic mp } s8 s2 |
 \time 4/4 s1 |
-\time 3/4 a4~( a8 d8) s4 |
-b2.~ |
+\time 3/4 a4~( a8 d8)_\markup { \tiny \parenthesize \dynamic p } s4 |
+b2.~\mf\> |
 \time 2/4 b2~ |
 \time 4/4 b8\p s8 s2. |
 \time 3/4 e,2. |
 g4~(\mf g8 c,8~ c4 |
 \time 4/4 f1~ |
 \time 2/4 f8) s8 s4 |
-\time 3/4 c4~ c8 f8~ f4~ |
-\time 4/4 f1 |
+\time 3/4 c4~\< c8 f8~ f4~ |
+\time 4/4 f1\mp |
 \time 1/4 g4~\p |
 \time 4/4 g1~ |
 \time 6/4 g4 s4 s2\mf s2 |
-\time 1/4 e4~ |
-\time 4/4 e2~ e8 s8 s4 |
-\time 1/4 s4 |
-\time 3/4 b'2. |
-d4~(\mp d8 a8~ a4 |
+\time 1/4 e4~\< |
+\time 4/4 e2~\f e8 s8 s4 |
+\time 1/4 s4\< |
+\time 3/4 b'2.\mf |
+d4~(\p\< d8 a8~ a4 |
 \time 4/4 c1~ |
-\time 2/4 c8)\p s8 s4 |
+\time 2/4 c8)\mp\> s8 s4 |
 \time 4/4 s1 |
-\time 3/4 g8 s8 s2 |
-\time 2/4 e2~ |
-\time 3/4 e2. |
+\time 3/4 g8\pp s8 s2 |
+\time 2/4 e2~\f\> |
+\time 3/4 e2.\mp |
 }
 >>
 }
 \new Staff = "di6" { \clef bass
 \accidentalStyle modern
 <<
-\relative { \tmarktfour \numericTimeSignature
+\relative { \tmarktfour \numericTimeSignature \override Hairpin.to-barline = ##f
 \override DynamicLineSpanner.staff-padding = \phds
 \time 3/4 d2.~( |
 \time 2/4 d2 |
-\time 3/4 ees8) r8 r8 aes8~ aes4~ |
+\time 3/4 ees8) r8 r8 aes8~_\markup { \tiny \parenthesize \dynamic p } aes4~ |
 \time 4/4 aes1~ |
 \time 3/4 aes2 r4 |
 s2. |
@@ -101,11 +101,11 @@ f8) s8 s2 |
 \time 4/4 c1 |
 \time 3/4 d8) s8 s2 |
 \time 2/4 s2 |
-\time 3/4 ees2. |
+\time 3/4 ees2.\fermata |
 }
 \\
-\relative { \tmarktfour \numericTimeSignature
-\time 3/4 s2. |
+\relative { \tmarktfour \numericTimeSignature \override Hairpin.to-barline = ##f
+\time 3/4 s2._\markup { \lower #4 \tiny { "[parenthesized, courtesy dynamics apply to nearest pitches]" } } |
 \time 2/4 bes,2~ |
 \time 3/4 bes8 s8 s2 |
 \time 4/4 b1~ |
@@ -120,8 +120,8 @@ b8 s8 s2 |
 \time 3/4 bes2. |
 \time 4/4 des,1~ |
 \time 1/4 des8 s8 |
-\time 4/4 b'2 fis2~ |
-\time 6/4 fis4 s4 s2 s2 |
+\time 4/4 b'2(\pp fis2~ |
+\time 6/4 fis4) s4 s2 s2 |
 \time 1/4 s4 |
 \time 4/4 cis'2~ cis8 s8 s4 |
 \time 1/4 s4 |

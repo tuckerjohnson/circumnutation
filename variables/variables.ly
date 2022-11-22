@@ -1,9 +1,9 @@
 %fifteen inventions project
 %texts
-xtitle = \markup { Fifteen Keyboard Inventions }
+xtitle = \markup { Inventions }
 xsub = \markup { \null }
 xcomp = \markup { Tucker Johnson }
-xinst = \markup  { piano }
+xinst = \markup  { keyboard }
 xdur = \markup { 20 minutes }
 xcr = \markup \tiny { Copyright Tucker Johnson MMXXII. All Rights Reserved }
 oddfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromproperty #'page:page-number-string " - " } \small { \xcomp } } \null } }
@@ -14,6 +14,7 @@ finfoot = \markup { \fill-line { \null \center-column { \concat { " - " \frompro
 tmarkione = \tempo "Vivace" 4 = 136
 tmarksev = \tempo "Poco rubato" 4 = 46-52
 tmarktfour = \tempo "Tempo giusto" 4 = 152
+tmarktfourb = \tempo "Tempo giusto" 4 = 152
 tmarktthree = \tempo "Presto" 4 = 168
 tmarktwo = \tempo "Allegro moderato" 4 = 103
 tmarkfi = \tempo "Largo" 4 = 55

@@ -6,7 +6,7 @@
 \accidentalStyle modern
 <<
 \relative { \tmarktwo \numericTimeSignature
-\time 4/4 r8 g''8(\mp a,4~ a8) d16( f16 c4) |
+\time 4/4 r8^\markup { \smaller \italic "giocoso" } g''8(\mp a,4~ a8) d16( f16 c4) |
 bes2( ees2) |
 r8 b'8(\mf cis,)[ e~]( e8. fis16 gis,4) |
 r2 r8 b8( e4) |
@@ -60,6 +60,6 @@ ges( f ees aes, des) |
 \context {
 \Score
 \override BarNumber.font-size = #1
-\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
 }
 }

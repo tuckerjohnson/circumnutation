@@ -9,7 +9,7 @@
 \omit Staff.BarLine
 \override Staff.BarLine.allow-span-bar = ##f
 \override DynamicLineSpanner.staff-padding = \phds
-\time 7/8 d'8[ e-- \change Staff = "di2" fis,-.-> \change Staff = "ui2" g'( a) \change Staff = "di2" b,-- \change Staff = "ui2" cis']( |
+\time 7/8 d'8[\offset Y-offset 2^\markup { \smaller \italic "bruscamente" } e-- \change Staff = "di2" fis,-.-> \change Staff = "ui2" g'( a) \change Staff = "di2" b,-- \change Staff = "ui2" cis']( |
 ees[ f) \change Staff = "di2" aes,,-- \change Staff = "ui2" bes''( c) \change Staff = "di2" g,,-- d-.->] |
 cis'[-- \change Staff = "ui2" b'' \change Staff = "di2" a,,,-.-> \change Staff = "ui2" gis'''( fis e) dis,]-- |
 c'[ \change Staff = "di2" bes,-- \change Staff = "ui2" f'' \change Staff = "di2" g,,,-.-> \change Staff = "ui2" a''' d,,-- e'] |

@@ -6,7 +6,7 @@
 \accidentalStyle modern
 <<
 \relative { \tmarksev \dtim \override TextSpanner.bound-details.left.text = "poco rit."
-\time 7/4 s1*7/4 |
+\time 7/4 s1*7/4^\markup { \smaller \italic "semplicemente; sotto voce" } |
 \time 4/4 s1 |
 \time 5/4 s1*5/4 |
 \time 3/4 s2 \ottava 1 d''''4 |
@@ -40,7 +40,7 @@
 \time 4/4 a1 \arpeggio \bar "|."  }
 \\
 \relative { \tmarksev \dtim
-\time 7/4 \stemDown ais''4^(\mp gis fis e dis cis b) |
+\time 7/4 \stemDown ais''4^(\p gis fis e dis cis b) |
 \time 4/4 b2. a4 |
 \time 5/4 s1*5/4 |
 \time 3/4 g2. |
@@ -111,22 +111,22 @@
 \time 2/4 s4 c4 |
 \time 4/4 bes1 \arpeggio \bar "|." }
 \\
-\relative { \tmarksev \dtim
-\time 7/4 s1*7/4 |
-\time 4/4 g1 |
-\time 5/4 \stemNeutral g4( f e d c) |
-\time 3/4 c4_( bes a) |
-\time 5/4 s1*5/4 |
-\time 4/4 s1 |
-\time 6/4 s1*6/4 |
-\time 3/4 s1*3/4 |
-\time 2/4 \stemDown s4 c4 |
-\time 4/4 s4 bes2( a4) |
-\time 3/4 s1*3/4 |
-\time 2/4 a4( g) |
-\time 4/4 s1 |
-\time 2/4 f4_( ees) |
-\time 4/4 d1 \arpeggio \bar "|." }
+\relative { \tmarksev \dtim \set Staff.pedalSustainStyle = #'mixed
+\time 7/4 s1*7/4\sustainOn |
+\time 4/4 g1\sustainOff\sustainOn |
+\time 5/4 \stemNeutral g4(\sustainOff\sustainOn f e d c) |
+\time 3/4 c4_(\sustainOff\sustainOn bes a) |
+\time 5/4 s1*5/4\sustainOff\sustainOn |
+\time 4/4 s1\sustainOff\sustainOn |
+\time 6/4 s1*6/4\sustainOff\sustainOn |
+\time 3/4 s1*3/4\sustainOff\sustainOn |
+\time 2/4 \stemDown s4\sustainOff\sustainOn c4 |
+\time 4/4 s4 bes2(\sustainOff\sustainOn a4) |
+\time 3/4 s1*3/4\sustainOff\sustainOn |
+\time 2/4 a4(\sustainOff\sustainOn g) |
+\time 4/4 s1\sustainOff\sustainOn |
+\time 2/4 f4_(\sustainOff\sustainOn ees) |
+\time 4/4 d1\sustainOff\sustainOn \arpeggio \bar "|." }
 >>
 }
 >>
