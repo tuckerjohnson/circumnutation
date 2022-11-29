@@ -22,6 +22,7 @@ front-matter = \markuplist {
                              \line { \bold "panicle 1" }
                              \line { \bold "pinnate 1" }
                              \line { \bold "anisomery 1" }
+                             \line { \bold "panicle 2" }
                              \line { \bold "cyme 1" }
                              \line { \bold "cyme 2" }
                              \line { \bold "cyme 3" }
