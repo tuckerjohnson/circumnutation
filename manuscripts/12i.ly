@@ -6,7 +6,7 @@
 \accidentalStyle modern
 <<
 \relative { \tmarktfourb \numericTimeSignature \override Hairpin.to-barline = ##f
-\time 2/4 s2^\markup { \smaller \italic "fuggevole; piu enfatico" } |
+\time 2/4 s2^\markup { \smaller \italic "spianato; piu enfatico" } |
 \time 3/4 bes''2.->( |
 g8)->^\markup { \tiny \parenthesize \dynamic ff } r8 r8 aes8~(^\markup { \tiny \parenthesize \dynamic p } aes4 |
 \time 4/4 des,1~ |
@@ -105,7 +105,7 @@ e,2.~ |
 }
 \\
 \relative { \tmarktfourb \numericTimeSignature \override Hairpin.to-barline = ##f
-\time 2/4 d,4( ees~ |
+\time 2/4 d,4(_\markup { \lower #4 \tiny { "[parenthesized, courtesy dynamics apply to nearest pitches]" } } ees~ |
 \time 3/4 ees2.~ |
 ees8) s8 s2 |
 \time 4/4 s1 |

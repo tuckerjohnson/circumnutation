@@ -11,7 +11,7 @@
       \concat { \on-the-fly #(on-page 7) \oddfoot }
       \concat { \on-the-fly #(on-page 9) \oddfoot }
       \concat { \on-the-fly #(on-page 11) \oddfoot }
-      \concat { \on-the-fly #(on-page 13) \oddfoot }
+      \concat { \on-the-fly #(on-page 13) \null }
       \concat { \on-the-fly #(on-page 15) \oddfoot }
       \concat { \on-the-fly #(on-page 17) \oddfoot }
       \concat { \on-the-fly #(on-page 19) \oddfoot }
@@ -26,8 +26,8 @@
       \concat { \on-the-fly #(on-page 6) \evfoot }
       \concat { \on-the-fly #(on-page 8) \evfoot }
       \concat { \on-the-fly #(on-page 10) \evfoot }
-      \concat { \on-the-fly #(on-page 12) \evfoot }
-      \concat { \on-the-fly #(on-page 14) \evfoot }
+      \concat { \on-the-fly #(on-page 12) \null }
+      \concat { \on-the-fly #(on-page 14) \null }
       \concat { \on-the-fly #(on-page 16) \evfoot }
       \concat { \on-the-fly #(on-page 18) \evfoot }
       \concat { \on-the-fly #(on-page 20) \evfoot }

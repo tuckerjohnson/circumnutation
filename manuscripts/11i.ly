@@ -6,7 +6,7 @@
 \accidentalStyle modern
 <<
 \relative { \tmarktfour \numericTimeSignature \override Hairpin.to-barline = ##f
-\time 3/4 a''2.~^\markup { \smaller \italic "fuggevole; spianato" } |
+\time 3/4 a''2.~^\markup { \smaller \italic "spianato" } |
 \time 2/4 a2 |
 \time 3/4 cis2.(^\p |
 \time 4/4 e2 fis,2~ |
