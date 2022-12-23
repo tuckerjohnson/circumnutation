@@ -6,8 +6,6 @@
 \accidentalStyle modern
 <<
 \relative { \override Score.MetronomeMark.padding = #2.2 \tmarktthree
-\omit Staff.BarLine
-\override Staff.BarLine.allow-span-bar = ##f
 \override DynamicLineSpanner.staff-padding = \phds
 \time 7/8 d'8[\offset Y-offset 2^\markup { \smaller \italic "bruscamente" } e-- \change Staff = "di2" fis,-.-> \change Staff = "ui2" g'( a) \change Staff = "di2" b,-- \change Staff = "ui2" cis']( |
 ees[ f) \change Staff = "di2" aes,,-- \change Staff = "ui2" bes''( c) \change Staff = "di2" g,,-- d-.->] |
@@ -33,13 +31,13 @@ d[ c) \change Staff = "di2" bes,( a) \change Staff = "ui2" g'( f) \change Staff 
 \change Staff = "ui2" g'[ \change Staff = "di2" a,,,-.-> \change Staff = "ui2" b''' \change Staff = "di2" c,,-- \change Staff = "ui2" d'' \change Staff = "di2" e,,-- \change Staff = "ui2" fis''] |
 \change Staff = "di2" des,,,-.->[ aes''( g) \change Staff = "ui2" f''(^"poco rit." ees c bes] |
 \stemUp a[ gis) \change Staff = "di2" fis,,-.-> \change Staff = "ui2" e'' \change Staff = "di2" d,-- cis' b,]-- \change Staff = "ui2"
-\override Staff.BarLine.allow-span-bar = ##t \bar "|." \revert Staff.BarLine.stencil }
+\bar "|." }
 >>
 }
 \new Staff = "di2" { \clef bass
 \accidentalStyle modern
 <<
-\relative { \tmarktthree \set tieWaitForNote = ##t \override TimeSignature.stencil = ##f \override Staff.BarLine.stencil = ##f
+\relative { \tmarktthree \set tieWaitForNote = ##t
 \override DynamicLineSpanner.staff-padding = #7
 \time 7/8 s8\fff\> s8 s8 s8 s8 s8 s8 |
 s8 s8 s8 s8 s8\mf s8 s8 |
@@ -65,7 +63,7 @@ s8 s8 s8 s8\p s8 s8 s8 |
 s8 s8 s8\< s8 s8 s8 s8 |
 s8 s8\mf\> s8 s8 s8 s8 s8 |
 s8 s8 s8 s8 s8 s8 s8\pp |
-\revert Staff.BarLine.stencil }
+}
 >>
 }
 >>
@@ -75,6 +73,5 @@ s8 s8 s8 s8 s8 s8 s8\pp |
 \Score
 \override BarNumber.break-visibility = ##(#f #f #f)
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
-\override TimeSignature.stencil = ##f
 }
 }

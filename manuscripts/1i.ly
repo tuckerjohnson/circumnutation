@@ -4,9 +4,11 @@
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "ui1" {
-  \accidentalStyle modern-cautionary
+  \accidentalStyle modern
   <<
     \relative { \tmarkione
+    \omit Staff.BarLine
+    \override Staff.BarLine.allow-span-bar = ##f
     \time 28/16 s16^\markup { \smaller \italic "volante; non legato" } s16 s16 s16 s16 s16 s16
     s16 s16 s16 s16 s16 s16 s16
     s16 s16 s16 s16 s16 s16 s16
@@ -18,14 +20,17 @@
     s16 s16 s16 s16 s16 s16 s16
     s16 s16 s16 s16 s16 s16 s16
     s16 s16 s16 s16 s16 s16 s16
-    s16 s16 s16 s16 s16 s16 s16 \bar "|."
+    s16 s16 s16 s16 s16 s16 s16
+    \override Staff.BarLine.allow-span-bar = ##t \bar "|." \revert Staff.BarLine.stencil
     }
   >>
 }
 \new Staff = "di1" { \clef bass
-  \accidentalStyle modern-cautionary
+  \accidentalStyle modern
   <<
   \relative { \tmarkione
+  \omit Staff.BarLine
+  \override Staff.BarLine.allow-span-bar = ##f
   \time 28/16 gis,16[\p ais b cis dis e fis]
   g16[ a c \change Staff = "ui1" d f ees \change Staff = "di1" bes]
   a16[ g fis e d c b]
@@ -37,7 +42,8 @@
   \change Staff = "ui1" d[ e g a bes f c]
   \change Staff = "di1" b[ a g fis e d cis]
   ees[ aes, g bes c d f]
-  fis[ gis a b cis \change Staff = "ui1" dis e] \change Staff = "di1" \bar "|."
+  fis[ gis a b cis \change Staff = "ui1" dis e] \change Staff = "di1"
+  \override Staff.BarLine.allow-span-bar = ##t \bar "|." \revert Staff.BarLine.stencil
   }
 >>
 }
