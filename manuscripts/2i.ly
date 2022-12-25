@@ -5,7 +5,7 @@
 \new Staff = "ui2" {
 \accidentalStyle modern
 <<
-\relative { \override Score.MetronomeMark.padding = #2.2 \tmarktthree
+\relative { \override Score.MetronomeMark.padding = #2.2 \tempo Presto 4=168
 \override DynamicLineSpanner.staff-padding = \phds
 \time 7/8 d'8[\offset Y-offset 2^\markup { \smaller \italic "bruscamente" } e-- \change Staff = "di2" fis,-.-> \change Staff = "ui2" g'( a) \change Staff = "di2" b,-- \change Staff = "ui2" cis']( |
 ees[ f) \change Staff = "di2" aes,,-- \change Staff = "ui2" bes''( c) \change Staff = "di2" g,,-- d-.->] |

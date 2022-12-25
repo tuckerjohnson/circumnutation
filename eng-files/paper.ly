@@ -6,36 +6,22 @@
 	oddHeaderMarkup = \markup { \tiny { "  " } }
 	evenHeaderMarkup = \markup { \tiny { "  " } }
 	oddFooterMarkup = \markup {
-      \concat { \on-the-fly #(on-page 3) \fill-line { \null \xcr \null } }
-      \concat { \on-the-fly #(on-page 5) \oddfoot }
-      \concat { \on-the-fly #(on-page 7) \oddfoot }
-      \concat { \on-the-fly #(on-page 9) \oddfoot }
-      \concat { \on-the-fly #(on-page 11) \oddfoot }
-      \concat { \on-the-fly #(on-page 13) \null }
-      \concat { \on-the-fly #(on-page 15) \oddfoot }
-      \concat { \on-the-fly #(on-page 17) \oddfoot }
-      \concat { \on-the-fly #(on-page 19) \oddfoot }
-      \concat { \on-the-fly #(on-page 21) \oddfoot }
-      \concat { \on-the-fly #(on-page 23) \oddfoot }
-      \concat { \on-the-fly #(on-page 25) \oddfoot }
-      \concat { \on-the-fly #(on-page 27) \oddfoot }
-    }
+      \concat { \if \on-page #3 \fill-line { \null \xcr \null } }
+      \concat { \if \on-page #5 \oddfoot }
+      \concat { \if \on-page #7 \oddfoot }
+      \concat { \if \on-page #9 \oddfoot }
+      \concat { \if \on-page #11 \oddfoot }
+      \concat { \if \on-page #13 \null }
+          }
   evenFooterMarkup = \markup {
-      \concat { \on-the-fly #(on-page 2) \evfoot }
-      \concat { \on-the-fly #(on-page 4) \evfoot }
-      \concat { \on-the-fly #(on-page 6) \evfoot }
-      \concat { \on-the-fly #(on-page 8) \evfoot }
-      \concat { \on-the-fly #(on-page 10) \evfoot }
-      \concat { \on-the-fly #(on-page 12) \null }
-      \concat { \on-the-fly #(on-page 14) \null }
-      \concat { \on-the-fly #(on-page 16) \evfoot }
-      \concat { \on-the-fly #(on-page 18) \evfoot }
-      \concat { \on-the-fly #(on-page 20) \evfoot }
-      \concat { \on-the-fly #(on-page 22) \evfoot }
-      \concat { \on-the-fly #(on-page 24) \evfoot }
-      \concat { \on-the-fly #(on-page 26) \evfoot }
-      \concat { \on-the-fly #(on-page 28) \evfoot }
-    }
+      \concat { \if \on-page #2 \evfoot }
+      \concat { \if \on-page #4 \evfoot }
+      \concat { \if \on-page #6 \evfoot }
+      \concat { \if \on-page #8 \evfoot }
+      \concat { \if \on-page #10 \evfoot }
+      \concat { \if \on-page #12 \null }
+      \concat { \if \on-page #14 \null }
+          }
 #(set-paper-size "letter")
         print-all-headers = ##t
         top-margin = 0.8\cm
