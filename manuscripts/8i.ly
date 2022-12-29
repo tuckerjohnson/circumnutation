@@ -22,7 +22,17 @@ b8^.^> r8 r8 s8 s4. |
 \bar "||"
 \tempo "Poco meno mosso" 4=144
 f8^.^> s8 s4 s4. |
-s4 s4 s4 c8^.^> |
+s4 s4 s4 c8(^> |
+a'8^>^.) r8 r4 r4. |
+r4 r4 r4 d,8^.^> |
+e8^.^> r8 r4 r4. |
+r8 g^.^> r4 s4. |
+r4 r4 r8 cis^.^> r8 |
+r8 bes8^.^> s4 s4. |
+gis8^.^> s8 r4 r4. |
+r4 s4 s8 r8 ees8^.^> |
+ges^.^> r8 r4 r4. |
+r4 r4 r4 ces8^.^> |
 \bar "|."
 }
 >>
@@ -46,6 +56,16 @@ f8[_. c,_. aes''_. d,,_. g'_. bes,_.] r8 |
 s8 s8 s8 des8_( bes4 ees8)\fermata |
 \change Staff = "d" s8 \stemDown a,,[^. c'^. e,,^. b''^. g,^. \change Staff = "u" d'']^. |
 des[^. \change Staff = "d" aes,^. \change Staff = "u" ees''^. \change Staff = "d" ges,,^. bes'^. f,]^. s8 |
+s8 r8 \stemUp e'4( gis fis8) |
+r8 g4( f8-.) s4. |
+s4 s4 s4. |
+s8 r8 a8([ c] \change Staff = "u" d4.) |
+\change Staff = "d" b8([ ais]~ ais2 cis8-. ) |
+s4 s4 s4. |
+s4 s4 r8 cis4-- |
+\change Staff = "u" s4 c8_( d4 \change Staff = "d" bes4) |
+s4 e,8-. s8 s4. |
+r8 f4( ges aes) |
 \bar "|."
 }
 \\
@@ -64,6 +84,17 @@ s4 s4 s4. |
 s8 r8 e,4^( a g8) |
 r8 aes8^( f4. ges8) s8 |
 r8 s8 s4 s4. |
+s4 s4 s4. |
+r8 cis,4( d b') |
+ees,4( bes' c,8)[-. a''^.] r8 |
+r8 dis,,8[^. cis''^. gis,^. ais'^. fis,^. b'^.] |
+g,8^. s8 s4 r8 f8[( e)] |
+s4 fis8([ gis] dis4.) |
+\stemNeutral c8_. r8 d8[_. \change Staff = "u" f''^. g^. e^. \change Staff = "d" a,,]_. |
+\change Staff = "u" r8 dis'8[^. \change Staff = "d" fis,,_. b']-. \stemDown e,,4( a8) |
+f8( aes4. g4.) |
+r8 b4 c,8[^. g''^. d,^. a'']^. |
+des,,4( bes' ges4.) |
 }
 >>
 }
