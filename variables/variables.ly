@@ -32,6 +32,9 @@ lst = \once \override TextSpanner.bound-details.left.text = "st"
 rst = \once \override TextSpanner.bound-details.right.text = " st"
 lord = \once \override TextSpanner.bound-details.left.text = "ord"
 rord = \once \override TextSpanner.bound-details.right.text = " ord"
+ffsempre =
+    #(make-dynamic-script (markup #:combine #:transparent "f" "ff" #:combine
+#:transparent "f" #:normal-text #:italic "sempre" ) )
 
 
 utwo = \change Staff = "ui2"
