@@ -35,7 +35,13 @@ rord = \once \override TextSpanner.bound-details.right.text = " ord"
 ffsempre =
     #(make-dynamic-script (markup #:combine #:transparent "f" "ff" #:combine
 #:transparent "f" #:normal-text #:italic "sempre" ) )
+ppsempre =
+    #(make-dynamic-script (markup #:combine #:transparent "f" "pp" #:combine
+#:transparent "f" #:normal-text #:italic "sempre" ) )
 
 
 utwo = \change Staff = "ui2"
 dtwo = \change Staff = "di2"
+
+U = \change Staff = "u"
+D = \change Staff = "d"
