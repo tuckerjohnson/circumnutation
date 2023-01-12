@@ -54,6 +54,13 @@ piece = \markup { \large { \bold "cyme" \number 1 } }
 
 \score {
 \header {
+piece = \markup { \large { \bold "pinnate" \number 2 } }
+}
+\include "manuscripts/7i.ly"
+}
+
+\score {
+\header {
 piece = \markup { \large { \bold "panicle" \number 3 } }
 }
 \include "manuscripts/8i.ly"
