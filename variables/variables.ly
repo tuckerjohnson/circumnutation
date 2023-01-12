@@ -1,7 +1,7 @@
 %fifteen inventions project
 %texts
 xtitle = \markup { Fifteen Inventions }
-xsub = \markup { selections }
+xsub = \markup { for keyboard }
 xcomp = \markup { Tucker Johnson }
 xinst = \markup  { keyboard }
 xdur = \markup { \null }
