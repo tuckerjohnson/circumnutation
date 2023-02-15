@@ -31,9 +31,9 @@ r4 r4 r8 cis^.^> r8 |
 r8 bes8^.^> s4 s4. |
 gis8^.^> s8 r4 r8 s4 |
 r4 s4 s8 r8 ees8^.^> |
-\tempo "Molto meno mosso" 4=72
+\tempo "Meno mosso" 4=72
 ges^.^> r8 r4 r4. |
-r4^"molto accel." r4 r4 ces8^.^> |
+r4 r4 r4 ces8^.^> |
 \bar "|."
 }
 >>

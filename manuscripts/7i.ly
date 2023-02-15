@@ -5,7 +5,7 @@
 \new Staff = "u3" {
 \accidentalStyle modern
 <<
-\relative { \tempo Allegro 4=120 \numericTimeSignature
+\relative { \tempo Allegro 4.=104 \numericTimeSignature
 \time 6/8
 \partial 16
 r16^\markup { \smaller \italic "semplice; secco" } |
@@ -28,7 +28,7 @@ d2.\fermata \bar "|."
 \new Staff = "d3" { \clef bass
 \accidentalStyle modern
 <<
-\relative { \tempo Allegro 4=120 \numericTimeSignature
+\relative { \tempo Allegro 4.=104 \numericTimeSignature
 \time 6/8
 \partial 16
 gis16~\p |
