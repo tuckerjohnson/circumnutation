@@ -96,6 +96,13 @@ piece = \markup { \large { \bold "pinnate" \number 3 } }
 
 \score {
 \header {
+piece = \markup { \large { \bold "umbel" } }
+}
+\include "manuscripts/14i.ly"
+}
+
+\score {
+\header {
 piece = \markup { \large { \bold "circumnutation" } }
 }
 \include "manuscripts/15i.ly"
