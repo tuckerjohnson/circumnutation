@@ -8,10 +8,8 @@
 \relative { \tempo Allegro 4=104 \numericTimeSignature
 \time 4/4
 ees''16(\ff\> bes aes g fis e d) des-. c-. b-. a-. f-. r4\mp |
-\time 2/4
-r4\fermata r8. cis'''16([ |
-\time 6/4
-b gis fis] f[ ees d bes] e[) c-. a-. g-.] r16 r4 r4 r4 |
+r4\fermata r8. cis'''16( b gis fis f ees d bes e,) |
+c-. a-. g-. r16 gis'16-. dis-. cis-. a( \clef bass bes f c bes g e d b) |
 }
 >>
 }
@@ -21,10 +19,7 @@ b gis fis] f[ ees d bes] e[) c-. a-. g-.] r16 r4 r4 r4 |
 \relative { \tempo Allegro 4=104 \numericTimeSignature
 \time 4/4
 \tuplet 3/2 { f'8( des c } \tuplet 3/2 { b a) aes-. } \tuplet 3/2 { g-. e-. d-. } \tuplet 3/2 { bes-. ges-. ees-. } |
-\time 2/4
-r4\fermata r4 |
-\time 6/4
-r4 r4 r4 r4 r4 r4 |
+r4\fermata r4 r4 \clef treble \tuplet 3/2 { a''8( g c,) } \clef bass |
 
 }
 >>

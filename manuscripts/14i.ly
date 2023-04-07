@@ -1,8 +1,8 @@
 %fifteen inventions project
-\new PianoStaff \with { \consists "Merge_rests_engraver" } <<
+\new PianoStaff <<
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
-\new Staff = "u" {
+\new Staff = "u" \with { \consists "Merge_rests_engraver" } {
 \accidentalStyle modern
 \relative { \tempo Allegro 4=132 \numericTimeSignature
 \time 4/4
@@ -39,9 +39,24 @@ R1*3/4 |
 \time 4/4
 \tuplet 5/4 { bes,8( g4 d'8 c~ } \tuplet 5/4 { c4.) ees4---> } |
 R1 |
+e,1-> |
+aes'2 \tuplet 3/2 { c4( bes f'~ } |
+<<
+  {
+    \voiceOne
+    f2) b,,8( g8-.)
+  }
+  \new Voice {
+    \voiceTwo
+    <aes ees'>2 f16( a, c8)
+  }
+>>
+\oneVoice
+r4 |
+R1 |
 }
 }
-\new Staff = "d" { \clef bass
+\new Staff = "d" \with { \consists "Merge_rests_engraver" } { \clef bass
 \accidentalStyle modern
 \relative { \numericTimeSignature
 \time 4/4
@@ -101,6 +116,10 @@ ees'4( c'4 b4) |
 b'''2~ |
 b2) f4. a8~-> |
 a1 |
+r2 a16( cis b4 fis8 |
+dis2) g,8( d'~ 4) |
+r2 d8 e-. ges4~-> |
+8 bes8~-> 4 des2-. |
 }
 }
 >>
