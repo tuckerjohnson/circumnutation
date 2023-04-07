@@ -8,7 +8,7 @@
 \relative { \tmarkfi \override Hairpin.to-barline = ##f %\tempo Lento 4=40
 \override DynamicLineSpanner.staff-padding = \phds
 \time 6/4
-\stemNeutral <b' e a>2\arpeggio\mf^\markup { \smaller \italic "dolce; espr." }_\markup { \lower #4 \tiny { "[roll chords slowly]" } } fis'4(~\p \tuplet 3/2 { fis8 <f, c'>4)\<\arpeggio } <cis dis' gis>2\arpeggio |
+\stemNeutral <b' e a>2\arpeggio\mf^\markup { \smaller \italic "dolce; espr." }_\markup { \lower #4 \tiny { "[roll chords delicately]" } } fis'4(~\p \tuplet 3/2 { fis8 <f, c'>4)\<\arpeggio } <cis dis' gis>2\arpeggio |
 <d' g>8[(\f\arpeggio aes,~]\p aes4) <fis' cis' b'>4~\<\arpeggio \tuplet 3/2 { 4 ais8~ } 8[ <dis, e'>8]~\f\arpeggio 4~\fermata |
 8[ <bes' a'>8~]\>_( \tuplet 3/2 { 8 e,4) } <g c f>2\mp\arpeggio d4.\>_( <cis' gis'>8)\arpeggio |
 <a, d' g>4~\pp\arpeggio \tuplet 3/2 { 8 <b' fis'>4\<~(\arpeggio^"molto rit." } 4 c,4) <bes ees f'>4~\mf\arpeggio 4\fermata |

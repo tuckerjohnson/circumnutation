@@ -35,6 +35,9 @@ rord = \once \override TextSpanner.bound-details.right.text = " ord"
 ffsempre =
     #(make-dynamic-script (markup #:combine #:transparent "f" "ff" #:combine
 #:transparent "f" #:normal-text #:italic "sempre" ) )
+fsubito =
+    #(make-dynamic-script (markup #:combine #:transparent "f" "f" #:combine
+#:transparent "f" #:normal-text #:italic "subito" ) )
 ppsempre =
     #(make-dynamic-script (markup #:combine #:transparent "f" "pp" #:combine
 #:transparent "f" #:normal-text #:italic "sempre" ) )
