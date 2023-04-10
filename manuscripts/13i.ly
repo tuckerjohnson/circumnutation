@@ -34,8 +34,8 @@ r4 \tempo "Molto accel." f,16-.\> g-. aes-. bes-. b-. d( a' c \tempo "Presto pos
 r4 r4 r4 \clef treble \tuplet 3/2 { a''8(\sustainOff g c,) } \clef bass |
 \tuplet 3/2 { bes8-. f-. d-. } \tuplet 3/2 { b-. fis-. e-. } \tuplet 3/2 { dis( cis gis) } r4\sustainOn \clef treble |
 r4 r8 a'''''8-. fis-. dis-. \tuplet 3/2 { bes-.\sustainOff ees,-. d-. } \clef bass \tuplet 3/2 { e,-. g,( f }
-\tuplet 3/2 { gis\sustainOn ais b) } r2\sustainOff |
-\tuplet 3/2 { ges'8( f c } \tuplet 3/2 { b d,) cis-. } \tuplet 3/2 { a-. g-. e-. } \tuplet 3/2 { dis-. fis-. ais-. } |
+\tuplet 3/2 { gis\sustainOn ais b) } r2\fermata |
+\tuplet 3/2 { ges'8(\sustainOff f c } \tuplet 3/2 { b d,) cis-. } \tuplet 3/2 { a-. g-. e-. } \tuplet 3/2 { dis-. fis-. ais-. } |
 \time 3/16 R1*3/16 |
 \time 4/4 r2 r4 f''4~( |
 4~ \tuplet 3/2 { 4 d8~ } 2~ |
