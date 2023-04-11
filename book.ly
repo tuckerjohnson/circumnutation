@@ -12,99 +12,71 @@
 	tagline = ##f
 }
 
+\tocItem \markup { "1.   Vivace" }
 \score {
 \header {
 title = \markup { \fontsize #1 \xtitle }
 subtitle = \markup { \medium \italic \xsub }
 composer = \xcomp
-poet = \markup { \xinst }
-piece = \markup { \large { \bold "pappus" } }
 }
 \include "manuscripts/1i.ly"
 }
 
 
+\tocItem \markup { "2.   Presto" }
 \score {
-\header {
-piece = \markup { \large { \bold "panicle" \number 1 } }
-}
 \include "manuscripts/2i.ly"
 }
 
+\tocItem \markup { "3.   Allegro moderato" }
 \score {
-\header {
-piece = \markup { \large { \bold "pinnate" \number 1 } }
-}
 \include "manuscripts/3i.ly"
 }
 
+\tocItem \markup { "4.   Largo" }
 \score {
-\header {
-piece = \markup { \large { \bold "anisomery" \number 1 } }
-}
 \include "manuscripts/4i.ly"
 }
 
+\tocItem \markup { "6.   Tempo giusto" }
 \score {
-\header {
-piece = \markup { \large { \bold "cyme" \number 1 } }
-}
 \include "manuscripts/6i.ly"
 }
 
+\tocItem \markup { "7.   Allegro moderato" }
 \score {
-\header {
-piece = \markup { \large { \bold "pinnate" \number 2 } }
-}
 \include "manuscripts/7i.ly"
 }
 
+\tocItem \markup { "8.   Presto" }
 \score {
-\header {
-piece = \markup { \large { \bold "panicle" \number 3 } }
-}
 \include "manuscripts/8i.ly"
 }
 
+
+\tocItem \markup { "9.   Largo" }
 \score {
-\header {
-piece = \markup { \large { \bold "anisomery" \number 2 } }
-}
 \include "manuscripts/9i.ly"
 }
 
+\tocItem \markup { "11.   Tempo giusto" }
 \score {
-\header {
-piece = \markup { \large { \bold "cyme" \number 2 } }
-}
 \include "manuscripts/11i.ly"
 }
 
+\tocItem \markup { "12.   Tempo giusto" }
 \score {
-\header {
-piece = \markup { \large { \bold "cyme" \number 3 } }
-}
 \include "manuscripts/12i.ly"
 }
 
+\tocItem \markup { "13.   Con moto" }
 \score {
-\header {
-piece = \markup { \large { \bold "pinnate" \number 3 } }
-}
 \include "manuscripts/13i.ly"
 }
 
-\score {
-\header {
-piece = \markup { \large { \bold "umbel" } }
-}
-\include "manuscripts/14i.ly"
-}
 
+\tocItem \markup { "15.   Poco rubato" }
 \score {
-\header {
-piece = \markup { \large { \bold "circumnutation" } }
-}
 \include "manuscripts/15i.ly"
 }
   \markup { \null }

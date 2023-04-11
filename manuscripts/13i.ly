@@ -1,9 +1,12 @@
 %fifteen inventions project
-\new PianoStaff <<
+\new PianoStaff \with {
+  instrumentName = \markup { \large "&numero;" \number 13 }
+}
+<<
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "u3" \with { \consists "Merge_rests_engraver" } {
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { \tempo "Con moto" 4=98 \numericTimeSignature
 \override Hairpin.to-barline = ##f
@@ -12,7 +15,7 @@
 ees''16(\ff\>^\markup { \smaller \italic "feroce" } bes aes g fis e d) des-. c-. b-. a-. f-. r4\mp |
 r4 r8. cis'''16(\f\> b gis fis f ees d bes e,) \clef bass |
 c-. a-. g-. r16 gis'16-. dis-. cis-. a( bes f c bes g e d b)\p \clef treble |
-\tempo "Meno mosso" 4=66 r2 r4\tempo "Molto accel." c''''16-. aes-. g-. f-. b,-.\< a( d, c
+\tempo "Meno mosso" 4=66 r2 r4^"Molto accel." c''''16-. aes-. g-. f-. b,-.\< a( d, c
 \tempo "A tempo" 4=98 cis dis e fis)\f r2\fermata |
 g'16(\ff\> ees des ges, a fis e) gis,-.f-.\mf b-. c-. d-. r8. cis''16(\p\> |
 \time 3/16 b[ gis fis] |
@@ -20,13 +23,13 @@ g'16(\ff\> ees des ges, a fis e) gis,-.f-.\mf b-. c-. d-. r8. cis''16(\p\> |
 c4 a2 g4~ |
 \time 5/16 g4 e16) \clef bass |
 \time 4/4 bes16-.\fsubito f-. d-. r16 cis-. dis-. gis-. a( \clef treble c f ges bes b d f g) |
-r4 \tempo "Molto accel." f,16-.\> g-. aes-. bes-. b-. d( a' c \tempo "Presto possible" cis dis e fis)\mp \bar "|."
+r4^"Molto accel." f,16-.\> g-. aes-. bes-. b-. d( a' c \tempo "Presto possible" cis dis e fis)\mp \bar "|."
 }
 >>
 }
 \new Staff = "d3" \with { \consists "Merge_rests_engraver" } { \clef bass
 \set Staff.pedalSustainStyle = #'mixed
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { \numericTimeSignature
 \time 4/4

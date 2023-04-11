@@ -1,9 +1,12 @@
 %fifteen inventions project
-\new PianoStaff <<
+\new PianoStaff \with {
+  instrumentName = \markup { \large "&numero;" \number 14 }
+}
+  <<
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "u" \with { \consists "Merge_rests_engraver" } {
-\accidentalStyle modern
+\accidentalStyle piano
 \relative { \tempo Allegro 4=132 \numericTimeSignature
 \time 4/4
 r2 cis''8( a4 fis'8 |
@@ -57,7 +60,7 @@ R1 |
 }
 }
 \new Staff = "d" \with { \consists "Merge_rests_engraver" } { \clef bass
-\accidentalStyle modern
+\accidentalStyle piano
 \relative { \numericTimeSignature
 \time 4/4
 <<

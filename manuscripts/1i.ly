@@ -1,10 +1,13 @@
 %fifteen inventions project
 
-\new PianoStaff \with { \consists "Merge_rests_engraver" } <<
+\new PianoStaff \with {
+  instrumentName = \markup { \large "&numero;" \number 1 }
+  \consists "Merge_rests_engraver" }
+<<
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "ui1" {
-  \accidentalStyle modern
+  \accidentalStyle forget
   <<
     \relative { \tempo Vivace 4=136
     \omit Staff.BarLine
@@ -26,7 +29,7 @@
   >>
 }
 \new Staff = "di1" { \clef bass
-  \accidentalStyle modern
+  \accidentalStyle forget
   <<
   \relative { \tmarkione
   \omit Staff.BarLine

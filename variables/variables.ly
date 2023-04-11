@@ -1,11 +1,12 @@
 %fifteen inventions project
 %texts
-xtitle = \markup { Fifteen Inventions }
-xsub = \markup { for keyboard }
+xyear = \markup { 2022-23 }
+xtitle = \markup { Circumnutation }
+xsub = \markup { fifteen inventions for keyboard instruments }
 xcomp = \markup { Tucker Johnson }
 xinst = \markup  { keyboard }
-xdur = \markup { \null }
-xcr = \markup \tiny { Copyright Tucker Johnson MMXXII. All Rights Reserved }
+xdur = \markup { "30\" - 15\'" }
+xcr = \markup \tiny { Copyright \char ##x00A9 MMXXIII Umbel Press. }
 oddfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromproperty #'page:page-number-string " - " } \small { \xcomp } } \null } }
 evfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromproperty #'page:page-number-string " - " } \small { \xtitle } } \null } }
 finfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromproperty #'page:page-number-string " - " } \small \typewriter { "February 1st, 2022 - Rochester, New York" } } \null } }

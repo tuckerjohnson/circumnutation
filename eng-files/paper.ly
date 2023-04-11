@@ -1,6 +1,7 @@
 %fifteen inventions project
 %------paper-block------
 \paper {
+  #(include-special-characters)
   first-page-number = -1
   print-page-number = ##f
 	oddHeaderMarkup = \markup { \tiny { "  " } }
@@ -11,7 +12,7 @@
       \concat { \if \on-page #7 \oddfoot }
       \concat { \if \on-page #9 \oddfoot }
       \concat { \if \on-page #11 \oddfoot }
-      \concat { \if \on-page #13 \null }
+      \concat { \if \on-page #13 \oddfoot }
           }
   evenFooterMarkup = \markup {
       \concat { \if \on-page #2 \evfoot }
@@ -19,8 +20,8 @@
       \concat { \if \on-page #6 \evfoot }
       \concat { \if \on-page #8 \evfoot }
       \concat { \if \on-page #10 \evfoot }
-      \concat { \if \on-page #12 \null }
-      \concat { \if \on-page #14 \null }
+      \concat { \if \on-page #12 \evfoot }
+      \concat { \if \on-page #14 \evfoot }
           }
 #(set-paper-size "letter")
         print-all-headers = ##t

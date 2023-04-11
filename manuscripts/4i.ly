@@ -1,9 +1,12 @@
 %fifteen inventions project
-\new PianoStaff <<
+\new PianoStaff \with {
+  instrumentName = \markup { \large "&numero;" \number 4 }
+}
+  <<
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "ui4" {
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { \tmarkfi
 \time 3/8 g'16([\mp^\markup { \smaller \italic "dolce; espr." } f] \tuplet 3/2 { e8 g f } |
@@ -11,7 +14,7 @@
 \time 3/8 b8( \tuplet 3/2 { ees8[ c d] } |
 \time 2/4 fis8 gis4) \override TextSpanner.bound-details.left.text = "molto accel." a8(\startTextSpan |
 \time 4/4 aes16\< g bes8) \tuplet 3/2 { r16 a16_( b16 } c8)^\markup { \smaller \italic "intenso" } \stemNeutral f16( ges ees8) cis16( e d8~\ff |
-\time 2/4 d4)\stopTextSpan\fermata \stemUp ees,8(^"a Tempo"\mp c16 d |
+\time 2/4 d4)\stopTextSpan\fermata \stemUp \tempo "A tempo" ees,8(\mp c16 d |
 \time 3/4 fis8 gis8 a4 f4~ |
 \time 2/4 \tuplet 3/2 { f8) g( e } b8 des8 |
 bes2)\fermata |
@@ -31,7 +34,7 @@ bes2)\fermata |
 >>
 }
 \new Staff = "di4" { \clef bass
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { %\tmarkfi
 \time 3/8 r8 <d, a' c>4\pp |

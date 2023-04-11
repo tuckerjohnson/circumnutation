@@ -1,11 +1,13 @@
 %fifteen inventions project
-\new PianoStaff \with { \consists "Merge_rests_engraver" } <<
+\new PianoStaff \with {
+  instrumentName = \markup { \large "&numero;" \number 7 }
+  \consists "Merge_rests_engraver" } <<
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "u3" {
-\accidentalStyle modern
+\accidentalStyle piano
 <<
-\relative { \tempo Allegro 4.=104 \numericTimeSignature
+\relative { \tempo "Allegro moderato" 4.=104 \numericTimeSignature
 \time 6/8
 \partial 16
 r16^\markup { \smaller \italic "semplice; secco" } |
@@ -26,9 +28,9 @@ d2.\fermata \bar "|."
 >>
 }
 \new Staff = "d3" { \clef bass
-\accidentalStyle modern
+\accidentalStyle piano
 <<
-\relative { \tempo Allegro 4.=104 \numericTimeSignature
+\relative { \numericTimeSignature
 \time 6/8
 \partial 16
 gis16~\p |

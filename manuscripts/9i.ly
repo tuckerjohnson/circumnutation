@@ -1,9 +1,12 @@
 %fifteen inventions project
-\new PianoStaff <<
+\new PianoStaff \with {
+  instrumentName = \markup { \large "&numero;" \number 9 }
+}
+  <<
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "u" {
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { \tmarkfi \override Hairpin.to-barline = ##f %\tempo Lento 4=40
 \override DynamicLineSpanner.staff-padding = \phds
@@ -16,7 +19,7 @@
 >>
 }
 \new Staff = "d" { \clef bass
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { %\tmarkfi
 \time 6/4

@@ -1,9 +1,11 @@
 %fifteen inventions project
-\new PianoStaff \with { \consists "Merge_rests_engraver" } <<
+\new PianoStaff \with {
+  instrumentName = \markup { \large "&numero;" \number 8 }
+  \consists "Merge_rests_engraver" } <<
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "u" {
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { \override Score.MetronomeMark.padding = #2.2 \tempo Presto 4=154
 \override DynamicLineSpanner.staff-padding = \phds
@@ -39,7 +41,7 @@ r4 r4 r4 ces8^.^> |
 >>
 }
 \new Staff = "d" { \clef bass
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { \override Score.MetronomeMark.padding = #2.2
 \override DynamicLineSpanner.staff-padding = \phds

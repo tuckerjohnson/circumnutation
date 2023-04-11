@@ -1,9 +1,12 @@
 %fifteen inventions project
-\new PianoStaff <<
+\new PianoStaff \with {
+  instrumentName = \markup { \large "&numero;" \number 15 }
+}
+  <<
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "ui7" {
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { \tmarksev \dtim \override TextSpanner.bound-details.left.text = "poco rit."
 \time 7/4 s1*7/4^\markup { \smaller \italic "semplicemente; sotto voce" } |
@@ -75,7 +78,7 @@
 >>
 }
 \new Staff = "di7" { \clef bass
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |

@@ -1,9 +1,12 @@
 %fifteen inventions project
-\new PianoStaff <<
+\new PianoStaff \with {
+  instrumentName = \markup { \large "&numero;" \number 6 }
+}
+  <<
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "ui6" {
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { \tmarktfour \numericTimeSignature \override Hairpin.to-barline = ##f
 \time 1/4 s4^\markup { \smaller \italic "spianato" } |
@@ -70,7 +73,7 @@ s2 |
 >>
 }
 \new Staff = "di6" { \clef bass
-\accidentalStyle modern
+\accidentalStyle piano
 <<
 \relative { \tmarktfour \numericTimeSignature \override Hairpin.to-barline = ##f
 \override DynamicLineSpanner.staff-padding = \phds
