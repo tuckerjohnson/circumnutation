@@ -6,30 +6,23 @@ front-matter = \markuplist {
      \line { \xinst " | " \xdur }
      \line { \xcomp }
      \vspace #25
-
    }
    \center-column {
-     \fill-line {
-       \column {\null}
-       \center-column {
-	  \vspace #7
-	  \line { \hbracket \bold "program notes" }
-	  \vspace #0.2
-	  \xpnote
-	  \vspace #0.5
-	  \line { ================================= }
-	  \vspace #0.5
-	  \line { \hbracket \bold "inventions" }
-	  \vspace #0.2
-	  \table-of-contents
-	  \null
-	  \line { ================================= }
-	  \vspace #1.5
-	}
+     \vspace #3
+     \table-of-contents
+     \vspace #0.5
+     \line { ================================= }
+     \vspace #0.5
+     \line { \hbracket \bold "program notes"}
+     \vspace #0.2
+     \xpnote
+     \vspace #0.5
+     \line { ================================= }
+     \vspace #0.5
+     \line { \hbracket \bold "performance notes"}
+     \vspace #0.2
 
-      \column {\null}
-       }
+  }
   }
    \right-column { \vspace #2 }
   }
-}
