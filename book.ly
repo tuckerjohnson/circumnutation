@@ -59,6 +59,11 @@ composer = \xcomp
 \include "manuscripts/9i.ly"
 }
 
+\tocItem \markup { "10.   Presto" }
+\score {
+\include "manuscripts/10i.ly"
+}
+
 \tocItem \markup { "11.   Tempo giusto" }
 \score {
 \include "manuscripts/11i.ly"
