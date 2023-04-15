@@ -13,6 +13,7 @@
     \concat { \if \on-page #9 \oddfoot }
     \concat { \if \on-page #11 \oddfoot }
     \concat { \if \on-page #13 \oddfoot }
+    \concat { \if \on-page #15 \oddfoot }
   }
   evenFooterMarkup = \markup {
     \concat { \if \on-page #2 \evfoot }

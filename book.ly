@@ -79,6 +79,10 @@ composer = \xcomp
 \include "manuscripts/13i.ly"
 }
 
+\tocItem \markup { "14.   Quasi ad lib" }
+\score {
+\include "manuscripts/14i.ly"
+}
 
 \tocItem \markup { "15.   Poco rubato" }
 \score {
