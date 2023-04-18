@@ -23,12 +23,13 @@
     \concat { \if \on-page #10 \evfoot }
     \concat { \if \on-page #12 \evfoot }
     \concat { \if \on-page #14 \evfoot }
+    \concat { \if \on-page #16 \evfoot }
   }
   tocTitleMarkup = \markup { \null }
   tocItemMarkup = \markup { \center-column {
     \fill-line {
-      \left-column { \concat { "                      " \fromproperty #'toc:text } }
-      \right-column { \concat { \fromproperty #'toc:page "                      " } }
+      \left-column { \concat { "                      " "       " \fromproperty #'toc:text } }
+      \right-column { \concat { \fromproperty #'toc:page "                      " "       " } }
     }
   }
 }
