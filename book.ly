@@ -89,7 +89,7 @@ composer = \xcomp
 \include "manuscripts/14i.ly"
 }
 
-\tocItem \markup { "15. " \bold "Poco rubato," \italic "semplicemente; sotto voce" }
+\tocItem \markup { "14. " \bold "Poco rubato," \italic "semplicemente; sotto voce" }
 \score {
 \include "manuscripts/15i.ly"
 }

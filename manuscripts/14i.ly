@@ -2,54 +2,38 @@
 \new PianoStaff \with {
   instrumentName = \markup { \large "&numero;" \number 14 }
 }
-  <<
-\set PianoStaff.connectArpeggios = ##t
-\override PianoStaff.Arpeggio.arpeggio-direction = #UP
-\new Staff = "u" \with { \consists "Merge_rests_engraver" } {
-\accidentalStyle piano
-\relative { \tempo Moderato 4=82 \numericTimeSignature
 <<
-  \relative {
-    \voiceTwo
-    \partial 4 b'4~^>\f |
-    b1
-    b1(-> |
-    c4)
-  }
-  \new Voice \relative {
-    \voiceOne
-    \partial 4 s4 |
-    s1 |
-    r16 cis''8-.^\pp fis16-. r4 r8 a,8-. ees'-. r8 |
-    s4
-  }
->>
-\oneVoice
-r8. f'''16~^\p 8 r8 ees,,4~\mp |
-ees1 |
-ees4. f8~\< f8. b16~ b8. c,16~ |
-c8 a'8 fis16 cis8.~\f 4 c'4~ |
-c16 r8. r4 r2 |
-R1 |
-\time 3/4
-f'16
-}
-}
-\new Staff = "d" \with { \consists "Merge_rests_engraver" } { \clef treble
+\set PianoStaff.connectArpeggios = ##t
+\new Staff = "u3" \with { \consists "Merge_rests_engraver" } {
 \accidentalStyle piano
-\relative { \numericTimeSignature
-\partial 4 r4 |
-R1 |
-r2 e'4~\mp e16 aes8.~\< |
-aes16 bes8. d8 g,8~\mf g4 r4 |
-R1 \clef bass |
-r16 aes,16-.\p r8 r4 e16-. r16 r8 g16-. r16 r8 |
-r4 d16-. r16 r8 ais16-. r16 r8 r4 \clef treble |
-r16 c''8.~ c2. |
-ees1-> |
-\time 3/4
-aes,2.-> |
+<<
+\relative { \tempo "Molto" 4=75 \numericTimeSignature
+<a' b>4 <b cis>4 4 <b fis'>4 |
+<b dis>2. f''4 |
+f4 f4. f4.~\arpeggio |
+1 \clef bass |
+\tuplet 3/2 { ees,,,8( a, b } \tuplet 3/2 { c f ges } des4) r4 \clef treble |
+f'''2~(\arpeggio 8 \tuplet 7/4 { g16 fis e d cis b a } bes8) |
+\time 6/16
+r16 r16 <dis, ais'>16-. r16 r16 <e ais>16-. |
 }
+>>
+}
+\new Staff = "d3" \with { \consists "Merge_rests_engraver" } { \clef bass
+\set Staff.pedalSustainStyle = #'mixed
+\accidentalStyle piano
+<<
+\relative { \numericTimeSignature
+gis4 4 e4 4 |
+e2. <bes' c>4 |
+<g c>4 <d c'>4. <aes ees' c'>4.~\arpeggio |
+1 |
+\tuplet 3/2 { r16 aes8( g e16~ } \tuplet 3/2 { 16 d8 } bes'8~ 4) c'8( ees |
+<bes, des' aes'>4~\arpeggio 8) r8 r2 |
+\time 6/16
+b,16-. fis'-. r16 cis16-. gis'16-. r16 |
+}
+>>
 }
 >>
 %\midi { }
@@ -57,6 +41,6 @@ aes,2.-> |
 \context {
 \Score
 \override BarNumber.font-size = #1
-\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
+\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/24)
 }
 }

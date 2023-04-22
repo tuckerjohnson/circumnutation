@@ -22,7 +22,7 @@ front-matter = \markuplist {
      \line { \hbracket \bold "performance notes"}
      \vspace #0.2
      \line { In invention one \italic "(Vivace)" accidentals apply only to the note they precede. }
-     \line { In inventions two through fifteen accidentals carry through the bar. }
+     \line { In inventions two through fourteen accidentals carry through the bar. }
   }
   }
    \right-column { \vspace #2 }
