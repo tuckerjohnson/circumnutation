@@ -2,7 +2,7 @@
 %texts
 xyear = \markup { 2022-23 }
 xtitle = \markup { Circumnutation }
-xsub = \markup { fourteen inventions for keyboard instruments }
+xsub = \markup { fifteen inventions for keyboard instruments }
 xcomp = \markup { Tucker Johnson }
 xinst = \markup  { keyboard }
 xdur = \markup { "30\" - 15\'" }
