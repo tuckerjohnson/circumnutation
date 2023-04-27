@@ -84,10 +84,10 @@ composer = \xcomp
 \include "manuscripts/13i.ly"
 }
 
-%\tocItem \markup { "14. " \bold "Moderato" }
-%\score {
-%\include "manuscripts/14i.ly"
-%}
+\tocItem \markup { "14. " \bold "Molto rubato" }
+\score {
+\include "manuscripts/14i.ly"
+ }
 
 \tocItem \markup { "14. " \bold "Poco rubato," \italic "semplicemente; sotto voce" }
 \score {
