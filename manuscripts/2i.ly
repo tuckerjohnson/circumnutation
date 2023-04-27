@@ -64,7 +64,15 @@ s8 s8 s8 s8 s8 s8 s8 |
 s8 s8 s8 s8\p s8 s8 s8 |
 s8 s8 s8\< s8 s8 s8 s8 |
 s8 s8\mf\> s8 s8 s8 s8 s8 |
-s8 s8 s8 s8 s8 s8 s8\pp |
+s8 s8 s8 s8 s8 s8 s8\pp
+\once \override Staff.BarLine.stencil =
+#(lambda (grob)
+(ly:stencil-combine-at-edge
+  (ly:bar-line::print grob)
+  X RIGHT
+  (grob-interpret-markup grob two-barlineMarkup)
+  0))
+\bar "|."
 }
 >>
 }

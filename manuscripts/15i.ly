@@ -57,7 +57,7 @@
 \time 2/4 f4_( ees) |
 \time 4/4 s1 |
 \time 2/4 \stemUp des2 |
-\time 4/4 c1 \arpeggio \bar "|." }
+\time 4/4 s1 \bar "|." }
 \\
 \relative { \tmarksev \dtim
 \time 7/4 s1*7/4 |
@@ -74,7 +74,7 @@
 \time 2/4 s1*2/4 |
 \time 4/4 s1 |
 \time 2/4 s1*2/4 |
-\time 4/4 f1 \arpeggio \bar "|." }
+\time 4/4 <c f>1 \arpeggio \bar "|." }
 >>
 }
 \new Staff = "di7" { \clef bass
@@ -129,7 +129,16 @@
 \time 2/4 a4(\sustainOff\sustainOn g) |
 \time 4/4 s1\sustainOff\sustainOn |
 \time 2/4 f4_(\sustainOff\sustainOn ees) |
-\time 4/4 d1\sustainOff\sustainOn \arpeggio \bar "|." }
+\time 4/4 d1\sustainOff\sustainOn \arpeggio
+\once \override Staff.BarLine.stencil =
+	    #(lambda (grob)
+	    (ly:stencil-combine-at-edge
+	      (ly:bar-line::print grob)
+	      X RIGHT
+	      (grob-interpret-markup grob fifteen-barlineMarkup)
+	      0))
+	    \bar "|."
+}
 >>
 }
 >>

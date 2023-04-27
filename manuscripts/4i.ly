@@ -46,7 +46,15 @@ bes2)\fermata |
 \time 2/4 4\fermata <aes f'>8\pp g8 |
 \time 3/4 <dis b' e>2 bes4~ |
 \time 2/4 \tuplet 3/2 { 8 <c' d a'>4 } <ees, aes>4~ |
-2\fermata \bar "|."
+2\fermata
+\once \override Staff.BarLine.stencil =
+#(lambda (grob)
+(ly:stencil-combine-at-edge
+  (ly:bar-line::print grob)
+  X RIGHT
+  (grob-interpret-markup grob four-barlineMarkup)
+  0))
+\bar "|."
 }
 >>
 }

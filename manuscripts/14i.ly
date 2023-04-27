@@ -27,7 +27,7 @@
 	\time 4/4
 	r2 <f bes g''>2\arpeggio\fermata |
 	r2 <ees des' aes'>2\arpeggio\fermata |
-	r2 <d c' fis'>2\arpeggio\fermata \bar "|."
+	r2 <d c' fis'>2\arpeggio\fermata
       }
     >>
   }
@@ -50,7 +50,7 @@
 	    r2 g2 a2\fermata |
 	    r2 <aes c>2\arpeggio\fermata |
 	    r2 <f bes>2\arpeggio\fermata |
-	    r2 <e b'>2\arpeggio\fermata |
+	    r2 <e b'>2\arpeggio\fermata
 	  }
 	  \new Voice \relative {
 	    \voiceTwo
@@ -65,7 +65,15 @@
 	    \tuplet 3/2 { r4 c8( } f2.) r2 |
 	    des4(\mp ees2.) |
 	    fis4( b,2.) |
-	    g'4(\mf a2.) |
+	    g'4(\mf a2.)
+	    \once \override Staff.BarLine.stencil =
+	    #(lambda (grob)
+	    (ly:stencil-combine-at-edge
+	      (ly:bar-line::print grob)
+	      X RIGHT
+	      (grob-interpret-markup grob fourteen-barlineMarkup)
+	      0))
+	    \bar "|."
 	  }
 	>>
       }

@@ -62,7 +62,15 @@ gis,4.(\> cis, fis8)\p\fermata \clef bass \bar "||"
 <g' a>[ <e d'>])\p r4. |
 r8 <d fis>4.(\mf\< <cis g'>8~ |
 \time 6/8 8[ aes'8] <c, f>4.\f\> bes8
-\time 5/8 <a e'>4. <b dis>4)\p \bar "|."
+\time 5/8 <a e'>4. <b dis>4)\p
+\once \override Staff.BarLine.stencil =
+#(lambda (grob)
+(ly:stencil-combine-at-edge
+  (ly:bar-line::print grob)
+  X RIGHT
+  (grob-interpret-markup grob ten-barlineMarkup)
+  0))
+\bar "|."
 }
 }
 >>

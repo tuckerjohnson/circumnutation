@@ -135,7 +135,15 @@ a8 s8 s4 |
 \time 4/4 b'2 fis2 |
 \time 2/4 cis8--) s8 s4 |
 s2 |
-\time 4/4 d1 \bar "|."
+\time 4/4 d1
+\once \override Staff.BarLine.stencil =
+#(lambda (grob)
+(ly:stencil-combine-at-edge
+  (ly:bar-line::print grob)
+  X RIGHT
+  (grob-interpret-markup grob six-barlineMarkup)
+  0))
+\bar "|."
 }
 >>
 }

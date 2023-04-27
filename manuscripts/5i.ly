@@ -105,7 +105,15 @@
 	  \voiceTwo
 	  f4\mf \clef treble |
 	  r8 r8 bes8~\fermata\sustainOn 2 |
-	  cis8([\> dis e fis] gis4.)\p \bar "|."
+	  cis8([\> dis e fis] gis4.)\p
+	  \once \override Staff.BarLine.stencil =
+	  #(lambda (grob)
+	  (ly:stencil-combine-at-edge
+	    (ly:bar-line::print grob)
+	    X RIGHT
+	    (grob-interpret-markup grob five-barlineMarkup)
+	  0))
+	\bar "|."
 	}
       >>
     }

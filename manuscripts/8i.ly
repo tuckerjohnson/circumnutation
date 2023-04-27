@@ -97,7 +97,15 @@ s4 fis8([ gis] dis4.) |
 \change Staff = "u" r8 dis'8[^. \change Staff = "d" fis,,_.  b']-. \stemDown e,,4(\< a8) |
 f8( aes4. g4.)\mf |
 r8 b4^\f c,8[^. g''^. d,^. a'']^. |
-des,,4( bes' ees,4.) |
+des,,4( bes' ees,4.)
+\once \override Staff.BarLine.stencil =
+#(lambda (grob)
+(ly:stencil-combine-at-edge
+  (ly:bar-line::print grob)
+  X RIGHT
+  (grob-interpret-markup grob eight-barlineMarkup)
+  0))
+\bar "|."
 }
 >>
 }

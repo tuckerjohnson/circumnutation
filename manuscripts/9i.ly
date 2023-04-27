@@ -26,7 +26,15 @@
 <g d>4(_\ppsempre <f c>) <ees bes>( <des aes>) <b fis>( <a e>) |
 bes8( ees,8 <c' f,>4) <d g,>4( <e a,>) <fis b,>( <gis cis,>)\fermata |
 <g d>4( <f c>) <ees bes>( <des aes>) <b fis>( a8[ e8]) |
-<bes' ees,>4( <c f,>4) <d g,>4( <e a,>) <fis b,>( <gis cis,>)\fermata \bar "|."
+<bes' ees,>4( <c f,>4) <d g,>4( <e a,>) <fis b,>( <gis cis,>)\fermata
+\once \override Staff.BarLine.stencil =
+#(lambda (grob)
+(ly:stencil-combine-at-edge
+  (ly:bar-line::print grob)
+  X RIGHT
+  (grob-interpret-markup grob nine-barlineMarkup)
+  0))
+\bar "|."
 }
 >>
 }

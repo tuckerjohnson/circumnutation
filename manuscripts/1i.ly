@@ -46,7 +46,16 @@
   \change Staff = "di1" b[ a g fis e d cis]
   ees[ aes, g bes c d f]
   fis[ gis a b cis \change Staff = "ui1" dis e] \change Staff = "di1"
-  \override Staff.BarLine.allow-span-bar = ##t \bar "|." \revert Staff.BarLine.stencil
+  \override Staff.BarLine.allow-span-bar = ##t
+\once \override Staff.BarLine.stencil =
+#(lambda (grob)
+(ly:stencil-combine-at-edge
+  (ly:bar-line::print grob)
+  X RIGHT
+  (grob-interpret-markup grob one-barlineMarkup)
+  0))
+\bar "|."
+  \revert Staff.BarLine.stencil
   }
 >>
 }

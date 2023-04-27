@@ -46,6 +46,14 @@ r4 r8 a'''''8-. fis-. dis-. \tuplet 3/2 { bes-.\sustainOff ees,-. d-. } \clef ba
 \tuplet 3/2 { 8 bes4~ } 16) |
 \tuplet 3/2 { a8-. g-. c,-. } \tuplet 3/2 { b-. fis-. d-. } \tuplet 3/2 { des( ees aes) } r4\sustainOn |
 \tuplet 3/2 { cis8-. fis-. a-. } \clef treble \tuplet 3/2 { c-.\sustainOff d-. ees-. } \tuplet 3/2 { e-. f( g } \tuplet 3/2 { gis a b) }
+\once \override Staff.BarLine.stencil =
+#(lambda (grob)
+(ly:stencil-combine-at-edge
+  (ly:bar-line::print grob)
+  X RIGHT
+  (grob-interpret-markup grob thirteen-barlineMarkup)
+  0))
+\bar "|."
 }
 >>
 }

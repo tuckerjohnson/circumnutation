@@ -46,7 +46,15 @@ dis8 cis gis' e b a |
 ees'2. |
 d8 fis a b e cis |
 g'8\p ees c bes f aes~ |
-aes2.\fermata |
+aes2.\fermata
+\once \override Staff.BarLine.stencil =
+#(lambda (grob)
+(ly:stencil-combine-at-edge
+  (ly:bar-line::print grob)
+  X RIGHT
+  (grob-interpret-markup grob seven-barlineMarkup)
+  0))
+\bar "|."
 }
 >>
 }

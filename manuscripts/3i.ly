@@ -26,7 +26,7 @@ r8^"Tempo primo" dis8-.-> cis4~-> cis8 fis16( g a,4)
 \time 5/8 r8\mp\< b4( e,4) |
 e8(\mf\> f4~ f4) |
 bes4(\mp\< c4.)
-\time 2/4 r4\f r4\fermata \bar "|."
+\time 2/4 r4\f r4\fermata
 }
 >>
 }
@@ -52,7 +52,15 @@ b2( e2) |
 \time 5/8 cis8( d fis gis a) |
 c( bes a g d) |
 ges( f ees aes, des) |
-\time 2/4 b8( e8~ e4)\fermata \bar "|."
+\time 2/4 b8( e8~ e4)\fermata
+\once \override Staff.BarLine.stencil =
+#(lambda (grob)
+(ly:stencil-combine-at-edge
+  (ly:bar-line::print grob)
+  X RIGHT
+  (grob-interpret-markup grob three-barlineMarkup)
+  0))
+\bar "|."
 }
 >>
 }
@@ -62,6 +70,6 @@ ges( f ees aes, des) |
 \context {
 \Score
 \override BarNumber.font-size = #1
-\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
+\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
 }
 }
