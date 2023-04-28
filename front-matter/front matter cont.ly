@@ -28,8 +28,8 @@ front-matter-cont = \markuplist {
 	\justify {
 	  &middot; Not all of the inventions are suitable for any keyboard instrument.
 	  A list of suggestions is provided below, but performers are encouraged to be
-	  creative with instrument choices. Where necessary, music can be played up or
-	  down the octave to fit instruments with less range. All of the inventions can
+	  creative with instrument choices. When necessary, music can be played up or
+	  down the octave to fit instruments with a limited range. All of the inventions can
 	  be played on a modern piano.
 	}
       }
