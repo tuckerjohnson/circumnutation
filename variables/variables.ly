@@ -7,8 +7,8 @@ xcomp = \markup { Tucker Johnson }
 xinst = \markup  { keyboard }
 xdur = \markup { "30\" - 15\'" }
 xcr = \markup \tiny { Copyright \char ##x00A9 MMXXIII Umbel Press. }
-oddfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromproperty #'page:page-number-string " - " } \teeny { \xcomp } } \null } }
-evfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromproperty #'page:page-number-string " - " } \teeny { \xtitle } } \null } }
+oddfoot = \markup { \fill-line { \null \center-column { \teeny { \xcomp } \vspace #-0.2 \concat { " - " \fromproperty #'page:page-number-string " - " } } \null } }
+evfoot = \markup { \fill-line { \null \center-column { \teeny { \xtitle } \vspace #-0.2 \concat { " - " \fromproperty #'page:page-number-string " - " } } \null } }
 finfoot = \markup { \fill-line { \null \center-column { \concat { " - " \fromproperty #'page:page-number-string " - " } \small \typewriter { "February 1st, 2022 - Rochester, New York" } } \null } }
 
 %music

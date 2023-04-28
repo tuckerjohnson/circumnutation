@@ -8,6 +8,8 @@
 \pageBreak
 \front-matter
 \pageBreak
+\markup { \vspace #5 }
+\pageBreak
  	\header {
 	tagline = ##f
 }
@@ -28,15 +30,19 @@ composer = \xcomp
 \include "manuscripts/2i.ly"
 }
 
+\pageBreak
+
 \tocItem \markup { "3. " \bold "Allegro moderato," \italic "giocoso" }
 \score {
 \include "manuscripts/3i.ly"
 }
+\pageBreak
 
 \tocItem \markup { "4. " \bold "Largo," \italic "dolce; espressivo" }
 \score {
 \include "manuscripts/4i.ly"
 }
+
 
 \tocItem \markup { "5. " \bold "Andante," \italic "rubato"  }
 \score {
@@ -47,6 +53,8 @@ composer = \xcomp
 \score {
 \include "manuscripts/6i.ly"
 }
+
+\pageBreak
 
 \tocItem \markup { "7. " \bold "Allegro moderato," \italic "semplice; secco" }
 \score {

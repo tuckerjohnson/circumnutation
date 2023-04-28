@@ -7,7 +7,7 @@
   oddHeaderMarkup = \markup { \tiny { "  " } }
   evenHeaderMarkup = \markup { \tiny { "  " } }
   oddFooterMarkup = \markup {
-    \concat { \if \on-page #3 \fill-line { \null \xcr \null } }
+    \concat { \if \on-page #3 \oddfoot }
     \concat { \if \on-page #5 \oddfoot }
     \concat { \if \on-page #7 \oddfoot }
     \concat { \if \on-page #9 \oddfoot }
@@ -18,13 +18,14 @@
   }
   evenFooterMarkup = \markup {
     \concat { \if \on-page #2 \evfoot }
-    \concat { \if \on-page #4 \evfoot }
+    \concat { \if \on-page #4 \fill-line { \null \xcr \null } }
     \concat { \if \on-page #6 \evfoot }
     \concat { \if \on-page #8 \evfoot }
     \concat { \if \on-page #10 \evfoot }
     \concat { \if \on-page #12 \evfoot }
     \concat { \if \on-page #14 \evfoot }
     \concat { \if \on-page #16 \evfoot }
+    \concat { \if \on-page #18 \evfoot }
   }
   tocTitleMarkup = \markup { \null }
   tocItemMarkup = \markup { \center-column {
@@ -49,7 +50,7 @@
 		        #:roman "Junicode"
 			#:sans "syne"
 		))
-        max-systems-per-page = #7
+        max-systems-per-page = #8
         system-system-spacing =
                 #'((basic-distance . 5)
                 (minimum-distance . 5)
@@ -57,5 +58,5 @@
         score-system-spacing =
                 #'((basic-distance . 4)
                 (minimum-distance . 4)
-                (padding . 5))
+                (padding . 8))
 }
