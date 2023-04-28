@@ -29,7 +29,8 @@ front-matter-cont = \markuplist {
 	  &middot; Not all of the inventions are suitable for any keyboard instrument.
 	  A list of suggestions is provided below, but performers are encouraged to be
 	  creative with instrument choices. Where necessary, music can be played up or
-	  down the octave to fit instruments with less range.
+	  down the octave to fit instruments with less range. All of the inventions can
+	  be played on a modern piano.
 	}
       }
       \vspace #2
@@ -49,7 +50,7 @@ front-matter-cont = \markuplist {
       \override #'(thickness . 5)
       \draw-squiggle-line #0.5 #'(20 . 0) ##t
       \vspace #3.25
-      \line \italic { Thank you to \bold "Xingyi Chen, Zihan Wu," and \bold "Ko Muramatsu" for playing and helping with these pieces as they grew.  }
+      \line \small \italic { Thank you to \bold "Xingyi Chen, Zihan Wu," and \bold "Ko Muramatsu" for playing and helping with these pieces as they grew.  }
   }
    \right-column { \vspace #2 }
  }
