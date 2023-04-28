@@ -17,7 +17,7 @@ outcover = \markuplist {
             \line { \null }
           }
         \right-column {
-            \vspace #15
+            \vspace #14
             \line { \fontsize #8 \bold \underline \xtitle }
 	    \vspace #-0.1
             \line { \fontsize #3 \sans \xcomp }
