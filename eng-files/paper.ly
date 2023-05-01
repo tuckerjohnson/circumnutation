@@ -10,14 +10,13 @@
     \concat { \if \on-page #3 \oddfoot }
     \concat { \if \on-page #5 \oddfoot }
     \concat { \if \on-page #7 \oddfoot }
-    \concat { \if \on-page #9 \null }
     \concat { \if \on-page #11 \oddfoot }
-    \concat { \if \on-page #13 \oddfoot }
     \concat { \if \on-page #15 \oddfoot }
     \concat { \if \on-page #17 \oddfoot }
     \concat { \if \on-page #19 \oddfoot }
     \concat { \if \on-page #21 \oddfoot }
     \concat { \if \on-page #23 \oddfoot }
+    \concat { \if \on-page #25 \oddfoot }
   }
   evenFooterMarkup = \markup {
     \concat { \if \on-page #2 \evfoot }
