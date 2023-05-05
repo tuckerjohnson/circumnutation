@@ -35,8 +35,8 @@ fis2.~ |
 \time 4/4 fis8) s8 s2. |
 bes1~ |
 \time 3/4 bes2 s4 |
-ees,2.( |
-\time 2/4 des2)\fermata |
+dis,2.( |
+\time 2/4 cis2)\fermata |
 }
 \\
 \relative { \tmarktfourb \numericTimeSignature \override Hairpin.to-barline = ##f

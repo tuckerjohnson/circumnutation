@@ -22,7 +22,7 @@ ais(\mp\< fis' dis b cis) |
 \time 4/4 g'4--\f\fermata aes,4~\mp^"Meno mosso" aes8 d16( f c4) |
 a2(^"poco rit." e'4~ e4)\fermata |
 r8^"Tempo primo" dis8-.-> cis4~-> cis8 fis16( g a,4)
-\time 3/4 r8\f\> aes8( d2) |
+\time 3/4 r8\f\> aes8_( d2) |
 \time 5/8 r8\mp\< b4( e,4) |
 e8(\mf\> f4~ f4) |
 bes4(\mp\< c4.)

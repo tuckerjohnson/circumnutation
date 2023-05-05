@@ -95,7 +95,7 @@ cis8--) s8 s4 |
 \time 1/4 fis4 |
 \time 6/4 s2. s2. |
 \time 1/4 aes4~ |
-\time 4/4 aes2 s2 |
+\time 4/4 aes2 r2 |
 \time 1/4 s4 |
 \time 2/4 b2 |
 \time 5/4 ees,4~(^\mf^\< \tuplet 3/2 { ees4 ges8~ } ges4~ \tuplet 3/2 { ges8 bes4~ } bes4 |
@@ -126,11 +126,11 @@ a8 s8 s4 |
 \time 1/4 s4 |
 \time 6/4 b8--_\markup { \tiny \parenthesize \dynamic mp }  r8 r4 r4 d,2.->_\f |
 \time 1/4 s4 |
-\time 4/4 s2 fis2(\pp |
+\time 4/4 r2 fis2(\pp |
 \time 1/4 \tuplet 3/2 { e8 cis8 a'8~ } |
 \time 2/4 a2) |
 \time 5/4 s1 s4 |
-\time 3/4 cis2. |
+\time 3/4 des2. |
 \time 2/4 e,2(\p |
 \time 4/4 b'2 fis2 |
 \time 2/4 cis8--) s8 s4 |

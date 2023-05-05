@@ -13,12 +13,11 @@ diatonic material.
 }
 \vspace #0.8
 \override #'(line-width . 90) \justify {
+The word \bold \italic "Circumnutation" comes from botany and describes the helical motion of growing
+stems and tendrils, a process whose reason has long been debated as either an endogenous action,
+an exogenous reaction to stimuli, or some combination of the two.
 I worked on these inventions for over a year, and I feel a connection between
 the process of design and discovery throughout this period to the cultivation
-of a garden. Therefore, I have titled the collection \bold \italic "Circumnutation," a term
-most commonly used in botany to describe the continuous elliptical motion of
-stems and tendrils as they grow. This title also seems fitting because
-pitches and collections cycle throughout the inventions and as the character
-of the work reaches out to different styles and textures.
+of a garden.
 }
 }
