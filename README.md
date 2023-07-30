@@ -10,6 +10,8 @@ Required Fonts:
 
 From a command prompt in the root directory:
 
-`cat variables/* eng-files/* front-matter/* | lilypond -dno-point-and-click --output="Circumnutation"`
+```
+cat variables/* eng-files/* front-matter/* | lilypond -dno-point-and-click --output="Circumnutation" -
+```
 
 (Copyright © 2023 Tucker Johnson)
