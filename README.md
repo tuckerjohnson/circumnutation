@@ -1,4 +1,4 @@
-*The content of this project (music and logos) are protected under copyright, and the underlying source code used to format that content licensed under the MIT license.*
+*The content of this project (music and logos) are protected under copyright, and the underlying source code used to format that content licensed under the Unlicense.*
 
 ## Usage
 
