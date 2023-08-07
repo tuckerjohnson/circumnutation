@@ -34,7 +34,7 @@ outcover = \markuplist {
       \center-column {
 	\xumbel
 	\vspace #0.3
-	  \line { \fontsize #1 \hbracket \sans \bold "  umbel press " \char ##x00A9 }
+	  \line { \fontsize #1 \hbracket \sans \bold "  umbel press " }
       }
       \line { \null }
     }
