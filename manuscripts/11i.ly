@@ -16,16 +16,16 @@
 \time 3/4 fis4~ fis8) e'8~(->^\mf e4 |
 fis,2.~ |
 \time 2/4 fis2~ |
-\time 4/4 fis8) s8 s2. |
+\time 4/4 fis8) r8 r2. |
 \time 3/4 a,2.( |
-d8)^\markup { \tiny \parenthesize \dynamic p } s8 s2 |
+d8)^\markup { \tiny \parenthesize \dynamic p } r8 r2 |
 \time 4/4 s1 |
-\time 2/4 cis8--^\markup { \tiny \parenthesize \dynamic mf } s8 s4 |
+\time 2/4 cis8--^\markup { \tiny \parenthesize \dynamic mf } r8 r4 |
 \time 3/4 s2. |
 \time 4/4 gis'1 |
 \time 1/4 d8( a8 |
 \time 4/4 e'1~ |
-\time 6/4 e4) s4 s2 s2 |
+\time 6/4 e4) r4 r4 r2. |
 \time 1/4 a,8( b8 |
 \time 4/4 fis'2) gis2~^\pp |
 \time 1/4 gis4 |
