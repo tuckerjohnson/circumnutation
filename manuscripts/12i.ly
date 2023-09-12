@@ -11,7 +11,7 @@
 \relative { \tmarktfourb \numericTimeSignature \override Hairpin.to-barline = ##f
 \time 2/4 s2^\markup { \smaller \italic "spianato; piu enfatico" } |
 \time 3/4 bes''2.->( |
-g8)->^\markup { \tiny \parenthesize \dynamic ff } r8 r8 aes8~(^\markup { \tiny \parenthesize \dynamic p } aes4 |
+f8)->^\markup { \tiny \parenthesize \dynamic ff } r8 r8 aes8~(^\markup { \tiny \parenthesize \dynamic p } aes4 |
 \time 4/4 des,1~ |
 \time 5/4 des2.) r2 |
 \time 3/4 s2. |
@@ -43,7 +43,7 @@ dis,2.( |
 \override DynamicLineSpanner.staff-padding = \phds
 \time 2/4 s2\mf\< |
 \time 3/4 a'2.->\ff |
-c2.(\p
+b2.(\p
 \time 4/4 ges1~ |
 \time 5/4 ges2~ ges8) des8~(\mp des2 |
 \time 3/4 aes'2.~\< |
