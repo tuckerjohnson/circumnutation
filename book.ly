@@ -53,7 +53,7 @@
       \line { \null }
     \center-column {
       \vspace #15
-      \line { \caps "This page intentionally left blank" }
+      \line { \caps "This page is intentionally left blank" }
     }
     \line { \null}
   }
@@ -79,7 +79,7 @@
       \line { \null }
     \center-column {
       \vspace #15
-      \line { \caps "This page intentionally left blank" }
+      \line { \caps "This page is intentionally left blank" }
     }
     \line { \null}
   }
