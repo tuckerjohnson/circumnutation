@@ -17,7 +17,7 @@ The word \bold \italic "Circumnutation" comes from botany and describes the heli
 stems and tendrils, a process whose reason has long been debated as either an endogenous action,
 an exogenous reaction to stimuli, or some combination of the two.
 I worked on these inventions for over a year, and I feel a connection between
-the process of design and discovery throughout this period to the cultivation
+the process of design and discovery throughout this period and the cultivation
 of a garden.
 }
 }

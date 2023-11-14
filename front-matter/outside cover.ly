@@ -32,9 +32,9 @@ outcover = \markuplist {
       \line { \null }
       \line { \null }
       \center-column {
-	\xumbel
-	\vspace #0.3
-	  \line { \fontsize #1 \hbracket \sans \bold "  umbel press " }
+	    \xumbel
+	    \vspace #0.3
+        \line { \concat { " " \fontsize #1 \hbracket \sans \bold "  umbel press " \char ##x00A9 } }
       }
       \line { \null }
     }

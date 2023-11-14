@@ -91,11 +91,26 @@
     \score {
       \include "manuscripts/8i.ly"
     }
+  }
+
+  \bookpart {
     \tocItem \markup { "9. " \bold "Largo," \italic "dolce; espressivo" }
     \score {
       \include "manuscripts/9i.ly"
     }
   }
+
+  \markuplist {
+    \fill-line {
+      \line { \null }
+    \center-column {
+      \vspace #15
+      \line { \caps "This page is intentionally left blank" }
+    }
+    \line { \null}
+  }
+  }
+  \pageBreak
 
   \bookpart {
     \tocItem \markup { "10. " \bold "Presto," \italic "staccatissimo/legato" }

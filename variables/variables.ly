@@ -53,7 +53,7 @@ D = \change Staff = "d"
 %barline notations
 
 one-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -65,7 +65,7 @@ one-barlineMarkup = \markup {
 }
 
 two-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -77,7 +77,7 @@ two-barlineMarkup = \markup {
 }
 
 three-barlineMarkup = \markup {
-  \with-dimensions #'(+8.8 . +8.8) #'(0 . 0)
+  \with-dimensions #'(+7.7 . +7.7) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -89,7 +89,7 @@ three-barlineMarkup = \markup {
 }
 
 four-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -101,7 +101,7 @@ four-barlineMarkup = \markup {
 }
 
 five-barlineMarkup = \markup {
-  \with-dimensions #'(+8.8 . +8.8) #'(0 . 0)
+  \with-dimensions #'(+7.7 . +7.7) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -113,7 +113,7 @@ five-barlineMarkup = \markup {
 }
 
 six-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -125,7 +125,7 @@ six-barlineMarkup = \markup {
 }
 
 seven-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -137,7 +137,7 @@ seven-barlineMarkup = \markup {
 }
 
 eight-barlineMarkup = \markup {
-  \with-dimensions #'(+8.8 . +8.8) #'(0 . 0)
+  \with-dimensions #'(+7.7 . +7.7) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -149,7 +149,7 @@ eight-barlineMarkup = \markup {
 }
 
 nine-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -161,7 +161,7 @@ nine-barlineMarkup = \markup {
 }
 
 ten-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -173,7 +173,7 @@ ten-barlineMarkup = \markup {
 }
 
 eleven-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -185,7 +185,7 @@ eleven-barlineMarkup = \markup {
 }
 
 twelve-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -197,7 +197,7 @@ twelve-barlineMarkup = \markup {
 }
 
 thirteen-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -209,7 +209,7 @@ thirteen-barlineMarkup = \markup {
 }
 
 fourteen-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
@@ -221,7 +221,7 @@ fourteen-barlineMarkup = \markup {
 }
 
 fifteen-barlineMarkup = \markup {
-  \with-dimensions #'(+9.1 . +9.1) #'(0 . 0)
+  \with-dimensions #'(+8 . +8) #'(0 . 0)
   \whiteout
   \pad-around #0.1
   \rotate #90 \teeny \fontsize #-3
