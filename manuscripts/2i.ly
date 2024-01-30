@@ -40,28 +40,34 @@ d[ c) \change Staff = "di2" bes,( a) \change Staff = "ui2" g'( f) \change Staff 
 \accidentalStyle piano
 <<
 \relative { \tmarktthree \set tieWaitForNote = ##t
-\override DynamicLineSpanner.staff-padding = #7
-\time 7/8 s8\fff\> s8 s8 s8 s8 s8 s8 |
-s8 s8 s8 s8 s8\mf s8 s8 |
-s8 s8 s8 s8\< s8 s8 s8 |
-s8 s8 s8\ff\> s8 s8 s8 s8 |
+\override DynamicLineSpanner.staff-padding = #1
+\time 7/8 s8^\fff^\> s8 s8 s8 s8 s8 s8 |
+s8 s8 s8 s8 s8^\mf s8 s8 |
+s8 s8 s8 s8^\< s8 s8 s8 |
+s8 s8 s8 s8^\ff^\> s8 s8 s8 |
 s8 s8 s8 s8 s8 s8 s8 |
-s8\mp s8 s8 s8 s8 s8 s8\< |
-s8 s8 s8 s8 s8 s8\f\> s8 |
+s8 s8^\mp s8
+\override DynamicLineSpanner.staff-padding = #4
+s8 s8 s8 s8^\< |
+s8 s8 s8 s8 s8^\f^\> s8 s8 |
 s8 s8 s8 s8 s8 s8 s8 |
-s8 s8 s8 s8\p s8 s8 s8 |
+s8 s8 s8 s8^\p s8 s8 s8 |
+\override DynamicLineSpanner.staff-padding = #5
 s8 s8 s8\< s8 s8 s8 s8 |
 s8 s8\mf\> s8 s8\change Staff = "ui2" s8^"poco rit." \change Staff = "di2" s8 s8 |
 s8 s8 s8 s8 s8 s8 s8\pp |
-s8\fff\> s8 s8 s8 s8 s8 s8 |
-s8 s8 s8 s8 s8\mf s8 s8 |
-s8 s8 s8 s8\< s8 s8 s8 |
-s8 s8 s8\ff\> s8 s8 s8 s8 |
-s8 s8 s8 s8 s8 s8 s8 |
-s8\mp s8 s8 s8 s8 s8 s8\< |
-s8 s8 s8 s8 s8 s8\f\> s8 |
-s8 s8 s8 s8 s8 s8 s8 |
-s8 s8 s8 s8\p s8 s8 s8 |
+\override DynamicLineSpanner.staff-padding = #0
+s8^\fff^\> s8 s8 s8 s8 s8 s8 |
+s8 s8 s8 s8 s8^\mf s8 s8 |
+\override DynamicLineSpanner.staff-padding = #3
+s8 s8 s8 s8^\< s8 s8 s8 |
+s8 s8 s8 s8^\ff^\> s8 s8 s8 |
+s8 s8 s8 s8 s8 s8 s8^\mp |
+s8 s8 s8 s8 s8 s8 s8\< |
+s8 s8 s8 s8 s8  s8\f s8 |
+s8^\> s8 s8 s8 s8 s8 s8 |
+s8 s8 s8 s8^\p s8 s8 s8 |
+\override DynamicLineSpanner.staff-padding = #5
 s8 s8 s8\< s8 s8 s8 s8 |
 s8 s8\mf\> s8 s8 s8 s8 s8 |
 s8 s8 s8 s8 s8 s8 s8\pp
