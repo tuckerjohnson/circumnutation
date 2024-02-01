@@ -14,7 +14,7 @@
       \tempo Andante 4 = 66
       \time 7/8
       r4^\markup { \tiny \italic "rubato" } d''8([\p\< c bes a g])\! |
-      r2
+       r4 r4
       <<
 	\relative {
 	  \voiceOne
@@ -23,16 +23,16 @@
 	}
 	\new Voice \relative {
 	  \voiceTwo
-	  r8 dis'8~\fermata dis8 |
-	  r8 c8~\fermata c4~ c4.|
+	  r8 dis'8~\shortfermata dis8 |
+	  r8 c8~\shortfermata c4~ c4.|
 	}
       >>
       \oneVoice
       des'8([\> aes] ges4. f8[ ees])\p |
-      r2 r4 d8\fermata |
+      r4 r4 r4 d8\shortfermata |
       g2~ g4. |
       f8([\< g aes bes] c4.)\! |
-      r2
+      r4 r4
       <<
 	\relative {
 	  \voiceOne
@@ -41,14 +41,14 @@
 	}
 	\new Voice \relative {
 	  \voiceTwo
-	  r8 r8 aes'8\fermata |
-	  r4 r8 e8~\fermata e4. |
+	  r8 r8 aes'8\shortfermata |
+	  r4 r8 e8~\shortfermata e4. |
 	}
       >>
       \oneVoice
       gis'8([\> ais b cis] dis4.)\p |
       \ottava #1 e4.(\< c8[ d f g])\! |
-      r2 r8 r8 a8\fermata |
+      r4 r4 r8 r8 a8\shortfermata |
     }
   }
   \new Staff = "d" \with { \consists "Merge_rests_engraver" }
@@ -63,7 +63,7 @@
 	{
 	  \voiceOne
 	  \once \override Staff.TextScript.outside-staff-priority = #1500
-	  r8\sustainOn_\markup { \lower #10 \tiny { "[slight ritard into fermatas, which should be short]" } } f8~\fermata f4~ f4. |
+	  r8\sustainOn_\markup { \lower #10 \tiny { "[slight rit. into fermatas]" } } f8~\shortfermata f4~ f4. |
 	}
 	\new Voice {
 	  \voiceTwo
@@ -78,33 +78,33 @@
 	\relative {
 	  \voiceOne
 	  c'4~\mf c4 |
-	  s2 r8 a4^\mf |
+	  s4 r4 r8 a4^\mf |
 	  r4 b8([^\> cis d e fis])^\p|
-	  r2 r8 r8 des8\fermata\sustainOn
+	  r4 r4 r8 r8 des8\shortfermata\sustainOn
 	}
 	\new Voice \relative {
 	  \voiceTwo
-	  r8 bes8~\fermata\sustainOn bes4 |
+	  r8 bes8~\shortfermata\sustainOn bes4 |
 	  e8([\p\< cis b gis] fis4.)\! |
-	  r8 a8~\fermata\sustainOff a4~ 4. |
-	  r2 r8 ees4\mf |
+	  r8 a8~\shortfermata\sustainOff a4~ 4. |
+	  r4 r4 r8 ees4\mf |
 	}
       >>
       \oneVoice
       d,8[(\> c bes g] f4.)\p |
       b8[(\< a8~] a4 g8[\sustainOff c d])\! |
-      r2 r8
+      r4 r4 r8
       <<
 	\relative {
 	  \voiceOne
-	  r8 fis'8\fermata \clef treble |
+	  r8 fis'8\shortfermata \clef treble |
 	  r8 a4~ a2 |
-	  s2 r8 b4 \bar "|."
+	  s4 r4 r8 b4 \bar "|."
 	}
 	\new Voice \relative {
 	  \voiceTwo
 	  f4\mf \clef treble |
-	  r8 r8 bes8~\fermata\sustainOn 2 |
+	  r8 r8 bes8~\shortfermata\sustainOn 2 |
 	  cis8([\> dis e fis] gis4.)\p
 	  \once \override Staff.BarLine.stencil =
 	  #(lambda (grob)

@@ -41,7 +41,7 @@
   cis16[ d e fis gis a b]
   \change Staff = "ui1" f'[ g e d c \change Staff = "di1" b a]
   bes[ aes ges f ees des ces]
-  c[ des ees f ges aes bes] |
+  c![ des ees f ges aes bes] |
   \change Staff = "ui1" d[ e g a bes f c]
   \change Staff = "di1" b[ a g fis e d cis]
   ees[ aes, g bes c d f]
