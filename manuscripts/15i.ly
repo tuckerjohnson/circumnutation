@@ -56,7 +56,7 @@
 \time 3/4 s1*3/4 |
 \time 2/4 f4_( ees) |
 \time 4/4 s1 |
-\time 2/4 \stemUp des2 |
+\time 2/4 \stemDown des2 |
 \time 4/4 s1 \bar "|." }
 \\
 \relative { \tmarksev \dtim
@@ -85,7 +85,7 @@
 \time 4/4 s1 |
 \time 5/4 s1*5/4 |
 \time 3/4 s1*3/4 |
-\time 5/4 \stemDown ees'4~ ees1 |
+\time 5/4 \stemDown ees'2~ ees2. |
 \time 4/4 \stemUp ees'4( d c bes) |
 \time 6/4 s1*6/4 |
 \time 3/4 s1*3/4 |
@@ -106,12 +106,12 @@
 \time 4/4 a1 |
 \time 6/4 a4( g f e d c) |
 \time 3/4 \stemDown \clef bass b4 aes4^( ges4 )|
-\time 2/4 ges2 |
+\time 2/4 \stemUp ges2 |
 \time 4/4 s1 |
 \time 3/4 s1*3/4 |
-\time 2/4 \stemUp bes2 |
+\time 2/4 bes2 |
 \time 4/4 f2( ees4 des4) |
-\time 2/4 s4 c4 |
+\time 2/4 s4 s4 |
 \time 4/4 bes1 \arpeggio \bar "|." }
 \\
 \relative { \tmarksev \dtim \set Staff.pedalSustainStyle = #'mixed
@@ -128,7 +128,7 @@
 \time 3/4 s1*3/4\sustainOff\sustainOn |
 \time 2/4 a4(\sustainOff\sustainOn g) |
 \time 4/4 s1\sustainOff\sustainOn |
-\time 2/4 f4_(\sustainOff\sustainOn ees) |
+\time 2/4 f4_(\sustainOff\sustainOn <ees c'>) |
 \time 4/4 d1\sustainOff\sustainOn \arpeggio
 \once \override Staff.BarLine.stencil =
 	    #(lambda (grob)
