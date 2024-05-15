@@ -1,4 +1,5 @@
 %fifteen inventions project
+
 \book {
   \outcover
   \pageBreak
@@ -48,18 +49,6 @@
     }
   }
 
-  \markuplist {
-    \fill-line {
-      \line { \null }
-    \center-column {
-      \vspace #15
-      \line { \caps "This page is intentionally left blank" }
-    }
-    \line { \null}
-  }
-  }
-  \pageBreak
-
   \bookpart {
     \tocItem \markup { "6. " \bold "Tempo giusto," \italic "spianato" }
     \score {
@@ -91,26 +80,11 @@
     \score {
       \include "manuscripts/8i.ly"
     }
-  }
-
-  \bookpart {
     \tocItem \markup { "9. " \bold "Largo," \italic "dolce; espressivo" }
     \score {
       \include "manuscripts/9i.ly"
     }
   }
-
-  \markuplist {
-    \fill-line {
-      \line { \null }
-    \center-column {
-      \vspace #15
-      \line { \caps "This page is intentionally left blank" }
-    }
-    \line { \null}
-  }
-  }
-  \pageBreak
 
   \bookpart {
     \tocItem \markup { "10. " \bold "Presto," \italic "staccatissimo/legato" }
@@ -138,9 +112,6 @@
     \score {
       \include "manuscripts/13i.ly"
     }
-  }
-
-  \bookpart {
     \tocItem \markup { "14. " \bold "Molto rubato" }
     \score {
       \include "manuscripts/14i.ly"

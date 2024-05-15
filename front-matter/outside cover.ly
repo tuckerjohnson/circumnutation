@@ -17,24 +17,24 @@ outcover = \markuplist {
             \line { \null }
           }
         \right-column {
-            \vspace #14
+            \vspace #15
             \line { \fontsize #8 \bold \underline \xtitle }
 	    \vspace #-0.1
             \line { \fontsize #3 \sans \xcomp }
 	    \vspace #3
-	    \line { \fontsize #2 \sans \concat { \xsub } }
+	    \line { \fontsize #2 \sans \concat { "Fifteen Inventions for " \xinst } }
       }
     }
-    \vspace #23
+    \vspace #26.25
     \fill-line {
       \line { \null }
       \line { \null }
       \line { \null }
       \line { \null }
       \center-column {
-	    \xumbel
-	    \vspace #0.3
-        \line { \concat { " " \fontsize #1 \hbracket \sans \bold "  umbel press " \char ##x00A9 } }
+	\xumbel
+	\vspace #0.3
+	  \line { \fontsize #1 \hbracket \sans \bold "  umbel press  " }
       }
       \line { \null }
     }

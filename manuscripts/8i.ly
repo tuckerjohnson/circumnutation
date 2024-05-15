@@ -114,7 +114,6 @@ des,4( bes' ees,4.)
 \layout {
 \context {
 \Score
-\override BarNumber.break-visibility = ##(#f #f #f)
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
 }
 }

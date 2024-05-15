@@ -69,7 +69,6 @@ ges( f ees aes, des) |
 \layout {
 \context {
 \Score
-\override BarNumber.font-size = #1
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
 }
 }

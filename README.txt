@@ -2,7 +2,7 @@ Usage
 
 Required Fonts:
 
-- haydn (https://github.com/OpenLilyPondFonts/haydn)
+- scorlatti (https://github.com/OpenLilyPondFonts/scorlatti)
 - Junicode
 - Syne
 

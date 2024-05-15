@@ -43,7 +43,6 @@ bes8( ees,8 <c' f,>4) <d g,>4( <e a,>) <fis b,>( <gis cis,>)\fermata |
 \layout {
 \context {
 \Score
-\override BarNumber.font-size = #1
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
 \override TimeSignature.stencil = ##f
 }

@@ -78,7 +78,6 @@ r8 <d fis>4.(\mf\< <cis g'>8~ |
 \layout {
 \context {
 \Score
-\override BarNumber.font-size = #1
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
 }
 }

@@ -62,7 +62,6 @@ r4 r8 a'''''8-. fis-. dis-. \tuplet 3/2 { bes-.\sustainOff ees,-. d-. } \clef ba
 \layout {
 \context {
 \Score
-\override BarNumber.font-size = #1
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/24)
 }
 }

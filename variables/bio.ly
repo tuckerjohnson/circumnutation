@@ -38,7 +38,7 @@ xbio = \markup {
       Penn State's Living Music, and the New Music Consortium. Additionally,
       Tucker serves as a sound engineer, technician, and teaching assistant
       with the Electroacoustic Music Studios at Eastman (EMuSE) and has
-      produced and performed dozens of electroacoustic works in this position
+      produced and performed hundreds of electroacoustic works in this position
       with artists such as Alan Pierson, Joao Pedro Oliviera, John Chowning,
       Jamie Jordan and more.
     }
@@ -58,10 +58,11 @@ xbio = \markup {
       He holds the MA and Catherine Filene Shouse Arts Leadership Certificate
       from the Eastman School of Music and the BM from Penn State University.
       He also studied at the University of South Florida. He has studied with
-      Robert Morris, Matthew Barber, David Liptak, Baljinder Sekhon, Sarah
-      Genevieve Burghart Rice, and Susanna Hancock. Tucker serves as instructor
-      of the Penn State Young Composers Institute, a virtual program for high
-      school students running in the fall and spring.
+      Robert Morris, Matthew Barber, Carlos Sánchez-Gutiérrez, David Liptak,
+      Baljinder Sekhon, Sarah Genevieve Burghart Rice, and Susanna Hancock.
+      Tucker serves as instructor of the Penn State Young Composers Institute,
+      a virtual program for high school students running in the fall and
+      spring.
     }
     \vspace #0.8
   }
