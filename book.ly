@@ -16,6 +16,10 @@
   }
 
   \bookpart {
+    \paper {
+      system-system-spacing = #'((basic-distance . 10) (minimum-distance . 5) (padding . 11))
+      score-system-spacing = #'((basic-distance . 4) (minimum-distance . 4) (padding . 7))
+    }
     \tocItem \markup { "1. " \bold "Vivace," \italic "volante; non legato" }
     \header {
 	title = \markup { \fontsize #1 \xtitle }
@@ -59,6 +63,11 @@
     \score {
       \include "manuscripts/7i.ly"
     }
+  \paper { systems-per-page = #5 }
+    \tocItem \markup { "8. " \bold "Presto" }
+    \score {
+      \include "manuscripts/8i.ly"
+    }
   }
 
   \markuplist {
@@ -74,11 +83,6 @@
   \pageBreak
 
   \bookpart {
-  \paper { systems-per-page = #4 }
-    \tocItem \markup { "8. " \bold "Presto" }
-    \score {
-      \include "manuscripts/8i.ly"
-    }
     \tocItem \markup { "9. " \bold "Largo," \italic "dolce; espressivo" }
     \score {
       \include "manuscripts/9i.ly"

@@ -61,6 +61,7 @@ aes2.\fermata
 >>
 %\midi { }
 \layout {
+  system-count = #3
 \context {
 \Score
 \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 5) (minimum-distance . 4) (padding . 5) (stretchability . 0))
