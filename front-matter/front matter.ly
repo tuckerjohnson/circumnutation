@@ -28,6 +28,7 @@ front-matter = \markuplist {
       \line \small \italic { Thank you to \bold "Xingyi Chen, Zihan Wu," and \bold "Ko Muramatsu" for playing and helping with these pieces as they grew.  }
     }
     \right-column {
+        \vspace #-0.5
         \fontsize #-5 \right-column {
         \line { \tiny \typewriter { \shortHash &ndash; \subject } }
         \line { \tiny \typewriter { \commitDate } }
