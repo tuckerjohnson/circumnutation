@@ -3,8 +3,9 @@
 \paper {
   #(include-special-characters)
   first-page-number = -1
+  footnote-separator-markup = \markup { \left-column { \vspace #0.5 \draw-line #'(6 . 0) } }
   print-page-number = ##f
-  tocTitleMarkup = \markup { \null }
+  tocTitleMarkup = \markup { \hbracket \sans \bold " contents " }
   tocItemMarkup = \markup \fill-line {
     \fill-with-pattern #1.5 #CENTER .
     \line {
@@ -23,9 +24,9 @@
   max-systems-per-page = #8
 
   last-bottom-spacing = #'((basic-distance . 5) (minimum-distance . 5) (padding . 0))
-  system-system-spacing = #'((basic-distance . 3) (minimum-distance . 2) (padding . 7))
-  score-system-spacing = #'((basic-distance . 4) (minimum-distance . 4) (padding . 7))
-  top-system-spacing = #'((basic-distance . 1) (minimum-distance . 1) (padding . 1) (stretchability . 0))
+  system-system-spacing = #'((basic-distance . 6) (minimum-distance . 2) (padding . 7))
+  score-system-spacing = #'((basic-distance . 4) (minimum-distance . 4) (padding . 10))
+  top-system-spacing = #'((basic-distance . 0) (minimum-distance . 0) (padding . 0))
 
   oddHeaderMarkup = \markup {
     \concat { \if \on-page #5 \oddhead }
@@ -60,6 +61,7 @@
     \concat { \if \on-page #17 \oddfoot }
     \concat { \if \on-page #19 \oddfoot }
     \concat { \if \on-page #21 \oddfoot }
+    \concat { \if \on-page #23 \fill-line { \null \tiny \typewriter \longHash \null } }
   }
   evenFooterMarkup = \markup {
     \concat { \if \on-page #2 \evfoot }

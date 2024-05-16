@@ -3,9 +3,11 @@
 front-matter = \markuplist {
   \fill-line {
     \left-column {
+      \vspace #-0.5
       \line { \bold \xtitle \concat { " [" \xyear "]" } }
       \line { \xinst " | " \xdur }
       \line { \xcomp }
+
       \vspace #25
     }
     \center-column {
@@ -16,11 +18,20 @@ front-matter = \markuplist {
       \override #'(thickness . 5)
       \draw-squiggle-line #0.5 #'(20 . 0) ##t
       \vspace #3
-      \line { \hbracket \bold "program notes"}
+      \line { \hbracket \bold \sans " program notes "}
       \vspace #0.2
       \xpnote
       \vspace #3
+      \override #'(thickness . 5)
+      \draw-squiggle-line #0.5 #'(20 . 0) ##t
+      \vspace #4
+      \line \small \italic { Thank you to \bold "Xingyi Chen, Zihan Wu," and \bold "Ko Muramatsu" for playing and helping with these pieces as they grew.  }
     }
-    \right-column { \vspace #2 }
+    \right-column {
+        \fontsize #-5 \right-column {
+        \line { \tiny \typewriter { \shortHash &ndash; \subject } }
+        \line { \tiny \typewriter { \commitDate } }
+      }
+      \vspace #2 }
   }
 }

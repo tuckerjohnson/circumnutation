@@ -63,7 +63,11 @@
 	{
 	  \voiceOne
 	  \once \override Staff.TextScript.outside-staff-priority = #1500
-	  r8\sustainOn_\markup { \lower #10 \tiny { "[slight rit. into fermatas]" } } f8~\shortfermata f4~ f4. |
+	  r8\sustainOn f8~
+      \footnote \markup \fontsize #-5 \number "1 " #'(-0.5 . 0.75) \markup \small \left-column {
+        \line { \super \number 1 "short fermatas should be very brief, and can be preceded by slight ritardando" }
+      }
+      \shortfermata      f4~ f4. |
 	}
 	\new Voice {
 	  \voiceTwo
@@ -123,6 +127,7 @@
 \layout {
 \context {
 \Score
+\override StaffGrouper.staff-staff-spacing = #'((basic-distance . 6) (minimum-distance . 5) (padding . 3) (stretchability . 0))
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
 }
 }

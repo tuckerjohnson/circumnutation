@@ -78,6 +78,7 @@ r8 <d fis>4.(\mf\< <cis g'>8~ |
 \layout {
 \context {
 \Score
+\override StaffGrouper.staff-staff-spacing = #'((basic-distance . 5) (minimum-distance . 4) (padding . 5) (stretchability . 0))
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
 }
 }

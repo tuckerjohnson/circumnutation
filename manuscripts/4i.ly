@@ -15,7 +15,8 @@
 \time 2/4 fis8 gis4) \override TextSpanner.bound-details.left.text = "molto accel." a8(\startTextSpan |
 \time 4/4 aes16\< g bes8) \tuplet 3/2 { r16 a16_( b16 } c8)^\markup { \smaller \italic "intenso" } \stemNeutral f16( ges ees8) cis16( e d8~\ff |
 \time 2/4 d4)\stopTextSpan\fermata \stemUp \tempo "A tempo" ees,8(\mp c16 d |
-\time 3/4 fis8 gis8 a4 f4~ |
+\once \override NonMusicalPaperColumn.line-break-system-details = #'((extra-offset . (0 . 10)))
+\time 3/4 fis8 gis8 a4 f4~ | \break
 \time 2/4 \tuplet 3/2 { f8) g( e } b8 des8 |
 bes2)\fermata |
 }
@@ -61,9 +62,11 @@ bes2)\fermata |
 >>
 %\midi { }
 \layout {
+  ragged-last = ##t
 \context {
 \Score
-\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+\override StaffGrouper.staff-staff-spacing = #'((basic-distance . 5) (minimum-distance . 4) (padding . 3) (stretchability . 0))
+\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/32)
 \override TimeSignature.stencil = ##f
 }
 }

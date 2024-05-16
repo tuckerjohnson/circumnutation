@@ -21,7 +21,8 @@ g(\mf\> f' d c^"rit." a) |
 ais(\mp\< fis' dis b cis) |
 \time 4/4 g'4--\f\fermata aes,4~\mp^"Meno mosso" aes8 d16( f c4) |
 a2(^"poco rit." e'4~ e4)\fermata |
-r8^"Tempo primo" dis8-.-> cis4~-> cis8 fis16( g a,4)
+\tempo "Tempo primo"
+r8 dis8-.-> cis4~-> cis8 fis16( g a,4)
 \time 3/4 r8\f\> aes8_( d2) |
 \time 5/8 r8\mp\< b4( e,4) |
 e8(\mf\> f4~ f4) |
@@ -69,6 +70,7 @@ ges( f ees aes, des) |
 \layout {
 \context {
 \Score
+\override StaffGrouper.staff-staff-spacing = #'((basic-distance . 6) (minimum-distance . 5) (padding . 3) (stretchability . 0))
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
 }
 }

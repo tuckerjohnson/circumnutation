@@ -47,9 +47,7 @@
     \score {
       \include "manuscripts/5i.ly"
     }
-  }
-
-  \bookpart {
+    \paper { systems-per-page = #4 }
     \tocItem \markup { "6. " \bold "Tempo giusto," \italic "spianato" }
     \score {
       \include "manuscripts/6i.ly"
@@ -76,6 +74,7 @@
   \pageBreak
 
   \bookpart {
+  \paper { systems-per-page = #4 }
     \tocItem \markup { "8. " \bold "Presto" }
     \score {
       \include "manuscripts/8i.ly"
@@ -121,8 +120,6 @@
       \include "manuscripts/15i.ly"
     }
   }
-  \markup { \null }
-  \pageBreak
   \backcover
   \pageBreak
   \markup { \null }

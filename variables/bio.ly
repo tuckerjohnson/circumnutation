@@ -2,7 +2,7 @@
 
 xbio = \markup {
   \center-column {
-    \override #'(line-width . 75) \justify \tiny {
+    \override #'(line-width . 100) \justify  {
       \bold "Tucker Johnson" is a composer, performer, and educator pursuing
       the Ph.D. in Music Composition at the Eastman School of Music in
       Rochester, NY. His musical practice includes works for soloists,
@@ -16,7 +16,7 @@ xbio = \markup {
       teaching.
     }
     \vspace #0.8
-    \override #'(line-width . 75) \justify \tiny {
+    \override #'(line-width . 100) \justify  {
       Tucker's music has been concertized and honored at festivals and events,
       including the Dot-The-Line new music festival (Seoul), Longy Divergent
       Studio (Boston), soundSCAPE Festival (Cesena), Composing in the
@@ -28,7 +28,7 @@ xbio = \markup {
       Gitelman Prize and the Peter T. Luckie Award.
     }
     \vspace #0.8
-    \override #'(line-width . 75) \justify \tiny {
+    \override #'(line-width . 100) \justify  {
       A consistent supporter of new music, Tucker has helped organize many
       events, festivals, and concerts and served various music organizations
       throughout his academic career. Currently, he serves as technical
@@ -43,26 +43,25 @@ xbio = \markup {
       Jamie Jordan and more.
     }
     \vspace #0.8
-    \override #'(line-width . 75) \justify \tiny {
+    \override #'(line-width . 100) \justify  {
       In his research, he has worked to develop approaches to music composition
       and collaborative improvisation using mathematics, networked computer
       instruments, machine listening, ambisonics, and other computer-assisted
       methods, with a tendency to favor recycled and reclaimed computer
       hardware. Listeners can hear this work in improvised performances with
-      Belgian saxophonist Floris Van Der Veken, recordings with
-      percussionist/guitarist John McGovern, and performances with Ossia New
-      Music.
+      Belgian saxophonist Floris Van Der Veken and recordings with
+      percussionist/guitarist John McGovern.
     }
     \vspace #0.8
-    \override #'(line-width . 75) \justify \tiny {
+    \override #'(line-width . 100) \justify  {
       He holds the MA and Catherine Filene Shouse Arts Leadership Certificate
       from the Eastman School of Music and the BM from Penn State University.
       He also studied at the University of South Florida. He has studied with
       Robert Morris, Matthew Barber, Carlos Sánchez-Gutiérrez, David Liptak,
       Baljinder Sekhon, Sarah Genevieve Burghart Rice, and Susanna Hancock.
       Tucker serves as instructor of the Penn State Young Composers Institute,
-      a virtual program for high school students running in the fall and
-      spring.
+      a virtual program for high school students running a fall, spring, and
+      summer session.
     }
     \vspace #0.8
   }

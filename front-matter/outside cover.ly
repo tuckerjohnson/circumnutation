@@ -22,7 +22,7 @@ outcover = \markuplist {
 	    \vspace #-0.1
             \line { \fontsize #3 \sans \xcomp }
 	    \vspace #3
-	    \line { \fontsize #2 \sans \concat { "Fifteen Inventions for " \xinst } }
+	    \line { \fontsize #2 \sans \concat { \xsub } }
       }
     }
     \vspace #26.25

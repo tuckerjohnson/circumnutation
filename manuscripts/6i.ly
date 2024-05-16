@@ -1,6 +1,11 @@
 %fifteen inventions project
 \new PianoStaff \with {
   instrumentName = \markup { \large "&numero;" \number 6 }
+  \override StaffGrouper.staff-staff-spacing =
+  #'((basic-distance . 2)
+  (minimum-distance . 1)
+  (padding . 3)
+  (stretchability . 0))
 }
   <<
 \set PianoStaff.connectArpeggios = ##t
@@ -44,7 +49,11 @@ f,2( |
 \time 1/4 gis'4~\p\>|
 \time 4/4 gis1~ |
 \time 5/4 gis8\pp r8 r4 r2. |
-\time 2/4 s2_\markup { \lower #4.5 \tiny \parenthesize \dynamic mf }|
+\time 2/4 s2
+\footnote \markup \fontsize #-5 \number " 2" #'(0.5 . 0.5) \markup \small \left-column {
+  \line { \super \number 2 "parenthesized, courtesy dynamics apply to nearest pitches" }
+      }
+_\markup { \lower #4.5 \tiny \parenthesize \dynamic mf }|
 \time 5/4 ees8-- r8 r4 r2. |
 \time 2/4 s2 |
 \time 4/4 c'1_\markup { \lower #3 \tiny \parenthesize \dynamic pp } |
@@ -108,7 +117,7 @@ s2 |
 }
 \\
 \relative { \tmarktfour \numericTimeSignature \override Hairpin.to-barline = ##f
-\time 1/4 s4_\markup { \lower #4 \tiny { "[parenthesized, courtesy dynamics apply to nearest pitches]" } }  |
+\time 1/4 s4  |
 \time 4/4 s1 |
 \time 5/4 b,8-- r8 r4 r2. |
 \time 2/4 a2 |
@@ -150,6 +159,7 @@ s2 |
 >>
 %\midi { }
 \layout {
+  system-count = #5
 \context {
 \Score
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)

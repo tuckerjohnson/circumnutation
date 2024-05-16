@@ -3,14 +3,22 @@
 backcover = \markuplist { \fill-line {
     \line { \null }
     \center-column {
-        \vspace #1
-        \line { \hbracket \bold \concat { "about " \xcomp } }
-        \vspace #1
+        \vspace #3
+        \line { \hbracket \sans \bold \concat { " about " \xcomp " " } }
+        \vspace #0.2
         \xbio
-        \vspace #1.3
-        \line { ================================= }
-        \vspace #1.3
-        \override #'(line-width . 75) \justify \typewriter \tiny { This score was engraved on #(string-append (strftime "%m-%d-%Y" (localtime (current-time))) ",") using LilyPond version #(string-append (lilypond-version) ".") If you would like to view the most recent version of the input documents that generated it, visit \sans \bold https://github.com/tuckerjohnson/circumnutation.}
+        \vspace #2
+        \override #'(thickness . 5)
+        \draw-squiggle-line #0.5 #'(20 . 0) ##t
+        \vspace #2
+        \override #'(line-width . 100)
+        \justify \tiny \sans {
+          This score was engraved on #(string-append (strftime "%m-%d-%Y"
+          (localtime (current-time))) ",") using LilyPond version
+          #(string-append (lilypond-version) ".") If you would like to view the
+          most recent version of the input documents that generated it, visit
+          \sans \bold \concat { "https://github.com/tuckerjohnson/" \xtitle "." }
+        }
     }
     \line { \null }
     }

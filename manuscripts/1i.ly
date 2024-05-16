@@ -64,6 +64,8 @@
 \layout {
 \context {
 \Score
+\override NonMusicalPaperColumn.line-break-system-details = #'((extra-offset . (0 . -10)))
+\override StaffGrouper.staff-staff-spacing = #'((basic-distance . 5) (minimum-distance . 4) (padding . 2) (stretchability . 0))
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
 \override TimeSignature.stencil = ##f
 }
