@@ -5,7 +5,6 @@
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "u3" {
-\accidentalStyle piano
 <<
 \relative { \tempo "Allegro moderato" 4.=104 \numericTimeSignature
 \time 6/8
@@ -28,7 +27,6 @@ d2.\fermata \bar "|."
 >>
 }
 \new Staff = "d3" { \clef bass
-\accidentalStyle piano
 <<
 \relative { \numericTimeSignature
 \time 6/8

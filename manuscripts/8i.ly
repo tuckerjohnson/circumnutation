@@ -5,7 +5,6 @@
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "u" {
-\accidentalStyle piano
 <<
 \relative { \override Score.MetronomeMark.padding = #2.2 \tempo Presto 4=154
 \override DynamicLineSpanner.staff-padding = \phds
@@ -32,7 +31,7 @@ r8 g^.^> r4 r4. |
 r4 r4 r8 cis^.^> r8 |
 r8 bes8^.^> r4 r4. |
 gis8^.^> s8 r4 r4. |
-r4 r4 r8 r8 ees8^.^> |
+r4 r4 r8 r8 ees8^.^> \bar "||"
 \tempo "Meno mosso" 4=72
 ges^.^> r8 r4 r4. |
 r4 r4 r8 r8 ces8^.^> |
@@ -41,7 +40,6 @@ r4 r4 r8 r8 ces8^.^> |
 >>
 }
 \new Staff = "d" \with { \consists "Merge_rests_engraver" } { \clef bass
-\accidentalStyle piano
 <<
 \relative { \override Score.MetronomeMark.padding = #2.2
 \override DynamicLineSpanner.staff-padding = \phds

@@ -13,12 +13,29 @@ front-matter-cont = \markuplist {
       \column {
         \override #'(line-width . 90)
 	    \justify {
-          &middot; In invention one \italic "(Vivace)" accidentals apply only
-          to the note they precede, but in all other inventions accidentals
-          carry through the measure.
+          \tiny \number 1 \tiny \number 2  "   " &middot;
+          In Invention \bold 1 \italic "(Vivace)" accidentals apply only
+          to the note they precede, but in all other inventions
+          "           " \bold "(2-15)" accidentals carry through the measure.
         }
       }
       \vspace #0.4
+      \column {
+        \override #'(line-width . 90)
+	    \justify {
+          \tiny \number 3 \hspace #4 &middot;
+          In Invention \bold 4 \italic "(Largo)" short fermata marks should be brief and can be preceded by a slight
+          ritard.
+        }
+      }
+      \vspace #0.4
+      \column {
+        \override #'(line-width . 90)
+	    \justify {
+          \tiny \number 4 \tiny \number 5 \tiny \number 6 &middot; In Inventions \bold "6, 11, and 12" parenthesized, courtesy dynamics apply to the nearest pitches. "           "
+        }
+      }
+      \vspace #0.8
       \column {
         \override #'(line-width . 90)
 	    \justify {

@@ -6,12 +6,15 @@
     \set PianoStaff.connectArpeggios = ##t
     \override PianoStaff.Arpeggio.arpeggio-direction = #UP
     \new Staff = "ui2" {
-      \accidentalStyle piano
     <<
       \relative {
         \override Score.MetronomeMark.padding = #2.2 \tempo Presto 4=168
         \override DynamicLineSpanner.staff-padding = \phds
-        \time 7/8 d'8[\offset Y-offset 2^\markup { \smaller \italic "bruscamente" } e-- \change Staff = "di2" fis,-.-> \change Staff = "ui2" g'( a) \change Staff = "di2" b,-- \change Staff = "ui2" cis']( |
+        \time 7/8 d'8[\offset Y-offset 2^\markup { \smaller \italic "bruscamente" } e-- \change Staff = "di2"
+        \footnote \markup \fontsize #-5 \number "2 " #'(-0.5 . -2) \markup \small \left-column {
+          \line { \super \number 2 "Accidentals carry through until the barline" \italic "(for Invenions 2-15)" }
+        } Accidental
+        fis,-.-> \change Staff = "ui2" g'( a) \change Staff = "di2" b,-- \change Staff = "ui2" cis']( |
         ees[ f) \change Staff = "di2" aes,,-- \change Staff = "ui2" bes''( c) \change Staff = "di2" g,,-- d-.->] |
         cis'[-- \change Staff = "ui2" b'' \change Staff = "di2" a,,,-.-> \change Staff = "ui2" gis'''( fis e) dis,]-- |
         c'[ \change Staff = "di2" bes,-- \change Staff = "ui2" f'' \change Staff = "di2" g,,,-.-> \change Staff = "ui2" a''' d,,-- e'] | \break
@@ -24,9 +27,9 @@
         \stemUp cis'[-- gis-.-> fis'( a b) d,-- \change Staff = "ui2" e'] \stemNeutral |
         \change Staff = "di2" f,[-- \change Staff = "ui2" g'( aes) \change Staff = "di2" bes,-- c,,-.-> \change Staff = "ui2" des'''( ees)]\fermata |
         d[^\markup { \raise #3 \bold "A tempo" } \change Staff = "di2" c,,,-.-> \change Staff = "ui2" bes''' \change Staff = "di2" aes,-- \change Staff = "ui2" g' \change Staff = "di2" f,-- \change Staff = "ui2" ees'] |
-\change Staff = "di2" \stemUp cis,[-- b'( a fis e) g,-.-> d']-- \stemNeutral |
-ees,-.->[ f' ges-- aes bes-- \change Staff = "ui2" c( des] |
-e)[ \change Staff = "di2" a,( b) \change Staff = "ui2" g' \change Staff = "di2" f,,-.-> \change Staff = "ui2" d''( c] |
+        \change Staff = "di2" \stemUp cis,[-- b'( a fis e) g,-.-> d']-- \stemNeutral |
+        ees,-.->[ f' ges-- aes bes-- \change Staff = "ui2" c( des] |
+      e)[ \change Staff = "di2" a,( b) \change Staff = "ui2" g' \change Staff = "di2" f,,-.-> \change Staff = "ui2" d''( c] |
 \change Staff = "di2" b)[ ais,,-.-> gis''( fis) e( dis) cis']( |
 a[ bes) c,-- d,-.-> \change Staff = "ui2" ees''( f) \change Staff = "di2" g,] |
 gis,[-.-> \change Staff = "ui2" a''( b) cis,-- e' fis,-- dis'(] |
@@ -39,7 +42,6 @@ d[ c) \change Staff = "di2" bes,( a) \change Staff = "ui2" g'( f) \change Staff 
 >>
 }
 \new Staff = "di2" { \clef bass
-\accidentalStyle piano
 <<
 \relative { \tmarktthree \set tieWaitForNote = ##t
 \override DynamicLineSpanner.staff-padding = #3

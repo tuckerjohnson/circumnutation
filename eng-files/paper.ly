@@ -11,7 +11,7 @@
     \line {
       \fromproperty #'toc:indent \fromproperty #'toc:text
     }
-    \fromproperty #'toc:page
+    \tiny \number \fromproperty #'toc:page
   }
   #(set-paper-size "arch a")
   top-margin = 0.5\in
@@ -32,12 +32,11 @@
     \concat { \if \on-page #5 \oddhead }
     \concat { \if \on-page #7 \oddhead }
     \concat { \if \on-page #9 \oddhead }
+    \concat { \if \on-page #11 \oddhead }
     \concat { \if \on-page #13 \oddhead }
     \concat { \if \on-page #15 \oddhead }
     \concat { \if \on-page #17 \oddhead }
     \concat { \if \on-page #19 \oddhead }
-    \concat { \if \on-page #21 \oddhead }
-
   }
   evenHeaderMarkup = \markup {
     \concat { \if \on-page #6 \evhead }
@@ -48,7 +47,6 @@
     \concat { \if \on-page #16 \evhead }
     \concat { \if \on-page #18 \evhead }
     \concat { \if \on-page #20 \evhead }
-    \concat { \if \on-page #22 \evhead }
 
   }
   oddFooterMarkup = \markup {
@@ -56,16 +54,16 @@
     \concat { \if \on-page #5 \oddfoot }
     \concat { \if \on-page #7 \oddfoot }
     \concat { \if \on-page #9 \oddfoot }
+    \concat { \if \on-page #11 \oddfoot }
     \concat { \if \on-page #13 \oddfoot }
     \concat { \if \on-page #15 \oddfoot }
     \concat { \if \on-page #17 \oddfoot }
     \concat { \if \on-page #19 \oddfoot }
-    \concat { \if \on-page #21 \oddfoot }
-    \concat { \if \on-page #23 \fill-line { \null \tiny \typewriter \longHash \null } }
+    \concat { \if \on-page #21 \fill-line { \null \tiny \typewriter \longHash \null } }
   }
   evenFooterMarkup = \markup {
     \concat { \if \on-page #2 \evfoot }
-    \concat { \if \on-page #4 \fill-line { \null \xcr \null } }
+    \concat { \if \on-page #4 \fill-line { \null \bold \xcr \null } }
     \concat { \if \on-page #6 \evfoot }
     \concat { \if \on-page #8 \evfoot }
     \concat { \if \on-page #10 \evfoot }
@@ -74,6 +72,5 @@
     \concat { \if \on-page #16 \evfoot }
     \concat { \if \on-page #18 \evfoot }
     \concat { \if \on-page #20 \evfoot }
-    \concat { \if \on-page #22 \evfoot }
   }
 }

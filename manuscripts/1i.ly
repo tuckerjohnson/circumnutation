@@ -34,7 +34,11 @@
   \relative { \tmarkione
   \omit Staff.BarLine
   \override Staff.BarLine.allow-span-bar = ##f
-  \time 28/16 gis,16[\p ais b cis dis e fis]
+  \time 28/16
+  \footnote \markup \fontsize #-5 \number "1 " #'(-0.5 . -0.75) \markup \small \left-column {
+        \line { \super \number 1 "Accidentals apply only to the note they precede" }
+      } Accidental
+  gis,16[\p ais b cis dis e fis]
   g16[ a c \change Staff = "ui1" d f ees \change Staff = "di1" bes]
   a16[ g fis e d c b]
   aes16[ f des ees g bes c] |
@@ -64,7 +68,7 @@
 \layout {
 \context {
 \Score
-\override NonMusicalPaperColumn.line-break-system-details = #'((extra-offset . (0 . -10)))
+\override NonMusicalPaperColumn.line-break-system-details = #'((extra-offset . (0 . -1)))
 \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 5) (minimum-distance . 4) (padding . 2) (stretchability . 0))
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
 \override TimeSignature.stencil = ##f

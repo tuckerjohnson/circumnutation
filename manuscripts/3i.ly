@@ -5,7 +5,6 @@
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "u3" {
-\accidentalStyle piano
 <<
 \relative { \tmarktwo \numericTimeSignature
 \time 4/4 r8^\markup { \smaller \italic "giocoso" } g''8(\mp a,4~ a8) d16( f16 c4) |
@@ -20,7 +19,7 @@ c8-.[\> f8-.] a,( d) g,2\mp |
 g(\mf\> f' d c^"rit." a) |
 ais(\mp\< fis' dis b cis) |
 \time 4/4 g'4--\f\fermata aes,4~\mp^"Meno mosso" aes8 d16( f c4) |
-a2(^"poco rit." e'4~ e4)\fermata |
+a2(^"poco rit." e'4~ e4)\fermata \bar "||"
 \tempo "Tempo primo"
 r8 dis8-.-> cis4~-> cis8 fis16( g a,4)
 \time 3/4 r8\f\> aes8_( d2) |
@@ -32,7 +31,6 @@ bes4(\mp\< c4.)
 >>
 }
 \new Staff = "d3" { \clef bass
-\accidentalStyle piano
 <<
 \relative { \tmarktwo \numericTimeSignature
 \time 4/4 R1 |

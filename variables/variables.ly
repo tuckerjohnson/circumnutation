@@ -6,7 +6,7 @@ xsub = \markup { fifteen inventions for keyboard instruments }
 xcomp = \markup { Tucker Johnson }
 xinst = \markup  { keyboard }
 xdur = \markup { "20\" - 12\'" }
-xcr = \markup \tiny { Copyright \char ##x00A9 MMXXIII Umbel Press. }
+xcr = \markup \tiny { Copyright \char ##x00A9 MMXXIII Umbel Press. (ASCAP) }
 oddhead = \markup { \fill-line { \null \center-column { \bold { \xcomp } "  " } \null } }
 evhead = \markup { \fill-line { \null \center-column { \bold { \xtitle } "  " } \null } }
 oddfoot = \markup { \fill-line { \null \center-column { " " \concat { " - " \fromproperty #'page:page-number-string " - " } } \null } }
@@ -14,7 +14,7 @@ evfoot = \markup { \fill-line { \null \center-column { " " \concat { " - " \from
 
 %music
 tmarkione = \tempo "Vivace" 4 = 136
-tmarksev = \tempo "Poco rubato" 4 = 46-52
+tmarksev = \tempo "Poco rubato" 4 = 46
 tmarktfour = \tempo "Tempo giusto" 4 = 152
 tmarktfourb = \tempo "Tempo giusto" 4 = 152
 tmarktthree = \tempo "Presto" 4 = 168

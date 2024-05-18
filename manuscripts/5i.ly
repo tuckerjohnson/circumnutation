@@ -8,7 +8,6 @@
   \new Staff = "u" \with { \consists "Merge_rests_engraver" }
   {
     \set Staff.pedalSustainStyle = #'mixed
-    \accidentalStyle piano
     \relative {
       \numericTimeSignature
       \tempo Andante 4 = 66
@@ -54,7 +53,6 @@
   \new Staff = "d" \with { \consists "Merge_rests_engraver" }
   {
     \set Staff.pedalSustainStyle = #'mixed
-    \accidentalStyle piano
     \relative {
       \numericTimeSignature
       \clef bass
@@ -64,8 +62,8 @@
 	  \voiceOne
 	  \once \override Staff.TextScript.outside-staff-priority = #1500
 	  r8\sustainOn f8~
-      \footnote \markup \fontsize #-5 \number "1 " #'(-0.5 . 0.75) \markup \small \left-column {
-        \line { \super \number 1 "short fermatas should be very brief, and can be preceded by slight ritardando" }
+      \footnote \markup \fontsize #-5 \number "3 " #'(-0.5 . 0.75) \markup \small \left-column {
+        \line { \super \number 3 "short fermatas should be very brief, and can be preceded by slight ritardando" }
       }
       \shortfermata      f4~ f4. |
 	}

@@ -29,9 +29,9 @@ front-matter = \markuplist {
     }
     \right-column {
         \vspace #-0.5
-        \right-column {
-        \line { \tiny \typewriter { \shortHash &ndash; \subject } }
-        \line { \tiny \typewriter { \commitDate } }
+        \right-column \fontsize #-1 {
+        \line { \fontsize #-2 \typewriter { \shortHash &ndash; \subject } }
+        \line { \fontsize #-2 \typewriter { \commitDate } }
       }
       \vspace #2 }
   }

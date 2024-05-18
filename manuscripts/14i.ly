@@ -6,7 +6,6 @@
   \override PianoStaff.Arpeggio.arpeggio-direction = #UP
   \set PianoStaff.connectArpeggios = ##t
   \new Staff = "u" \with { \consists "Merge_rests_engraver" } {
-    \accidentalStyle piano
     <<
       \relative {
 	\tempo "Molto rubato" 4=82 \numericTimeSignature
@@ -33,7 +32,6 @@
   }
   \new Staff = "d" \with { \consists "Merge_rests_engraver" } { \clef bass
     \set Staff.pedalSustainStyle = #'mixed
-    \accidentalStyle piano
     <<
       \relative { \numericTimeSignature
 	<<
@@ -82,8 +80,11 @@
 >>
 %\midi { }
 \layout {
+  system-count = 3
 \context {
 \Score
+    \override StaffGrouper.staff-staff-spacing =
+    #'((basic-distance . 5) (minimum-distance . 4) (padding . 2) (stretchability . 0))
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/20)
 }
 }

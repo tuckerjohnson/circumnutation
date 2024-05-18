@@ -11,20 +11,7 @@ cover =  \markuplist {
             \vspace #1
             \line { \fontsize #5 \bold  \xtitle }
             \line { \italic \xsub }
-            \vspace #5
-%	    \line { Submitted in Partial Fulfillment }
-%	    \line { of the }
-%	    \line { Requirements for the Degree }
-%	    \line { Master of Arts }
-%	    \vspace #1
-%	    \line { Supervised by }
-%	    \line { Dr. Matthew Barber }
-%	    \vspace #1
-%	    \line { Department of Composition }
-%	    \line { Eastman School of Music }
-%	    \vspace #1
-%	    \line { University of Rochester }
-%	    \line { Rochester, New York }
+            \vspace #8
           }
         \right-column {
             \line { \null }

@@ -11,7 +11,6 @@
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "ui6" \with { \consists "Merge_rests_engraver" } {
-\accidentalStyle piano
 <<
 \relative { \tmarktfour \numericTimeSignature \override Hairpin.to-barline = ##f
 \time 1/4 s4^\markup { \smaller \italic "spianato" } |
@@ -50,8 +49,8 @@ f,2( |
 \time 4/4 gis1~ |
 \time 5/4 gis8\pp r8 r4 r2. |
 \time 2/4 s2
-\footnote \markup \fontsize #-5 \number " 2" #'(0.5 . 0.5) \markup \small \left-column {
-  \line { \super \number 2 "parenthesized, courtesy dynamics apply to nearest pitches" }
+\footnote \markup \fontsize #-5 \number " 4" #'(0.5 . 0.5) \markup \small \left-column {
+  \line { \super \number 4 "parenthesized, courtesy dynamics apply to nearest pitches" }
       }
 _\markup { \lower #4.5 \tiny \parenthesize \dynamic mf }|
 \time 5/4 ees8-- r8 r4 r2. |
@@ -82,7 +81,6 @@ s2 |
 >>
 }
 \new Staff = "di6" \with { \consists "Merge_rests_engraver" } { \clef bass
-\accidentalStyle piano
 <<
 \relative { \tmarktfour \numericTimeSignature \override Hairpin.to-barline = ##f
 \override DynamicLineSpanner.staff-padding = \phds
@@ -160,8 +158,10 @@ s2 |
 %\midi { }
 \layout {
   system-count = #5
-\context {
-\Score
-\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
-}
+  \context {
+    \Score
+    \override StaffGrouper.staff-staff-spacing =
+    #'((basic-distance . 5) (minimum-distance . 4) (padding . 3) (stretchability . 0))
+    \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/10)
+  }
 }

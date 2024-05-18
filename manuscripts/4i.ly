@@ -6,7 +6,6 @@
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "ui4" {
-\accidentalStyle piano
 <<
 \relative { \tmarkfi
 \time 3/8 g'16([\mp^\markup { \smaller \italic "dolce; espr." } f] \tuplet 3/2 { e8 g f } |
@@ -35,7 +34,6 @@ bes2)\fermata |
 >>
 }
 \new Staff = "di4" { \clef bass
-\accidentalStyle piano
 <<
 \relative { %\tmarkfi
 \time 3/8 r8 <d, a' c>4\pp |

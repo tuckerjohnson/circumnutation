@@ -19,6 +19,7 @@
     \paper {
       system-system-spacing = #'((basic-distance . 10) (minimum-distance . 5) (padding . 11))
       score-system-spacing = #'((basic-distance . 4) (minimum-distance . 4) (padding . 7))
+      page-count = #2
     }
     \tocItem \markup { "1. " \bold "Vivace," \italic "volante; non legato" }
     \header {
@@ -70,26 +71,11 @@
     }
   }
 
-  \markuplist {
-    \fill-line {
-      \line { \null }
-    \center-column {
-      \vspace #15
-      \line { \caps "This page is intentionally left blank" }
-    }
-    \line { \null}
-  }
-  }
-  \pageBreak
-
   \bookpart {
     \tocItem \markup { "9. " \bold "Largo," \italic "dolce; espressivo" }
     \score {
       \include "manuscripts/9i.ly"
     }
-  }
-
-  \bookpart {
     \tocItem \markup { "10. " \bold "Presto," \italic "staccatissimo/legato" }
     \score {
       \include "manuscripts/10i.ly"
@@ -119,12 +105,16 @@
     \score {
       \include "manuscripts/14i.ly"
     }
+  }
+
+  \bookpart {
     \tocItem \markup { "15. " \bold "Poco rubato," \italic "semplicemente; sotto voce" }
     \score {
       \include "manuscripts/15i.ly"
     }
   }
+
   \backcover
   \pageBreak
-  \markup { \null }
+  \markup { \fill-line { \center-column { \vspace #24 \xumbel } } }
 }

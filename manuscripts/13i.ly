@@ -6,7 +6,6 @@
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "u3" \with { \consists "Merge_rests_engraver" } {
-\accidentalStyle piano
 <<
 \relative { \tempo "Con moto" 4=98 \numericTimeSignature
 \override Hairpin.to-barline = ##f
@@ -29,7 +28,6 @@ r4^"Molto accel." f,16-.\> g-. aes-. bes-. b-. d( a' c \tempo "Presto possible" 
 }
 \new Staff = "d3" \with { \consists "Merge_rests_engraver" } { \clef bass
 \set Staff.pedalSustainStyle = #'mixed
-\accidentalStyle piano
 <<
 \relative { \numericTimeSignature
 \time 4/4
@@ -62,6 +60,8 @@ r4 r8 a'''''8-. fis-. dis-. \tuplet 3/2 { bes-.\sustainOff ees,-. d-. } \clef ba
 \layout {
 \context {
 \Score
+    \override StaffGrouper.staff-staff-spacing =
+    #'((basic-distance . 6) (minimum-distance . 4) (padding . 5) (stretchability . 5))
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/24)
 }
 }

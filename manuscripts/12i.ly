@@ -6,12 +6,15 @@
 \set PianoStaff.connectArpeggios = ##t
 \override PianoStaff.Arpeggio.arpeggio-direction = #UP
 \new Staff = "ui6" \with { \consists "Merge_rests_engraver" } {
-\accidentalStyle piano
 <<
 \relative { \tmarktfourb \numericTimeSignature \override Hairpin.to-barline = ##f
 \time 2/4 s2^\markup { \smaller \italic "spianato; piu enfatico" } |
 \time 3/4 bes''2.->( |
-f8)->^\markup { \tiny \parenthesize \dynamic ff } r8 r8 aes8~(^\markup { \tiny \parenthesize \dynamic p } aes4 |
+f8)->
+        \footnote \markup \fontsize #-5 \number " 6" #'(0.5 . 0.5) \markup \small \left-column {
+          \line { \super \number 6 "parenthesized, courtesy dynamics apply to nearest pitches" }
+        }
+^\markup { \tiny \parenthesize \dynamic ff } r8 r8 aes8~(^\markup { \tiny \parenthesize \dynamic p } aes4 |
 \time 4/4 des,1~ |
 \time 5/4 des2.) r2 |
 \time 3/4 s2. |
@@ -73,7 +76,6 @@ fis2.( |
 >>
 }
 \new Staff = "di6" \with { \consists "Merge_rests_engraver" } { \clef bass
-\accidentalStyle piano
 <<
 \relative { \tmarktfourb \numericTimeSignature \override Hairpin.to-barline = ##f
 \override DynamicLineSpanner.staff-padding = \phds
@@ -108,7 +110,7 @@ e,2.~ |
 }
 \\
 \relative { \tmarktfourb \numericTimeSignature \override Hairpin.to-barline = ##f
-\time 2/4 d,4(_\markup { \lower #4 \tiny { "[parenthesized, courtesy dynamics apply to nearest pitches]" } } ees~ |
+\time 2/4 d,4( ees~ |
 \time 3/4 ees2.~ |
 ees8) r8 r4 r4 |
 \time 4/4 s1 |
@@ -150,6 +152,7 @@ s2. |
 >>
 %\midi { }
 \layout {
+  system-count = #5
 \context {
 \Score
 \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
