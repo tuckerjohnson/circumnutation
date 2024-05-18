@@ -32,7 +32,7 @@ r4^"Molto accel." f,16-.\> g-. aes-. bes-. b-. d( a' c \tempo "Presto possible" 
 \relative { \numericTimeSignature
 \time 4/4
 \tuplet 3/2 { f'8( des c } \tuplet 3/2 { b a) aes-. } \tuplet 3/2 { g-. e-. d-. } \tuplet 3/2 { bes-.\sustainOn ges-. ees-. } |
-r4 r4 r4 \clef treble \tuplet 3/2 { a''8(\sustainOff g c,) } \clef bass |
+r2 r4 \clef treble \tuplet 3/2 { a''8(\sustainOff g c,) } \clef bass |
 \tuplet 3/2 { bes8-. f-. d-. } \tuplet 3/2 { b-. fis-. e-. } \tuplet 3/2 { dis( cis gis) } r4\sustainOn \clef treble |
 r4 r8 a'''''8-. fis-. dis-. \tuplet 3/2 { bes-.\sustainOff ees,-. d-. } \clef bass \tuplet 3/2 { e,-. g,( f }
 \tuplet 3/2 { gis\sustainOn ais b) } r2\fermata |
